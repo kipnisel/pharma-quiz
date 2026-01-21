@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharmacology Basics Quiz - Lecture 1</title>
+    <title>חידון יסודות הפרמקולוגיה - הרצאה 1</title>
     <link rel="stylesheet" href="lecture-styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Pharmacology Basics Quiz</h1>
-            <p class="subtitle">Lecture 1: Pharmacokinetics Fundamentals</p>
+            <h1>חידון יסודות הפרמקולוגיה</h1>
+            <p class="subtitle">הרצאה 1: יסודות פרמקוקינטיקה</p>
         </header>
 
         <div id="stats" class="stats">
             <div class="stat-item">
-                <span class="stat-label">Question:</span>
+                <span class="stat-label">שאלה:</span>
                 <span id="question-number">1</span> / <span id="total-questions">10</span>
             </div>
             <div class="stat-item">
-                <span class="stat-label">Score:</span>
+                <span class="stat-label">ניקוד:</span>
                 <span id="score">0</span>
             </div>
         </div>
@@ -37,23 +37,23 @@
                 <p id="explanation" class="explanation"></p>
             </div>
 
-            <button id="next-btn" class="btn next-btn hidden">Next Question</button>
+            <button id="next-btn" class="btn next-btn hidden">השאלה הבאה</button>
         </div>
 
         <div id="results" class="results hidden">
-            <h2>Quiz Complete!</h2>
+            <h2>סיכום</h2>
             <div class="results-score">
                 <span id="final-score">0</span> / <span id="final-total">10</span>
             </div>
             <p id="results-message"></p>
-            <button id="restart-btn" class="btn">Start Again</button>
-            <a href="index.html" class="btn secondary-btn">Drug Quiz</a>
+            <button id="restart-btn" class="btn">התחל מחדש</button>
+            <a href="index.html" class="btn secondary-btn">חידון תרופות</a>
         </div>
 
         <div id="settings" class="settings">
-            <h3>Quiz Settings</h3>
+            <h3>הגדרות</h3>
             <div class="setting-item">
-                <label for="question-count">Number of Questions:</label>
+                <label for="question-count">מספר שאלות:</label>
                 <select id="question-count">
                     <option value="5">5</option>
                     <option value="10" selected>10</option>
@@ -63,32 +63,32 @@
                 </select>
             </div>
             <div class="setting-item">
-                <label for="category-select">Category:</label>
+                <label for="category-select">קטגוריה:</label>
                 <select id="category-select">
-                    <option value="all" selected>All Topics</option>
-                    <option value="Definitions">Definitions</option>
-                    <option value="Drug Naming">Drug Naming</option>
-                    <option value="Drug Development">Drug Development</option>
-                    <option value="FDA Categories">FDA Categories</option>
-                    <option value="Pharmacokinetics">Pharmacokinetics</option>
-                    <option value="Routes of Administration">Routes of Administration</option>
-                    <option value="Absorption">Absorption</option>
-                    <option value="Bioavailability">Bioavailability</option>
-                    <option value="Distribution">Distribution</option>
-                    <option value="Metabolism">Metabolism</option>
-                    <option value="Excretion">Excretion</option>
-                    <option value="Half-Life">Half-Life</option>
-                    <option value="Kinetics">Kinetics</option>
-                    <option value="Loading Dose">Loading Dose</option>
-                    <option value="Clearance">Clearance</option>
-                    <option value="Pharmacodynamics">Pharmacodynamics</option>
-                    <option value="Therapeutic Index">Therapeutic Index</option>
-                    <option value="Drug Interactions">Drug Interactions</option>
-                    <option value="Special Populations">Special Populations</option>
+                    <option value="all" selected>הכל</option>
+                    <option value="הגדרות">הגדרות</option>
+                    <option value="שמות תרופות">שמות תרופות</option>
+                    <option value="פיתוח תרופות">פיתוח תרופות</option>
+                    <option value="קטגוריות FDA">קטגוריות FDA</option>
+                    <option value="פרמקוקינטיקה">פרמקוקינטיקה</option>
+                    <option value="דרכי מתן">דרכי מתן</option>
+                    <option value="ספיגה">ספיגה</option>
+                    <option value="זמינות ביולוגית">זמינות ביולוגית</option>
+                    <option value="פיזור">פיזור</option>
+                    <option value="מטבוליזם">מטבוליזם</option>
+                    <option value="הפרשה">הפרשה</option>
+                    <option value="זמן מחצית חיים">זמן מחצית חיים</option>
+                    <option value="קינטיקה">קינטיקה</option>
+                    <option value="מינון טעינה">מינון טעינה</option>
+                    <option value="פינוי">פינוי</option>
+                    <option value="פרמקודינמיקה">פרמקודינמיקה</option>
+                    <option value="מדד טיפולי">מדד טיפולי</option>
+                    <option value="אינטראקציות תרופתיות">אינטראקציות תרופתיות</option>
+                    <option value="אוכלוסיות מיוחדות">אוכלוסיות מיוחדות</option>
                 </select>
             </div>
-            <button id="start-btn" class="btn start-btn">Start Quiz</button>
-            <a href="index.html" class="btn secondary-btn">Drug Quiz</a>
+            <button id="start-btn" class="btn start-btn">התחל חידון</button>
+            <a href="index.html" class="btn secondary-btn">חידון תרופות</a>
         </div>
     </div>
 

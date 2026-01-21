@@ -4,710 +4,710 @@
 const lecture1Data = [
     // Definition of Pharmacology
     {
-        question: "What is Pharmacology?",
+        question: "מהי פרמקולוגיה?",
         options: [
-            { text: "The study of drugs and their interactions with living systems", correct: true },
-            { text: "The study of human anatomy", correct: false },
-            { text: "The study of disease processes", correct: false },
-            { text: "The study of surgical procedures", correct: false }
+            { text: "המדע החוקר תרופות ואינטראקציות שלהן עם מערכות חיים", correct: true },
+            { text: "המדע החוקר אנטומיה אנושית", correct: false },
+            { text: "המדע החוקר תהליכי מחלות", correct: false },
+            { text: "המדע החוקר פרוצדורות כירורגיות", correct: false }
         ],
-        category: "Definitions",
-        explanation: "Pharmacology is the study of drugs and their interactions with living systems."
+        category: "הגדרות",
+        explanation: "פרמקולוגיה היא המדע החוקר תרופות ואינטראקציות שלהן עם מערכות חיים."
     },
     {
-        question: "What is a drug?",
+        question: "מהי תרופה (Drug)?",
         options: [
-            { text: "A substance that affects the function of living cells", correct: true },
-            { text: "Only prescription medications", correct: false },
-            { text: "Only substances that cause addiction", correct: false },
-            { text: "Only synthetic chemicals", correct: false }
+            { text: "חומר המשפיע על תפקוד תאים חיים", correct: true },
+            { text: "רק תרופות מרשם", correct: false },
+            { text: "רק חומרים הגורמים להתמכרות", correct: false },
+            { text: "רק כימיקלים סינתטיים", correct: false }
         ],
-        category: "Definitions",
-        explanation: "A drug is any substance that affects the function of living cells, used for treatment, prevention, or diagnosis of disease."
+        category: "הגדרות",
+        explanation: "תרופה היא כל חומר המשפיע על תפקוד תאים חיים, המשמש לטיפול, מניעה או אבחון מחלות."
     },
 
     // Drug Naming
     {
-        question: "Which type of drug name is unique and owned by a company?",
+        question: "איזה סוג שם של תרופה הוא ייחודי ושייך לחברה?",
         options: [
-            { text: "Trade name (Brand name)", correct: true },
-            { text: "Generic name", correct: false },
-            { text: "Chemical name", correct: false },
-            { text: "IUPAC name", correct: false }
+            { text: "שם מסחרי (Trade name)", correct: true },
+            { text: "שם גנרי", correct: false },
+            { text: "שם כימי", correct: false },
+            { text: "שם IUPAC", correct: false }
         ],
-        category: "Drug Naming",
-        explanation: "Trade names (brand names) are unique names owned by pharmaceutical companies. Examples: Advil, Tylenol."
+        category: "שמות תרופות",
+        explanation: "שמות מסחריים הם שמות ייחודיים בבעלות חברות תרופות. דוגמאות: Advil, Tylenol."
     },
     {
-        question: "The generic name of a drug is also known as:",
+        question: "השם הגנרי של תרופה נקרא גם:",
         options: [
-            { text: "Non-proprietary name", correct: true },
-            { text: "Brand name", correct: false },
-            { text: "Chemical formula", correct: false },
-            { text: "Trade name", correct: false }
+            { text: "שם לא קנייני (Non-proprietary name)", correct: true },
+            { text: "שם מותג", correct: false },
+            { text: "נוסחה כימית", correct: false },
+            { text: "שם מסחרי", correct: false }
         ],
-        category: "Drug Naming",
-        explanation: "Generic name = Non-proprietary name. It is assigned by USAN (United States Adopted Names)."
+        category: "שמות תרופות",
+        explanation: "שם גנרי = שם לא קנייני. הוא נקבע על ידי USAN (United States Adopted Names)."
     },
     {
-        question: "Which drug name describes the chemical structure?",
+        question: "איזה שם של תרופה מתאר את המבנה הכימי?",
         options: [
-            { text: "Chemical name", correct: true },
-            { text: "Generic name", correct: false },
-            { text: "Trade name", correct: false },
-            { text: "Brand name", correct: false }
+            { text: "שם כימי", correct: true },
+            { text: "שם גנרי", correct: false },
+            { text: "שם מסחרי", correct: false },
+            { text: "שם מותג", correct: false }
         ],
-        category: "Drug Naming",
-        explanation: "Chemical names describe the drug's chemical structure. Example: N-acetyl-para-aminophenol (acetaminophen)."
+        category: "שמות תרופות",
+        explanation: "שמות כימיים מתארים את המבנה הכימי של התרופה. דוגמה: N-acetyl-para-aminophenol (אצטמינופן)."
     },
 
     // Drug Development Phases
     {
-        question: "In which phase of clinical trials is a drug first tested on humans?",
+        question: "באיזה שלב של ניסויים קליניים נבדקת תרופה לראשונה על בני אדם?",
         options: [
-            { text: "Phase 1", correct: true },
-            { text: "Phase 2", correct: false },
-            { text: "Phase 3", correct: false },
-            { text: "Phase 4", correct: false }
+            { text: "שלב 1 (Phase 1)", correct: true },
+            { text: "שלב 2 (Phase 2)", correct: false },
+            { text: "שלב 3 (Phase 3)", correct: false },
+            { text: "שלב 4 (Phase 4)", correct: false }
         ],
-        category: "Drug Development",
-        explanation: "Phase 1 trials are the first tests in humans, typically involving 20-100 healthy volunteers to assess safety and dosing."
+        category: "פיתוח תרופות",
+        explanation: "ניסויי שלב 1 הם הבדיקות הראשונות בבני אדם, בדרך כלל על 20-100 מתנדבים בריאים להערכת בטיחות ומינון."
     },
     {
-        question: "Which phase of clinical trials involves thousands of patients and compares to standard therapy?",
+        question: "באיזה שלב של ניסויים קליניים משתתפים אלפי מטופלים ומשווים לטיפול סטנדרטי?",
         options: [
-            { text: "Phase 3", correct: true },
-            { text: "Phase 1", correct: false },
-            { text: "Phase 2", correct: false },
-            { text: "Phase 4", correct: false }
+            { text: "שלב 3 (Phase 3)", correct: true },
+            { text: "שלב 1 (Phase 1)", correct: false },
+            { text: "שלב 2 (Phase 2)", correct: false },
+            { text: "שלב 4 (Phase 4)", correct: false }
         ],
-        category: "Drug Development",
-        explanation: "Phase 3 involves 1,000-6,000 patients and compares the new drug to standard therapy or placebo."
+        category: "פיתוח תרופות",
+        explanation: "שלב 3 כולל 1,000-6,000 מטופלים ומשווה את התרופה החדשה לטיפול סטנדרטי או פלצבו."
     },
     {
-        question: "Post-marketing surveillance occurs in which phase?",
+        question: "מעקב פוסט-שיווקי (Post-marketing surveillance) מתרחש באיזה שלב?",
         options: [
-            { text: "Phase 4", correct: true },
-            { text: "Phase 1", correct: false },
-            { text: "Phase 2", correct: false },
-            { text: "Phase 3", correct: false }
+            { text: "שלב 4 (Phase 4)", correct: true },
+            { text: "שלב 1 (Phase 1)", correct: false },
+            { text: "שלב 2 (Phase 2)", correct: false },
+            { text: "שלב 3 (Phase 3)", correct: false }
         ],
-        category: "Drug Development",
-        explanation: "Phase 4 is post-marketing surveillance, monitoring the drug after FDA approval for rare or long-term adverse effects."
+        category: "פיתוח תרופות",
+        explanation: "שלב 4 הוא מעקב פוסט-שיווקי, ניטור התרופה לאחר אישור FDA לתופעות לוואי נדירות או ארוכות טווח."
     },
     {
-        question: "Phase 2 clinical trials primarily assess:",
+        question: "ניסויים קליניים בשלב 2 בודקים בעיקר:",
         options: [
-            { text: "Effectiveness in patients with target disease", correct: true },
-            { text: "Safety in healthy volunteers", correct: false },
-            { text: "Post-marketing surveillance", correct: false },
-            { text: "Comparison with standard therapy", correct: false }
+            { text: "יעילות במטופלים עם המחלה המטרה", correct: true },
+            { text: "בטיחות במתנדבים בריאים", correct: false },
+            { text: "מעקב פוסט-שיווקי", correct: false },
+            { text: "השוואה לטיפול סטנדרטי", correct: false }
         ],
-        category: "Drug Development",
-        explanation: "Phase 2 involves 100-500 patients with the target disease to assess effectiveness."
+        category: "פיתוח תרופות",
+        explanation: "שלב 2 כולל 100-500 מטופלים עם המחלה המטרה להערכת יעילות."
     },
 
     // FDA Pregnancy Categories
     {
-        question: "Which FDA pregnancy category indicates 'No risk in controlled human studies'?",
+        question: "איזו קטגוריית הריון של FDA מציינת 'אין סיכון במחקרים מבוקרים בבני אדם'?",
         options: [
-            { text: "Category A", correct: true },
-            { text: "Category B", correct: false },
-            { text: "Category C", correct: false },
-            { text: "Category D", correct: false }
+            { text: "קטגוריה A", correct: true },
+            { text: "קטגוריה B", correct: false },
+            { text: "קטגוריה C", correct: false },
+            { text: "קטגוריה D", correct: false }
         ],
-        category: "FDA Categories",
-        explanation: "Category A: No risk in controlled human studies."
+        category: "קטגוריות FDA",
+        explanation: "קטגוריה A: אין סיכון במחקרים מבוקרים בבני אדם."
     },
     {
-        question: "Which FDA pregnancy category indicates drugs that are contraindicated in pregnancy?",
+        question: "איזו קטגוריית הריון של FDA מציינת תרופות שאסורות בהריון?",
         options: [
-            { text: "Category X", correct: true },
-            { text: "Category D", correct: false },
-            { text: "Category C", correct: false },
-            { text: "Category B", correct: false }
+            { text: "קטגוריה X", correct: true },
+            { text: "קטגוריה D", correct: false },
+            { text: "קטגוריה C", correct: false },
+            { text: "קטגוריה B", correct: false }
         ],
-        category: "FDA Categories",
-        explanation: "Category X: Contraindicated - risks clearly outweigh benefits."
+        category: "קטגוריות FDA",
+        explanation: "קטגוריה X: התווית נגד - הסיכונים עולים בבירור על היתרונות."
     },
     {
-        question: "Category D in FDA pregnancy classification means:",
+        question: "קטגוריה D בסיווג הריון של FDA משמעותה:",
         options: [
-            { text: "Positive evidence of risk, but benefits may outweigh risks", correct: true },
-            { text: "No risk demonstrated", correct: false },
-            { text: "Contraindicated in pregnancy", correct: false },
-            { text: "No animal studies available", correct: false }
+            { text: "ראיות חיוביות לסיכון, אך היתרונות עשויים לעלות על הסיכונים", correct: true },
+            { text: "לא הודגם סיכון", correct: false },
+            { text: "התווית נגד בהריון", correct: false },
+            { text: "אין מחקרים על בעלי חיים", correct: false }
         ],
-        category: "FDA Categories",
-        explanation: "Category D: Positive evidence of risk, but benefits may outweigh risks in serious conditions."
+        category: "קטגוריות FDA",
+        explanation: "קטגוריה D: ראיות חיוביות לסיכון, אך היתרונות עשויים לעלות על הסיכונים במצבים חמורים."
     },
 
     // Pharmacokinetics - General
     {
-        question: "What does ADME stand for in pharmacokinetics?",
+        question: "מה מייצג הקיצור ADME בפרמקוקינטיקה?",
         options: [
-            { text: "Absorption, Distribution, Metabolism, Excretion", correct: true },
-            { text: "Administration, Dosing, Monitoring, Evaluation", correct: false },
-            { text: "Action, Duration, Mechanism, Effect", correct: false },
-            { text: "Agonist, Drug, Membrane, Enzyme", correct: false }
+            { text: "ספיגה, פיזור, מטבוליזם, הפרשה (Absorption, Distribution, Metabolism, Excretion)", correct: true },
+            { text: "מתן, מינון, ניטור, הערכה", correct: false },
+            { text: "פעולה, משך, מנגנון, השפעה", correct: false },
+            { text: "אגוניסט, תרופה, ממברנה, אנזים", correct: false }
         ],
-        category: "Pharmacokinetics",
-        explanation: "ADME = Absorption, Distribution, Metabolism, Excretion - the four main processes of pharmacokinetics."
+        category: "פרמקוקינטיקה",
+        explanation: "ADME = Absorption, Distribution, Metabolism, Excretion - ארבעת התהליכים העיקריים של פרמקוקינטיקה."
     },
     {
-        question: "Pharmacokinetics is best described as:",
+        question: "פרמקוקינטיקה מתארת בצורה הטובה ביותר:",
         options: [
-            { text: "What the body does to the drug", correct: true },
-            { text: "What the drug does to the body", correct: false },
-            { text: "How drugs interact with receptors", correct: false },
-            { text: "The study of drug side effects", correct: false }
+            { text: "מה הגוף עושה לתרופה", correct: true },
+            { text: "מה התרופה עושה לגוף", correct: false },
+            { text: "כיצד תרופות מתקשרות עם קולטנים", correct: false },
+            { text: "מחקר תופעות לוואי של תרופות", correct: false }
         ],
-        category: "Pharmacokinetics",
-        explanation: "Pharmacokinetics = what the body does to the drug. Pharmacodynamics = what the drug does to the body."
+        category: "פרמקוקינטיקה",
+        explanation: "פרמקוקינטיקה = מה הגוף עושה לתרופה. פרמקודינמיקה = מה התרופה עושה לגוף."
     },
     {
-        question: "Pharmacodynamics is best described as:",
+        question: "פרמקודינמיקה מתארת בצורה הטובה ביותר:",
         options: [
-            { text: "What the drug does to the body", correct: true },
-            { text: "What the body does to the drug", correct: false },
-            { text: "How drugs are absorbed", correct: false },
-            { text: "How drugs are excreted", correct: false }
+            { text: "מה התרופה עושה לגוף", correct: true },
+            { text: "מה הגוף עושה לתרופה", correct: false },
+            { text: "כיצד תרופות נספגות", correct: false },
+            { text: "כיצד תרופות מופרשות", correct: false }
         ],
-        category: "Pharmacokinetics",
-        explanation: "Pharmacodynamics = what the drug does to the body (drug effects and mechanisms)."
+        category: "פרמקוקינטיקה",
+        explanation: "פרמקודינמיקה = מה התרופה עושה לגוף (השפעות ומנגנונים של תרופות)."
     },
 
     // Routes of Administration
     {
-        question: "Which route of administration has 100% bioavailability?",
+        question: "לאיזו דרך מתן יש זמינות ביולוגית של 100%?",
         options: [
-            { text: "Intravenous (IV)", correct: true },
-            { text: "Oral", correct: false },
-            { text: "Intramuscular", correct: false },
-            { text: "Subcutaneous", correct: false }
+            { text: "תוך-ורידי (IV)", correct: true },
+            { text: "פומי (Oral)", correct: false },
+            { text: "תוך-שרירי (IM)", correct: false },
+            { text: "תת-עורי (SC)", correct: false }
         ],
-        category: "Routes of Administration",
-        explanation: "IV administration delivers the drug directly into the bloodstream, giving 100% bioavailability."
+        category: "דרכי מתן",
+        explanation: "מתן IV מעביר את התרופה ישירות לזרם הדם, נותן זמינות ביולוגית של 100%."
     },
     {
-        question: "Enteral routes of administration include all EXCEPT:",
+        question: "דרכי מתן אנטרליות כוללות את כולן חוץ מ:",
         options: [
-            { text: "Intravenous", correct: true },
-            { text: "Oral", correct: false },
-            { text: "Sublingual", correct: false },
-            { text: "Rectal", correct: false }
+            { text: "תוך-ורידי (IV)", correct: true },
+            { text: "פומי (Oral)", correct: false },
+            { text: "תת-לשוני (Sublingual)", correct: false },
+            { text: "רקטלי (Rectal)", correct: false }
         ],
-        category: "Routes of Administration",
-        explanation: "Enteral routes involve the GI tract: oral, sublingual, buccal, rectal. IV is a parenteral route."
+        category: "דרכי מתן",
+        explanation: "דרכי מתן אנטרליות מערבות את מערכת העיכול: פומי, תת-לשוני, בוקלי, רקטלי. IV היא דרך פרנטרלית."
     },
     {
-        question: "Which route bypasses first-pass metabolism?",
+        question: "איזו דרך מתן עוקפת מטבוליזם מעבר ראשון (First-pass)?",
         options: [
-            { text: "Sublingual", correct: true },
-            { text: "Oral", correct: false },
-            { text: "Gastric tube", correct: false },
-            { text: "Rectal (partially)", correct: false }
+            { text: "תת-לשוני (Sublingual)", correct: true },
+            { text: "פומי (Oral)", correct: false },
+            { text: "צינור קיבה (Gastric tube)", correct: false },
+            { text: "רקטלי (באופן חלקי)", correct: false }
         ],
-        category: "Routes of Administration",
-        explanation: "Sublingual absorption goes directly into systemic circulation, bypassing the liver's first-pass metabolism."
+        category: "דרכי מתן",
+        explanation: "ספיגה תת-לשונית עוברת ישירות למחזור הדם הסיסטמי, עוקפת את מטבוליזם המעבר הראשון בכבד."
     },
     {
-        question: "First-pass metabolism occurs primarily in:",
+        question: "מטבוליזם מעבר ראשון (First-pass) מתרחש בעיקר ב:",
         options: [
-            { text: "The liver", correct: true },
-            { text: "The kidneys", correct: false },
-            { text: "The lungs", correct: false },
-            { text: "The stomach", correct: false }
+            { text: "כבד", correct: true },
+            { text: "כליות", correct: false },
+            { text: "ריאות", correct: false },
+            { text: "קיבה", correct: false }
         ],
-        category: "Routes of Administration",
-        explanation: "First-pass metabolism occurs in the liver when drugs absorbed from the GI tract pass through the portal circulation."
+        category: "דרכי מתן",
+        explanation: "מטבוליזם מעבר ראשון מתרחש בכבד כאשר תרופות הנספגות ממערכת העיכול עוברות דרך מחזור הדם הפורטלי."
     },
 
     // Absorption
     {
-        question: "Most drugs cross cell membranes by:",
+        question: "רוב התרופות חוצות ממברנות תאים על ידי:",
         options: [
-            { text: "Passive diffusion", correct: true },
-            { text: "Active transport", correct: false },
-            { text: "Pinocytosis", correct: false },
-            { text: "Facilitated diffusion", correct: false }
+            { text: "דיפוזיה פסיבית", correct: true },
+            { text: "הובלה פעילה", correct: false },
+            { text: "פינוציטוזיס", correct: false },
+            { text: "דיפוזיה מונחית", correct: false }
         ],
-        category: "Absorption",
-        explanation: "Passive diffusion is the most common mechanism for drug absorption across cell membranes."
+        category: "ספיגה",
+        explanation: "דיפוזיה פסיבית היא המנגנון הנפוץ ביותר לספיגת תרופות דרך ממברנות תאים."
     },
     {
-        question: "Which form of a weak acid drug is better absorbed?",
+        question: "איזו צורה של תרופה חומצית חלשה נספגת טוב יותר?",
         options: [
-            { text: "Unionized (uncharged) form", correct: true },
-            { text: "Ionized (charged) form", correct: false },
-            { text: "Salt form", correct: false },
-            { text: "Hydrated form", correct: false }
+            { text: "צורה לא-מיוננת (לא טעונה)", correct: true },
+            { text: "צורה מיוננת (טעונה)", correct: false },
+            { text: "צורת מלח", correct: false },
+            { text: "צורה מוהידרטת", correct: false }
         ],
-        category: "Absorption",
-        explanation: "Unionized (uncharged) forms are more lipid soluble and cross cell membranes more easily."
+        category: "ספיגה",
+        explanation: "צורות לא-מיוננות (לא טעונות) הן יותר מסיסות בשומן וחוצות ממברנות תאים בקלות רבה יותר."
     },
     {
-        question: "A weak acid drug is best absorbed in:",
+        question: "תרופה חומצית חלשה נספגת הכי טוב ב:",
         options: [
-            { text: "Acidic environment (stomach)", correct: true },
-            { text: "Basic environment (intestine)", correct: false },
-            { text: "Neutral environment", correct: false },
-            { text: "It doesn't matter", correct: false }
+            { text: "סביבה חומצית (קיבה)", correct: true },
+            { text: "סביבה בסיסית (מעי)", correct: false },
+            { text: "סביבה ניטרלית", correct: false },
+            { text: "לא משנה", correct: false }
         ],
-        category: "Absorption",
-        explanation: "Weak acids are more unionized in acidic environments, making them better absorbed in the stomach."
+        category: "ספיגה",
+        explanation: "חומצות חלשות יותר לא-מיוננות בסביבות חומציות, מה שהופך אותן לנספגות טוב יותר בקיבה."
     },
     {
-        question: "A weak base drug is best absorbed in:",
+        question: "תרופה בסיסית חלשה נספגת הכי טוב ב:",
         options: [
-            { text: "Basic environment (intestine)", correct: true },
-            { text: "Acidic environment (stomach)", correct: false },
-            { text: "Neutral environment", correct: false },
-            { text: "It doesn't matter", correct: false }
+            { text: "סביבה בסיסית (מעי)", correct: true },
+            { text: "סביבה חומצית (קיבה)", correct: false },
+            { text: "סביבה ניטרלית", correct: false },
+            { text: "לא משנה", correct: false }
         ],
-        category: "Absorption",
-        explanation: "Weak bases are more unionized in basic environments, making them better absorbed in the intestine."
+        category: "ספיגה",
+        explanation: "בסיסים חלשים יותר לא-מיוננים בסביבות בסיסיות, מה שהופך אותם לנספגים טוב יותר במעי."
     },
 
     // Bioavailability
     {
-        question: "Bioavailability (F) is defined as:",
+        question: "זמינות ביולוגית (F) מוגדרת כ:",
         options: [
-            { text: "Fraction of administered drug that reaches systemic circulation", correct: true },
-            { text: "Total amount of drug in the body", correct: false },
-            { text: "Rate of drug elimination", correct: false },
-            { text: "Volume in which the drug distributes", correct: false }
+            { text: "השיעור של התרופה שמגיע למחזור הסיסטמי", correct: true },
+            { text: "כמות התרופה הכוללת בגוף", correct: false },
+            { text: "קצב סילוק התרופה", correct: false },
+            { text: "הנפח שבו התרופה מתפזרת", correct: false }
         ],
-        category: "Bioavailability",
-        explanation: "Bioavailability (F) is the fraction of administered drug that reaches systemic circulation unchanged."
+        category: "זמינות ביולוגית",
+        explanation: "זמינות ביולוגית (F) היא השיעור של התרופה המנוהלת שמגיע למחזור הסיסטמי ללא שינוי."
     },
     {
-        question: "Which factor does NOT affect bioavailability?",
+        question: "איזה גורם לא משפיע על זמינות ביולוגית?",
         options: [
-            { text: "Patient's height", correct: true },
-            { text: "First-pass metabolism", correct: false },
-            { text: "Drug formulation", correct: false },
-            { text: "Route of administration", correct: false }
+            { text: "גובה המטופל", correct: true },
+            { text: "מטבוליזם מעבר ראשון", correct: false },
+            { text: "פורמולציית התרופה", correct: false },
+            { text: "דרך המתן", correct: false }
         ],
-        category: "Bioavailability",
-        explanation: "Bioavailability is affected by first-pass metabolism, drug solubility, formulation, and route of administration."
+        category: "זמינות ביולוגית",
+        explanation: "זמינות ביולוגית מושפעת ממטבוליזם מעבר ראשון, מסיסות התרופה, פורמולציה ודרך המתן."
     },
 
     // Distribution
     {
-        question: "Volume of distribution (Vd) indicates:",
+        question: "נפח הפיזור (Vd) מציין:",
         options: [
-            { text: "How widely a drug distributes in the body", correct: true },
-            { text: "The actual volume of blood", correct: false },
-            { text: "The rate of drug elimination", correct: false },
-            { text: "The amount of drug absorbed", correct: false }
+            { text: "עד כמה התרופה מתפזרת בגוף באופן נרחב", correct: true },
+            { text: "הנפח האמיתי של הדם", correct: false },
+            { text: "קצב סילוק התרופה", correct: false },
+            { text: "כמות התרופה שנספגה", correct: false }
         ],
-        category: "Distribution",
-        explanation: "Vd is the theoretical volume needed to contain the total drug amount at plasma concentration."
+        category: "פיזור",
+        explanation: "Vd הוא הנפח התיאורטי הדרוש להכיל את כמות התרופה הכוללת בריכוז הפלזמה."
     },
     {
-        question: "A drug with high lipid solubility will have:",
+        question: "לתרופה עם מסיסות גבוהה בשומן יהיה:",
         options: [
-            { text: "Large volume of distribution", correct: true },
-            { text: "Small volume of distribution", correct: false },
-            { text: "No tissue distribution", correct: false },
-            { text: "100% plasma protein binding", correct: false }
+            { text: "נפח פיזור גדול", correct: true },
+            { text: "נפח פיזור קטן", correct: false },
+            { text: "ללא פיזור לרקמות", correct: false },
+            { text: "100% קשירה לחלבוני פלזמה", correct: false }
         ],
-        category: "Distribution",
-        explanation: "Lipid-soluble drugs distribute widely into tissues, resulting in large Vd."
+        category: "פיזור",
+        explanation: "תרופות מסיסות בשומן מתפזרות באופן נרחב לרקמות, מה שגורם ל-Vd גדול."
     },
     {
-        question: "Which protein is the main drug-binding protein in plasma?",
+        question: "איזה חלבון הוא החלבון העיקרי הקושר תרופות בפלזמה?",
         options: [
-            { text: "Albumin", correct: true },
-            { text: "Globulin", correct: false },
-            { text: "Fibrinogen", correct: false },
-            { text: "Hemoglobin", correct: false }
+            { text: "אלבומין", correct: true },
+            { text: "גלובולין", correct: false },
+            { text: "פיברינוגן", correct: false },
+            { text: "המוגלובין", correct: false }
         ],
-        category: "Distribution",
-        explanation: "Albumin is the primary plasma protein that binds drugs (especially acidic drugs)."
+        category: "פיזור",
+        explanation: "אלבומין הוא חלבון הפלזמה העיקרי הקושר תרופות (במיוחד תרופות חומציות)."
     },
     {
-        question: "Only _____ drug can exert pharmacological effect:",
+        question: "רק תרופה _____ יכולה להפעיל השפעה פרמקולוגית:",
         options: [
-            { text: "Unbound (free)", correct: true },
-            { text: "Protein-bound", correct: false },
-            { text: "Metabolized", correct: false },
-            { text: "Ionized", correct: false }
+            { text: "לא קשורה (חופשית)", correct: true },
+            { text: "קשורה לחלבון", correct: false },
+            { text: "ממוטבלת", correct: false },
+            { text: "מיוננת", correct: false }
         ],
-        category: "Distribution",
-        explanation: "Only unbound (free) drug can cross membranes and interact with receptors to produce effects."
+        category: "פיזור",
+        explanation: "רק תרופה לא קשורה (חופשית) יכולה לחצות ממברנות ולהתקשר עם קולטנים כדי לייצר השפעות."
     },
 
     // Metabolism
     {
-        question: "Phase 1 metabolism reactions include all EXCEPT:",
+        question: "תגובות מטבוליזם פאזה 1 כוללות את כולן חוץ מ:",
         options: [
-            { text: "Glucuronidation", correct: true },
-            { text: "Oxidation", correct: false },
-            { text: "Reduction", correct: false },
-            { text: "Hydrolysis", correct: false }
+            { text: "גלוקורונידציה", correct: true },
+            { text: "חמצון", correct: false },
+            { text: "חיזור", correct: false },
+            { text: "הידרוליזה", correct: false }
         ],
-        category: "Metabolism",
-        explanation: "Phase 1 = oxidation, reduction, hydrolysis. Phase 2 = conjugation reactions like glucuronidation."
+        category: "מטבוליזם",
+        explanation: "פאזה 1 = חמצון, חיזור, הידרוליזה. פאזה 2 = תגובות צימוד כמו גלוקורונידציה."
     },
     {
-        question: "The primary site of drug metabolism is:",
+        question: "האתר העיקרי למטבוליזם של תרופות הוא:",
         options: [
-            { text: "Liver", correct: true },
-            { text: "Kidney", correct: false },
-            { text: "Lung", correct: false },
-            { text: "Intestine", correct: false }
+            { text: "כבד", correct: true },
+            { text: "כליה", correct: false },
+            { text: "ריאה", correct: false },
+            { text: "מעי", correct: false }
         ],
-        category: "Metabolism",
-        explanation: "The liver is the primary site of drug metabolism, containing most metabolizing enzymes."
+        category: "מטבוליזם",
+        explanation: "הכבד הוא האתר העיקרי למטבוליזם של תרופות, המכיל את רוב האנזימים המטבוליזמים."
     },
     {
-        question: "Cytochrome P450 enzymes are involved in:",
+        question: "אנזימי ציטוכרום P450 מעורבים ב:",
         options: [
-            { text: "Phase 1 metabolism", correct: true },
-            { text: "Phase 2 metabolism", correct: false },
-            { text: "Drug excretion", correct: false },
-            { text: "Drug absorption", correct: false }
+            { text: "מטבוליזם פאזה 1", correct: true },
+            { text: "מטבוליזם פאזה 2", correct: false },
+            { text: "הפרשת תרופות", correct: false },
+            { text: "ספיגת תרופות", correct: false }
         ],
-        category: "Metabolism",
-        explanation: "CYP450 enzymes catalyze Phase 1 oxidation reactions, the most important pathway for drug metabolism."
+        category: "מטבוליזם",
+        explanation: "אנזימי CYP450 מזרזים תגובות חמצון של פאזה 1, המסלול החשוב ביותר למטבוליזם של תרופות."
     },
     {
-        question: "Phase 2 metabolism typically makes drugs:",
+        question: "מטבוליזם פאזה 2 בדרך כלל הופך תרופות ל:",
         options: [
-            { text: "More water soluble for excretion", correct: true },
-            { text: "More lipid soluble", correct: false },
-            { text: "More active", correct: false },
-            { text: "More toxic", correct: false }
+            { text: "יותר מסיסות במים להפרשה", correct: true },
+            { text: "יותר מסיסות בשומן", correct: false },
+            { text: "יותר פעילות", correct: false },
+            { text: "יותר רעילות", correct: false }
         ],
-        category: "Metabolism",
-        explanation: "Phase 2 conjugation reactions add polar groups, making drugs more water-soluble for renal excretion."
+        category: "מטבוליזם",
+        explanation: "תגובות צימוד של פאזה 2 מוסיפות קבוצות פולריות, והופכות תרופות ליותר מסיסות במים להפרשה כלייתית."
     },
     {
-        question: "A prodrug is:",
+        question: "פרו-דראג (Prodrug) היא:",
         options: [
-            { text: "An inactive compound converted to active drug in the body", correct: true },
-            { text: "An active drug that becomes inactive", correct: false },
-            { text: "A drug given before surgery", correct: false },
-            { text: "A professional-grade medication", correct: false }
+            { text: "תרכובת לא פעילה שהופכת לתרופה פעילה בגוף", correct: true },
+            { text: "תרופה פעילה שהופכת ללא פעילה", correct: false },
+            { text: "תרופה הניתנת לפני ניתוח", correct: false },
+            { text: "תרופה בדרגה מקצועית", correct: false }
         ],
-        category: "Metabolism",
-        explanation: "Prodrugs are inactive compounds that undergo metabolism to become active drugs."
+        category: "מטבוליזם",
+        explanation: "פרו-דראגס הן תרכובות לא פעילות שעוברות מטבוליזם להפוך לתרופות פעילות."
     },
 
     // Excretion
     {
-        question: "The primary organ of drug excretion is:",
+        question: "האיבר העיקרי להפרשת תרופות הוא:",
         options: [
-            { text: "Kidney", correct: true },
-            { text: "Liver", correct: false },
-            { text: "Lung", correct: false },
-            { text: "Skin", correct: false }
+            { text: "כליה", correct: true },
+            { text: "כבד", correct: false },
+            { text: "ריאה", correct: false },
+            { text: "עור", correct: false }
         ],
-        category: "Excretion",
-        explanation: "Kidneys are the primary organs for drug excretion, eliminating water-soluble drugs and metabolites."
+        category: "הפרשה",
+        explanation: "הכליות הן האיברים העיקריים להפרשת תרופות, מסלקות תרופות מסיסות במים ומטבוליטים."
     },
     {
-        question: "Renal drug excretion involves all EXCEPT:",
+        question: "הפרשת תרופות כלייתית כוללת את כולן חוץ מ:",
         options: [
-            { text: "Oxidation", correct: true },
-            { text: "Glomerular filtration", correct: false },
-            { text: "Tubular secretion", correct: false },
-            { text: "Tubular reabsorption", correct: false }
+            { text: "חמצון", correct: true },
+            { text: "סינון גלומרולרי", correct: false },
+            { text: "הפרשה טובולרית", correct: false },
+            { text: "ספיגה חוזרת טובולרית", correct: false }
         ],
-        category: "Excretion",
-        explanation: "Renal excretion involves filtration, secretion, and reabsorption. Oxidation is metabolism, not excretion."
+        category: "הפרשה",
+        explanation: "הפרשה כלייתית כוללת סינון, הפרשה וספיגה חוזרת. חמצון הוא מטבוליזם, לא הפרשה."
     },
     {
-        question: "Alkalinizing urine increases excretion of:",
+        question: "הבססת השתן מגבירה הפרשה של:",
         options: [
-            { text: "Weak acids", correct: true },
-            { text: "Weak bases", correct: false },
-            { text: "Neutral drugs", correct: false },
-            { text: "All drugs equally", correct: false }
+            { text: "חומצות חלשות", correct: true },
+            { text: "בסיסים חלשים", correct: false },
+            { text: "תרופות ניטרליות", correct: false },
+            { text: "כל התרופות באופן שווה", correct: false }
         ],
-        category: "Excretion",
-        explanation: "Alkaline urine ionizes weak acids, preventing reabsorption and increasing excretion (ion trapping)."
+        category: "הפרשה",
+        explanation: "שתן בסיסי מיינן חומצות חלשות, מונע ספיגה חוזרת ומגביר הפרשה (לכידת יונים)."
     },
 
     // Half-Life
     {
-        question: "Half-life (t½) is defined as:",
+        question: "זמן מחצית חיים (t½) מוגדר כ:",
         options: [
-            { text: "Time for plasma concentration to decrease by 50%", correct: true },
-            { text: "Time for drug to be completely eliminated", correct: false },
-            { text: "Time for drug to reach peak concentration", correct: false },
-            { text: "Time for drug to be absorbed", correct: false }
+            { text: "הזמן לירידת ריכוז הפלזמה ב-50%", correct: true },
+            { text: "הזמן לסילוק מלא של התרופה", correct: false },
+            { text: "הזמן להגעה לריכוז שיא", correct: false },
+            { text: "הזמן לספיגת התרופה", correct: false }
         ],
-        category: "Half-Life",
-        explanation: "Half-life is the time required for plasma drug concentration to decrease by 50%."
+        category: "זמן מחצית חיים",
+        explanation: "זמן מחצית חיים הוא הזמן הדרוש לירידת ריכוז התרופה בפלזמה ב-50%."
     },
     {
-        question: "Approximately how many half-lives are needed to reach steady state?",
+        question: "כמה זמני מחצית חיים בערך דרושים להגעה למצב יציב (Steady state)?",
         options: [
-            { text: "4-5 half-lives", correct: true },
-            { text: "1-2 half-lives", correct: false },
-            { text: "10 half-lives", correct: false },
-            { text: "It depends on the dose", correct: false }
+            { text: "4-5 זמני מחצית חיים", correct: true },
+            { text: "1-2 זמני מחצית חיים", correct: false },
+            { text: "10 זמני מחצית חיים", correct: false },
+            { text: "תלוי במינון", correct: false }
         ],
-        category: "Half-Life",
-        explanation: "Steady state is reached after approximately 4-5 half-lives (>94% of final concentration)."
+        category: "זמן מחצית חיים",
+        explanation: "מצב יציב מושג לאחר כ-4-5 זמני מחצית חיים (>94% מהריכוז הסופי)."
     },
     {
-        question: "After 4 half-lives, what percentage of drug remains?",
+        question: "אחרי 4 זמני מחצית חיים, כמה אחוז מהתרופה נותר?",
         options: [
             { text: "6.25%", correct: true },
             { text: "25%", correct: false },
             { text: "12.5%", correct: false },
             { text: "50%", correct: false }
         ],
-        category: "Half-Life",
-        explanation: "After 4 half-lives: 100% → 50% → 25% → 12.5% → 6.25% remains."
+        category: "זמן מחצית חיים",
+        explanation: "אחרי 4 זמני מחצית חיים: 100% → 50% → 25% → 12.5% → 6.25% נותר."
     },
 
     // Kinetics
     {
-        question: "First-order kinetics means:",
+        question: "קינטיקה מסדר ראשון (First-order) משמעותה:",
         options: [
-            { text: "A constant fraction of drug is eliminated per unit time", correct: true },
-            { text: "A constant amount of drug is eliminated per unit time", correct: false },
-            { text: "The drug is eliminated immediately", correct: false },
-            { text: "The drug is not metabolized", correct: false }
+            { text: "שיעור קבוע של תרופה מסולק ליחידת זמן", correct: true },
+            { text: "כמות קבועה של תרופה מסולקת ליחידת זמן", correct: false },
+            { text: "התרופה מסולקת מיד", correct: false },
+            { text: "התרופה לא עוברת מטבוליזם", correct: false }
         ],
-        category: "Kinetics",
-        explanation: "First-order: constant fraction eliminated per time. Rate depends on concentration."
+        category: "קינטיקה",
+        explanation: "סדר ראשון: שיעור קבוע מסולק ליחידת זמן. הקצב תלוי בריכוז."
     },
     {
-        question: "Zero-order kinetics means:",
+        question: "קינטיקה מסדר אפס (Zero-order) משמעותה:",
         options: [
-            { text: "A constant amount of drug is eliminated per unit time", correct: true },
-            { text: "A constant fraction of drug is eliminated per unit time", correct: false },
-            { text: "No drug is eliminated", correct: false },
-            { text: "Elimination is instantaneous", correct: false }
+            { text: "כמות קבועה של תרופה מסולקת ליחידת זמן", correct: true },
+            { text: "שיעור קבוע של תרופה מסולק ליחידת זמן", correct: false },
+            { text: "אין סילוק תרופה", correct: false },
+            { text: "הסילוק מיידי", correct: false }
         ],
-        category: "Kinetics",
-        explanation: "Zero-order: constant amount eliminated per time, regardless of concentration. Enzymes are saturated."
+        category: "קינטיקה",
+        explanation: "סדר אפס: כמות קבועה מסולקת ליחידת זמן, ללא תלות בריכוז. האנזימים רוויים."
     },
     {
-        question: "Which drug exhibits zero-order kinetics at therapeutic doses?",
+        question: "איזו תרופה מציגה קינטיקה מסדר אפס במינונים טיפוליים?",
         options: [
-            { text: "Ethanol (alcohol)", correct: true },
-            { text: "Aspirin", correct: false },
-            { text: "Penicillin", correct: false },
-            { text: "Ibuprofen", correct: false }
+            { text: "אתנול (אלכוהול)", correct: true },
+            { text: "אספירין", correct: false },
+            { text: "פניצילין", correct: false },
+            { text: "איבופרופן", correct: false }
         ],
-        category: "Kinetics",
-        explanation: "Ethanol follows zero-order kinetics because alcohol dehydrogenase becomes saturated."
+        category: "קינטיקה",
+        explanation: "אתנול עוקב אחר קינטיקה מסדר אפס כי אלכוהול דהידרוגנאז הופך רווי."
     },
     {
-        question: "Most drugs follow which type of elimination kinetics?",
+        question: "רוב התרופות עוקבות אחר איזה סוג קינטיקת סילוק?",
         options: [
-            { text: "First-order", correct: true },
-            { text: "Zero-order", correct: false },
-            { text: "Second-order", correct: false },
-            { text: "Mixed-order", correct: false }
+            { text: "סדר ראשון", correct: true },
+            { text: "סדר אפס", correct: false },
+            { text: "סדר שני", correct: false },
+            { text: "סדר מעורב", correct: false }
         ],
-        category: "Kinetics",
-        explanation: "Most drugs follow first-order kinetics at therapeutic concentrations."
+        category: "קינטיקה",
+        explanation: "רוב התרופות עוקבות אחר קינטיקה מסדר ראשון בריכוזים טיפוליים."
     },
 
     // Loading Dose
     {
-        question: "The formula for loading dose is:",
+        question: "הנוסחה למינון טעינה (Loading dose) היא:",
         options: [
             { text: "LD = Vd × Cp", correct: true },
             { text: "LD = Cp / Vd", correct: false },
             { text: "LD = Clearance × t½", correct: false },
             { text: "LD = Dose / Bioavailability", correct: false }
         ],
-        category: "Loading Dose",
-        explanation: "Loading Dose = Volume of distribution × Target plasma concentration (LD = Vd × Cp)."
+        category: "מינון טעינה",
+        explanation: "מינון טעינה = נפח פיזור × ריכוז פלזמה מטרה (LD = Vd × Cp)."
     },
     {
-        question: "A loading dose is used to:",
+        question: "מינון טעינה משמש כדי:",
         options: [
-            { text: "Rapidly achieve therapeutic concentration", correct: true },
-            { text: "Slowly build up drug levels", correct: false },
-            { text: "Reduce side effects", correct: false },
-            { text: "Increase half-life", correct: false }
+            { text: "להגיע במהירות לריכוז טיפולי", correct: true },
+            { text: "לבנות באיטיות רמות תרופה", correct: false },
+            { text: "להפחית תופעות לוואי", correct: false },
+            { text: "להגדיל זמן מחצית חיים", correct: false }
         ],
-        category: "Loading Dose",
-        explanation: "Loading doses achieve therapeutic levels quickly without waiting for 4-5 half-lives."
+        category: "מינון טעינה",
+        explanation: "מינוני טעינה משיגים רמות טיפוליות במהירות מבלי להמתין 4-5 זמני מחצית חיים."
     },
 
     // Clearance
     {
-        question: "Clearance represents:",
+        question: "פינוי (Clearance) מייצג:",
         options: [
-            { text: "Volume of plasma cleared of drug per unit time", correct: true },
-            { text: "Amount of drug eliminated per dose", correct: false },
-            { text: "Time to eliminate all drug", correct: false },
-            { text: "Rate of drug absorption", correct: false }
+            { text: "נפח פלזמה המנוקה מתרופה ליחידת זמן", correct: true },
+            { text: "כמות התרופה המסולקת למינון", correct: false },
+            { text: "זמן לסילוק כל התרופה", correct: false },
+            { text: "קצב ספיגת התרופה", correct: false }
         ],
-        category: "Clearance",
-        explanation: "Clearance is the volume of plasma from which drug is completely removed per unit time."
+        category: "פינוי",
+        explanation: "פינוי הוא נפח הפלזמה שממנו התרופה מוסרת לחלוטין ליחידת זמן."
     },
     {
-        question: "Total body clearance equals:",
+        question: "פינוי גופני כולל שווה ל:",
         options: [
-            { text: "Renal clearance + Hepatic clearance + Other clearance", correct: true },
-            { text: "Renal clearance only", correct: false },
-            { text: "Hepatic clearance only", correct: false },
-            { text: "Vd × half-life", correct: false }
+            { text: "פינוי כלייתי + פינוי כבדי + פינוי אחר", correct: true },
+            { text: "פינוי כלייתי בלבד", correct: false },
+            { text: "פינוי כבדי בלבד", correct: false },
+            { text: "Vd × זמן מחצית חיים", correct: false }
         ],
-        category: "Clearance",
-        explanation: "Total clearance is the sum of all organ clearances (kidney, liver, and other routes)."
+        category: "פינוי",
+        explanation: "פינוי כולל הוא סכום כל הפינויים מאיברים (כליה, כבד ומסלולים אחרים)."
     },
 
     // Pharmacodynamics
     {
-        question: "An agonist is a drug that:",
+        question: "אגוניסט היא תרופה ש:",
         options: [
-            { text: "Binds to a receptor and activates it", correct: true },
-            { text: "Binds to a receptor and blocks it", correct: false },
-            { text: "Prevents drug absorption", correct: false },
-            { text: "Increases drug metabolism", correct: false }
+            { text: "נקשרת לקולטן ומפעילה אותו", correct: true },
+            { text: "נקשרת לקולטן וחוסמת אותו", correct: false },
+            { text: "מונעת ספיגת תרופה", correct: false },
+            { text: "מגבירה מטבוליזם של תרופה", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "Agonists bind to receptors and produce a biological response (activate the receptor)."
+        category: "פרמקודינמיקה",
+        explanation: "אגוניסטים נקשרים לקולטנים ומייצרים תגובה ביולוגית (מפעילים את הקולטן)."
     },
     {
-        question: "An antagonist is a drug that:",
+        question: "אנטגוניסט היא תרופה ש:",
         options: [
-            { text: "Binds to a receptor and blocks the effect of agonists", correct: true },
-            { text: "Binds to a receptor and activates it", correct: false },
-            { text: "Increases agonist effects", correct: false },
-            { text: "Has no receptor interaction", correct: false }
+            { text: "נקשרת לקולטן וחוסמת את השפעת האגוניסטים", correct: true },
+            { text: "נקשרת לקולטן ומפעילה אותו", correct: false },
+            { text: "מגבירה השפעות אגוניסטים", correct: false },
+            { text: "אין לה אינטראקציה עם קולטנים", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "Antagonists bind to receptors but do not activate them, blocking the action of agonists."
+        category: "פרמקודינמיקה",
+        explanation: "אנטגוניסטים נקשרים לקולטנים אך לא מפעילים אותם, חוסמים את פעולת האגוניסטים."
     },
     {
-        question: "A competitive antagonist:",
+        question: "אנטגוניסט תחרותי:",
         options: [
-            { text: "Can be overcome by increasing agonist concentration", correct: true },
-            { text: "Cannot be overcome by any means", correct: false },
-            { text: "Binds irreversibly to the receptor", correct: false },
-            { text: "Binds to a different site than the agonist", correct: false }
+            { text: "ניתן להתגבר עליו על ידי הגברת ריכוז האגוניסט", correct: true },
+            { text: "לא ניתן להתגבר עליו בשום אמצעי", correct: false },
+            { text: "נקשר באופן בלתי הפיך לקולטן", correct: false },
+            { text: "נקשר לאתר שונה מהאגוניסט", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "Competitive antagonists compete with agonists for the same binding site and can be overcome by higher agonist doses."
+        category: "פרמקודינמיקה",
+        explanation: "אנטגוניסטים תחרותיים מתחרים עם אגוניסטים על אותו אתר קישור וניתן להתגבר עליהם על ידי מינונים גבוהים יותר של אגוניסט."
     },
     {
-        question: "Efficacy refers to:",
+        question: "יעילות (Efficacy) מתייחסת ל:",
         options: [
-            { text: "Maximum effect a drug can produce", correct: true },
-            { text: "Dose needed to produce 50% effect", correct: false },
-            { text: "How quickly a drug works", correct: false },
-            { text: "How long a drug lasts", correct: false }
+            { text: "ההשפעה המקסימלית שתרופה יכולה לייצר", correct: true },
+            { text: "המינון הדרוש לייצר 50% מההשפעה", correct: false },
+            { text: "כמה מהר תרופה פועלת", correct: false },
+            { text: "כמה זמן תרופה נמשכת", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "Efficacy (Emax) is the maximum response a drug can produce, regardless of dose."
+        category: "פרמקודינמיקה",
+        explanation: "יעילות (Emax) היא התגובה המקסימלית שתרופה יכולה לייצר, ללא תלות במינון."
     },
     {
-        question: "Potency refers to:",
+        question: "פוטנטיות (Potency) מתייחסת ל:",
         options: [
-            { text: "Amount of drug needed to produce a given effect", correct: true },
-            { text: "Maximum effect a drug can produce", correct: false },
-            { text: "Duration of drug action", correct: false },
-            { text: "Speed of drug onset", correct: false }
+            { text: "כמות התרופה הדרושה לייצר השפעה נתונה", correct: true },
+            { text: "ההשפעה המקסימלית שתרופה יכולה לייצר", correct: false },
+            { text: "משך פעולת התרופה", correct: false },
+            { text: "מהירות תחילת פעולת התרופה", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "Potency is the dose required to produce a specific effect (ED50). Lower dose = higher potency."
+        category: "פרמקודינמיקה",
+        explanation: "פוטנטיות היא המינון הדרוש לייצר השפעה ספציפית (ED50). מינון נמוך יותר = פוטנטיות גבוהה יותר."
     },
     {
-        question: "ED50 represents:",
+        question: "ED50 מייצג:",
         options: [
-            { text: "Dose producing 50% of maximum effect", correct: true },
-            { text: "Dose that is lethal to 50% of subjects", correct: false },
-            { text: "Dose that is toxic to 50% of subjects", correct: false },
-            { text: "50% bioavailability", correct: false }
+            { text: "המינון המייצר 50% מההשפעה המקסימלית", correct: true },
+            { text: "המינון הקטלני ל-50% מהנבדקים", correct: false },
+            { text: "המינון הרעיל ל-50% מהנבדקים", correct: false },
+            { text: "50% זמינות ביולוגית", correct: false }
         ],
-        category: "Pharmacodynamics",
-        explanation: "ED50 (Effective Dose 50) is the dose that produces 50% of the maximum therapeutic effect."
+        category: "פרמקודינמיקה",
+        explanation: "ED50 (מינון אפקטיבי 50) הוא המינון המייצר 50% מההשפעה הטיפולית המקסימלית."
     },
 
     // Therapeutic Index
     {
-        question: "Therapeutic index (TI) is calculated as:",
+        question: "מדד טיפולי (TI) מחושב כ:",
         options: [
-            { text: "TD50/ED50 or LD50/ED50", correct: true },
+            { text: "TD50/ED50 או LD50/ED50", correct: true },
             { text: "ED50/TD50", correct: false },
             { text: "Emax/EC50", correct: false },
             { text: "Clearance/Vd", correct: false }
         ],
-        category: "Therapeutic Index",
-        explanation: "TI = TD50/ED50 (toxic dose/effective dose). Higher TI = safer drug."
+        category: "מדד טיפולי",
+        explanation: "TI = TD50/ED50 (מינון רעיל/מינון אפקטיבי). TI גבוה יותר = תרופה בטוחה יותר."
     },
     {
-        question: "A drug with a narrow therapeutic index:",
+        question: "תרופה עם מדד טיפולי צר:",
         options: [
-            { text: "Requires careful monitoring of blood levels", correct: true },
-            { text: "Is very safe to use", correct: false },
-            { text: "Can be given in any dose", correct: false },
-            { text: "Has no side effects", correct: false }
+            { text: "דורשת ניטור קפדני של רמות בדם", correct: true },
+            { text: "מאוד בטוחה לשימוש", correct: false },
+            { text: "ניתן לתת בכל מינון", correct: false },
+            { text: "אין לה תופעות לוואי", correct: false }
         ],
-        category: "Therapeutic Index",
-        explanation: "Narrow TI drugs (like warfarin, digoxin, lithium) need careful monitoring due to small margin between therapeutic and toxic doses."
+        category: "מדד טיפולי",
+        explanation: "תרופות עם TI צר (כמו וורפרין, דיגוקסין, ליתיום) צריכות ניטור קפדני בגלל המרווח הקטן בין מינונים טיפוליים לרעילים."
     },
 
     // Drug Interactions
     {
-        question: "A CYP450 inducer will:",
+        question: "משרן (Inducer) של CYP450 יגרום ל:",
         options: [
-            { text: "Increase metabolism of other drugs", correct: true },
-            { text: "Decrease metabolism of other drugs", correct: false },
-            { text: "Have no effect on other drugs", correct: false },
-            { text: "Only affect its own metabolism", correct: false }
+            { text: "הגברת מטבוליזם של תרופות אחרות", correct: true },
+            { text: "הפחתת מטבוליזם של תרופות אחרות", correct: false },
+            { text: "ללא השפעה על תרופות אחרות", correct: false },
+            { text: "השפעה רק על המטבוליזם שלו עצמו", correct: false }
         ],
-        category: "Drug Interactions",
-        explanation: "CYP450 inducers (like rifampin, phenytoin) increase enzyme activity, speeding up metabolism of other drugs."
+        category: "אינטראקציות תרופתיות",
+        explanation: "משרני CYP450 (כמו ריפמפין, פניטואין) מגבירים פעילות אנזימים, מזרזים מטבוליזם של תרופות אחרות."
     },
     {
-        question: "A CYP450 inhibitor will:",
+        question: "מעכב (Inhibitor) של CYP450 יגרום ל:",
         options: [
-            { text: "Decrease metabolism of other drugs", correct: true },
-            { text: "Increase metabolism of other drugs", correct: false },
-            { text: "Increase drug absorption", correct: false },
-            { text: "Decrease drug distribution", correct: false }
+            { text: "הפחתת מטבוליזם של תרופות אחרות", correct: true },
+            { text: "הגברת מטבוליזם של תרופות אחרות", correct: false },
+            { text: "הגברת ספיגת תרופות", correct: false },
+            { text: "הפחתת פיזור תרופות", correct: false }
         ],
-        category: "Drug Interactions",
-        explanation: "CYP450 inhibitors (like ketoconazole, grapefruit juice) decrease enzyme activity, slowing metabolism of other drugs."
+        category: "אינטראקציות תרופתיות",
+        explanation: "מעכבי CYP450 (כמו קטוקונאזול, מיץ אשכוליות) מפחיתים פעילות אנזימים, מאטים מטבוליזם של תרופות אחרות."
     },
     {
-        question: "Synergism occurs when:",
+        question: "סינרגיזם מתרחש כאשר:",
         options: [
-            { text: "Combined effect of two drugs is greater than sum of individual effects", correct: true },
-            { text: "One drug cancels the effect of another", correct: false },
-            { text: "Two drugs have no interaction", correct: false },
-            { text: "One drug increases the toxicity of another", correct: false }
+            { text: "ההשפעה המשולבת של שתי תרופות גדולה מסכום ההשפעות הבודדות", correct: true },
+            { text: "תרופה אחת מבטלת את השפעת השנייה", correct: false },
+            { text: "לשתי תרופות אין אינטראקציה", correct: false },
+            { text: "תרופה אחת מגבירה את הרעילות של השנייה", correct: false }
         ],
-        category: "Drug Interactions",
-        explanation: "Synergism (potentiation): 1 + 1 > 2. Combined effect exceeds the sum of individual effects."
+        category: "אינטראקציות תרופתיות",
+        explanation: "סינרגיזם (פוטנציאציה): 1 + 1 > 2. ההשפעה המשולבת עולה על סכום ההשפעות הבודדות."
     },
 
     // Special Populations
     {
-        question: "Drug dosing in elderly patients often requires:",
+        question: "מינון תרופות בחולים קשישים לעתים קרובות דורש:",
         options: [
-            { text: "Lower doses due to decreased renal/hepatic function", correct: true },
-            { text: "Higher doses due to increased metabolism", correct: false },
-            { text: "No adjustment needed", correct: false },
-            { text: "More frequent dosing", correct: false }
+            { text: "מינונים נמוכים יותר בשל ירידה בתפקוד כלייתי/כבדי", correct: true },
+            { text: "מינונים גבוהים יותר בשל עלייה במטבוליזם", correct: false },
+            { text: "אין צורך בהתאמה", correct: false },
+            { text: "מתן תכוף יותר", correct: false }
         ],
-        category: "Special Populations",
-        explanation: "Elderly have decreased renal and hepatic function, requiring dose reductions for many drugs."
+        category: "אוכלוסיות מיוחדות",
+        explanation: "לקשישים תפקוד כלייתי וכבדי מופחת, הדורש הפחתת מינון עבור תרופות רבות."
     },
     {
-        question: "In renal failure, drugs that are primarily renally excreted will have:",
+        question: "באי-ספיקת כליות, לתרופות שמופרשות בעיקר דרך הכליות יהיה:",
         options: [
-            { text: "Increased half-life", correct: true },
-            { text: "Decreased half-life", correct: false },
-            { text: "Unchanged pharmacokinetics", correct: false },
-            { text: "Increased metabolism", correct: false }
+            { text: "זמן מחצית חיים מוארך", correct: true },
+            { text: "זמן מחצית חיים מקוצר", correct: false },
+            { text: "פרמקוקינטיקה ללא שינוי", correct: false },
+            { text: "מטבוליזם מוגבר", correct: false }
         ],
-        category: "Special Populations",
-        explanation: "Reduced renal function decreases clearance, leading to drug accumulation and prolonged half-life."
+        category: "אוכלוסיות מיוחדות",
+        explanation: "תפקוד כלייתי מופחת מוריד את הפינוי, מוביל להצטברות תרופה וזמן מחצית חיים מוארך."
     }
 ];

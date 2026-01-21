@@ -124,7 +124,7 @@ class LectureQuiz {
         // Show feedback
         this.feedbackEl.classList.remove('hidden', 'correct', 'incorrect');
         this.feedbackEl.classList.add(isCorrect ? 'correct' : 'incorrect');
-        this.feedbackTextEl.textContent = isCorrect ? 'Correct!' : 'Incorrect';
+        this.feedbackTextEl.textContent = isCorrect ? 'תשובה נכונה!' : 'תשובה שגויה';
         this.explanationEl.textContent = question.explanation;
 
         this.nextBtnEl.classList.remove('hidden');
@@ -146,15 +146,15 @@ class LectureQuiz {
         let message = '';
 
         if (percentage === 100) {
-            message = 'Perfect! You are a pharmacology expert!';
+            message = 'מושלם! אתה מומחה בפרמקולוגיה!';
         } else if (percentage >= 80) {
-            message = 'Excellent! You have great knowledge!';
+            message = 'מצוין! יש לך ידע מרשים!';
         } else if (percentage >= 60) {
-            message = 'Good job! Room for some improvement.';
+            message = 'טוב מאוד! יש מקום לשיפור קטן';
         } else if (percentage >= 40) {
-            message = 'Not bad, but review the material.';
+            message = 'לא רע, אבל כדאי לחזור על החומר';
         } else {
-            message = 'Keep studying! You can do it!';
+            message = 'צריך קצת יותר לימוד, בהצלחה!';
         }
 
         this.resultsMessageEl.textContent = message;

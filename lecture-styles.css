@@ -99,13 +99,13 @@ header h1 {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
-    text-align: left;
+    text-align: right;
 }
 
 .option:hover {
     background: #e9ecef;
     border-color: #11998e;
-    transform: translateX(5px);
+    transform: translateX(-5px);
 }
 
 .option.selected {
@@ -162,7 +162,7 @@ header h1 {
     font-size: 0.95rem;
     line-height: 1.5;
     color: #333;
-    text-align: left;
+    text-align: right;
 }
 
 .btn {
