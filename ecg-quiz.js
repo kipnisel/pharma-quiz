@@ -16,6 +16,8 @@ class ECGQuiz {
         this.resultsEl = document.getElementById('results');
         this.questionTextEl = document.getElementById('question-text');
         this.questionCategoryEl = document.getElementById('question-category');
+        this.questionImageContainerEl = document.getElementById('question-image-container');
+        this.questionImageEl = document.getElementById('question-image');
         this.optionsEl = document.getElementById('options');
         this.feedbackEl = document.getElementById('feedback');
         this.feedbackTextEl = document.getElementById('feedback-text');
@@ -77,6 +79,14 @@ class ECGQuiz {
         this.questionNumberEl.textContent = this.currentQuestion + 1;
         this.questionCategoryEl.textContent = question.category;
         this.questionTextEl.textContent = question.question;
+
+        // Handle image display
+        if (question.image) {
+            this.questionImageEl.src = question.image;
+            this.questionImageContainerEl.classList.remove('hidden');
+        } else {
+            this.questionImageContainerEl.classList.add('hidden');
+        }
 
         // Shuffle options for each display
         const shuffledOptions = [...question.options].sort(() => Math.random() - 0.5);

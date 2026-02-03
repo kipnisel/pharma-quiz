@@ -571,5 +571,223 @@ const ecgData = [
         ],
         category: "כללי",
         explanation: "קצב לב תקין במבוגר הוא 60-100 פעימות בדקה."
+    },
+
+    // Image-based questions - זיהוי קצב מתמונה
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/sinus_tachycardia.png",
+        options: [
+            { text: "Sinus Tachycardia", correct: true },
+            { text: "Sinus Bradycardia", correct: false },
+            { text: "Atrial Fibrillation", correct: false },
+            { text: "Ventricular Tachycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Sinus Tachycardia - קצב סינוס מהיר מעל 100 פעימות בדקה עם גלי P תקינים לפני כל QRS."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/sinus_bradycardia.png",
+        options: [
+            { text: "Sinus Bradycardia", correct: true },
+            { text: "Sinus Tachycardia", correct: false },
+            { text: "1st Degree AV Block", correct: false },
+            { text: "Asystole", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Sinus Bradycardia - קצב סינוס איטי פחות מ-60 פעימות בדקה עם גלי P תקינים."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/pac.png",
+        options: [
+            { text: "PAC - Premature Atrial Contraction", correct: true },
+            { text: "PVC - Premature Ventricular Complex", correct: false },
+            { text: "Sinus Arrhythmia", correct: false },
+            { text: "Atrial Flutter", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו PAC - פעימה מוקדמת ממקור עלייתי. גל P מוקדם עם QRS צר בעקבותיו."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/avnrt.png",
+        options: [
+            { text: "SVT / AVNRT", correct: true },
+            { text: "Sinus Tachycardia", correct: false },
+            { text: "Ventricular Tachycardia", correct: false },
+            { text: "Atrial Flutter", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו SVT/AVNRT - טכיקרדיה על-חדרית עם קצב סדיר ומהיר, QRS צר וגלי P לא נראים או שליליים."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/atrial_flutter.png",
+        options: [
+            { text: "Atrial Flutter - רפרוף עליות", correct: true },
+            { text: "Atrial Fibrillation - פרפור עליות", correct: false },
+            { text: "SVT", correct: false },
+            { text: "Sinus Tachycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Atrial Flutter - גלי F בצורת 'שיני מסור' עם יחס P:QRS קבוע (2:1, 3:1, 4:1)."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/atrial_fibrillation.png",
+        options: [
+            { text: "Atrial Fibrillation - פרפור עליות", correct: true },
+            { text: "Atrial Flutter - רפרוף עליות", correct: false },
+            { text: "SVT", correct: false },
+            { text: "Multifocal Atrial Tachycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Atrial Fibrillation - קצב לא סדיר לחלוטין, קו בסיס 'רועד' ללא גלי P ברורים."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/pvc.png",
+        options: [
+            { text: "PVC - Premature Ventricular Complex", correct: true },
+            { text: "PAC - Premature Atrial Contraction", correct: false },
+            { text: "Bundle Branch Block", correct: false },
+            { text: "Ventricular Tachycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו PVC - קומפלקס חדרי מוקדם עם QRS רחב וצורה שונה, ללא גל P קודם."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/bigeminy.png",
+        options: [
+            { text: "Bigeminy - PVC אחרי כל פעימה תקינה", correct: true },
+            { text: "Trigeminy", correct: false },
+            { text: "Quadrigeminy", correct: false },
+            { text: "Couplets", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Bigeminy - דפוס קבוע של פעימה תקינה ואחריה PVC, חוזר על עצמו."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/trigeminy.png",
+        options: [
+            { text: "Trigeminy - PVC אחרי כל 2 פעימות תקינות", correct: true },
+            { text: "Bigeminy", correct: false },
+            { text: "Quadrigeminy", correct: false },
+            { text: "PVC בודד", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Trigeminy - דפוס של 2 פעימות תקינות ואחריהן PVC."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/quadrigeminy.png",
+        options: [
+            { text: "Quadrigeminy - PVC אחרי כל 3 פעימות תקינות", correct: true },
+            { text: "Trigeminy", correct: false },
+            { text: "Bigeminy", correct: false },
+            { text: "Multifocal PVC", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Quadrigeminy - דפוס של 3 פעימות תקינות ואחריהן PVC."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/vt.png",
+        options: [
+            { text: "Ventricular Tachycardia - VT", correct: true },
+            { text: "SVT עם הולכה אברנטית", correct: false },
+            { text: "Atrial Flutter", correct: false },
+            { text: "Torsade de Pointes", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו VT - טכיקרדיה חדרית עם QRS רחב ומונומורפי, קצב סדיר 100-200/דקה."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/torsade.png",
+        options: [
+            { text: "Torsade de Pointes", correct: true },
+            { text: "Ventricular Fibrillation", correct: false },
+            { text: "Polymorphic VT", correct: false },
+            { text: "Ventricular Tachycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Torsade de Pointes - VT פולימורפי עם 'סיבוב' מאפיין של הקומפלקסים סביב קו הבסיס."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/vf.png",
+        options: [
+            { text: "Ventricular Fibrillation - VF", correct: true },
+            { text: "Torsade de Pointes", correct: false },
+            { text: "Atrial Fibrillation", correct: false },
+            { text: "Asystole", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו VF - פרפור חדרים, קו כאוטי ללא צורה מזוהה, מצב מסכן חיים המחייב דפיברילציה מיידית."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/asystole.png",
+        options: [
+            { text: "Asystole", correct: true },
+            { text: "Fine VF", correct: false },
+            { text: "3rd Degree AV Block", correct: false },
+            { text: "Sinus Arrest", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Asystole - קו שטוח ללא פעילות חשמלית, מצב מסכן חיים המחייב החייאה מיידית."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/av_block_1st.png",
+        options: [
+            { text: "1st Degree AV Block", correct: true },
+            { text: "2nd Degree AV Block Type 1", correct: false },
+            { text: "Normal Sinus Rhythm", correct: false },
+            { text: "Sinus Bradycardia", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו 1st Degree AV Block - מרווח PR מוארך מעל 0.20 שניות, כל גל P מלווה ב-QRS."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/av_block_2nd_type1.png",
+        options: [
+            { text: "2nd Degree AV Block Type 1 (Wenckebach)", correct: true },
+            { text: "2nd Degree AV Block Type 2", correct: false },
+            { text: "1st Degree AV Block", correct: false },
+            { text: "3rd Degree AV Block", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Type 1 (Wenckebach) - מרווח PR מתארך בהדרגה עד 'נשירת' QRS."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/av_block_2nd_type2.png",
+        options: [
+            { text: "2nd Degree AV Block Type 2", correct: true },
+            { text: "2nd Degree AV Block Type 1", correct: false },
+            { text: "3rd Degree AV Block", correct: false },
+            { text: "1st Degree AV Block", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו Type 2 - מרווח PR קבוע עם 'נשירת' QRS פתאומית. יחס P:QRS קבוע (2:1, 3:1)."
+    },
+    {
+        question: "זהה את הקצב בתמונה:",
+        image: "images/av_block_3rd.png",
+        options: [
+            { text: "3rd Degree AV Block (Complete Heart Block)", correct: true },
+            { text: "2nd Degree AV Block Type 2", correct: false },
+            { text: "Sinus Bradycardia", correct: false },
+            { text: "Junctional Rhythm", correct: false }
+        ],
+        category: "זיהוי מתמונה",
+        explanation: "זהו 3rd Degree AV Block - חסם מלא, אין קשר בין גלי P ל-QRS. מצב מסכן חיים!"
     }
 ];
