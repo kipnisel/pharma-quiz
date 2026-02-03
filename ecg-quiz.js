@@ -59,7 +59,11 @@ class ECGQuiz {
 
         // Filter by category if selected
         if (this.selectedCategory !== 'all') {
-            availableQuestions = availableQuestions.filter(q => q.category === this.selectedCategory);
+            // Normalize strings to handle potential Unicode encoding differences
+            const normalizedSelected = this.selectedCategory.normalize('NFC').trim();
+            availableQuestions = availableQuestions.filter(q =>
+                q.category.normalize('NFC').trim() === normalizedSelected
+            );
         }
 
         // Shuffle questions
