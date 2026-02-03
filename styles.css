@@ -194,6 +194,17 @@ header h1 {
     box-shadow: 0 5px 15px rgba(17, 153, 142, 0.4);
 }
 
+.tertiary-btn {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.tertiary-btn:hover {
+    box-shadow: 0 5px 15px rgba(192, 57, 43, 0.4);
+}
+
 .next-btn {
     max-width: 250px;
     margin: 0 auto;
