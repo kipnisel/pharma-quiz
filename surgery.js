@@ -105,10 +105,10 @@ const surgeryData = [
     {
         question: "מדוע יש להפסיק מטפורמין לפני בדיקת CT עם חומר ניגוד?",
         options: [
-            { text: "סיכון לחמצת לקטית בשילוב פגיעה כלייתית מחומר הניגוד", correct: true },
-            { text: "חומר הניגוד מבטל את פעילות התרופה", correct: false },
-            { text: "סיכון לתגובה אלרגית", correct: false },
-            { text: "עלייה בסוכר בדם", correct: false }
+            { text: "סיכון לחמצת לקטית עקב פגיעה כלייתית מהניגוד", correct: true },
+            { text: "חומר הניגוד מבטל את פעילות התרופה בכבד", correct: false },
+            { text: "סיכון מוגבר לתגובה אלרגית לחומר הניגוד", correct: false },
+            { text: "גורם לעלייה חדה ברמות הסוכר בדם", correct: false }
         ],
         category: "סוכרת",
         explanation: "חומר ניגוד עלול לפגוע בתפקוד הכליות, ובשילוב עם מטפורמין עלול לגרום לחמצת לקטית."
@@ -217,10 +217,10 @@ const surgeryData = [
     {
         question: "מה ההבדל בין הפטיטיס B להפטיטיס C מבחינת מהלך המחלה?",
         options: [
-            { text: "B בדרך כלל סימפטומטי ומחלים, C בדרך כלל אסימפטומטי ונהיה כרוני", correct: true },
-            { text: "שניהם תמיד כרוניים", correct: false },
-            { text: "C יותר סימפטומטי", correct: false },
-            { text: "אין הבדל משמעותי", correct: false }
+            { text: "B לרוב סימפטומטי ומחלים, C לרוב שקט והופך לכרוני", correct: true },
+            { text: "שניהם בדרך כלל הופכים לזיהום כרוני ארוך טווח", correct: false },
+            { text: "C גורם לתסמינים חמורים יותר בשלב החריף", correct: false },
+            { text: "B ו-C זהים במהלך הקליני ובפרוגנוזה", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "הפטיטיס B לרוב סימפטומטי ורוב החולים מחלימים. הפטיטיס C לרוב אסימפטומטי ו-80% הופכים לכרוניים."
@@ -286,9 +286,9 @@ const surgeryData = [
         question: "מה הטיפול הראשוני בהיפרקלמיה חריפה?",
         options: [
             { text: "סידן IV להגנה על הלב, אינסולין+גלוקוז להכנסת K+ לתאים", correct: true },
-            { text: "אשלגן IV", correct: false },
-            { text: "מטפורמין", correct: false },
-            { text: "אנטיביוטיקה", correct: false }
+            { text: "מתן אשלגן IV לאיזון רמות האלקטרוליטים בדם", correct: false },
+            { text: "משתנים חוסכי אשלגן להגברת הפרשתו בשתן", correct: false },
+            { text: "ביקרבונט IV לתיקון החמצת והורדת האשלגן", correct: false }
         ],
         category: "אלקטרוליטים",
         explanation: "סידן מגן על הלב מהפרעות קצב. אינסולין+גלוקוז מכניסים K+ לתאים."
@@ -411,9 +411,9 @@ const surgeryData = [
         question: "מהו הטיפול הראשוני בחסימת מעי?",
         options: [
             { text: "צום, זונדה לניקוז, נוזלים ואלקטרוליטים IV", correct: true },
-            { text: "האכלה דרך הפה", correct: false },
-            { text: "ניתוח מיידי בכל מקרה", correct: false },
-            { text: "משלשלים", correct: false }
+            { text: "האכלה דרך הפה עם מזון קל לעיכול", correct: false },
+            { text: "ניתוח לפרוסקופי מיידי בכל סוגי החסימות", correct: false },
+            { text: "מתן משלשלים והחשה לפינוי המעיים", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "הטיפול הבסיסי: צום להנחת המעי, זונדה לניקוז גזים ונוזלים, ואיזון נוזלים IV."
@@ -432,10 +432,10 @@ const surgeryData = [
     {
         question: "מהו הסימן האופייני ביותר לחסימת מעי?",
         options: [
-            { text: "כאב בטן קוליקי, הקאות, נפיחות, עצירה בגזים וצואה", correct: true },
-            { text: "שלשולים", correct: false },
-            { text: "חום גבוה בלבד", correct: false },
-            { text: "ירידה במשקל בלבד", correct: false }
+            { text: "כאב קוליקי, הקאות, נפיחות, עצירה בגזים וצואה", correct: true },
+            { text: "שלשולים מימיים עם דם וליחה בצואה", correct: false },
+            { text: "חום גבוה מלווה בצמרמורות והזעות לילה", correct: false },
+            { text: "ירידה במשקל עם חולשה כללית וחוסר תיאבון", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "הטטרדה הקלאסית: כאב קוליקי, הקאות, נפיחות (distension), ועצירה מוחלטת."
@@ -490,9 +490,9 @@ const surgeryData = [
         question: "מהי Hypothermia הטיפולית לאחר החייאה?",
         options: [
             { text: "קירור ל-32-34 מעלות למשך 12-24 שעות להגנה נוירולוגית", correct: true },
-            { text: "חימום מואץ", correct: false },
-            { text: "שמירה על 37 מעלות", correct: false },
-            { text: "קירור ל-25 מעלות", correct: false }
+            { text: "חימום מואץ של המטופל ל-39 מעלות להגברת מטבוליזם", correct: false },
+            { text: "שמירה קפדנית על טמפרטורה תקינה של 37 מעלות", correct: false },
+            { text: "קירור עמוק ל-25 מעלות לעצירה מטבולית מוחלטת", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "קירור טיפולי מגן על המוח לאחר דום לב, מתבצע ב-32-34°C למשך 12-24 שעות."
@@ -641,9 +641,9 @@ const surgeryData = [
         question: "אילו גורמים מעכבים ריפוי פצעים?",
         options: [
             { text: "סוכרת, אנמיה, תת תזונה, סטרואידים, עישון", correct: true },
-            { text: "ויטמין C גבוה", correct: false },
-            { text: "חלבון גבוה בתזונה", correct: false },
-            { text: "פעילות גופנית", correct: false }
+            { text: "רמות גבוהות של ויטמין C ואבץ בגוף", correct: false },
+            { text: "תזונה עשירה בחלבון וקלוריות מספיקות", correct: false },
+            { text: "פעילות גופנית מתונה וזרימת דם תקינה", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "כל גורם שפוגע בפרפוזיה, תזונה או מערכת החיסון מעכב ריפוי."
@@ -652,9 +652,9 @@ const surgeryData = [
         question: "מהו סימן לזיהום בפצע ניתוחי?",
         options: [
             { text: "אודם, חום מקומי, נפיחות, הפרשה מוגלתית וכאב", correct: true },
-            { text: "פצע יבש ונקי", correct: false },
-            { text: "גרד קל", correct: false },
-            { text: "צבע ורדרד חיוור", correct: false }
+            { text: "פצע יבש ונקי עם קרום דק ויבש בשוליים", correct: false },
+            { text: "גרד קל באזור הפצע עם עור מתקלף סביב", correct: false },
+            { text: "צבע ורדרד חיוור של הרקמה הסובבת את הפצע", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "סימני דלקת קלאסיים: Rubor (אודם), Calor (חום), Tumor (נפיחות), Dolor (כאב), ו-Pus."
@@ -717,10 +717,10 @@ const surgeryData = [
     {
         question: "מה התפקיד של רקמת גרנולציה בריפוי פצע?",
         options: [
-            { text: "רקמה עשירה בכלי דם שממלאת את הפצע ומהווה בסיס לאפיתליזציה", correct: true },
-            { text: "רקמה שגורמת לזיהום", correct: false },
-            { text: "רקמה שיש להסיר מיידית", correct: false },
-            { text: "סימן לכישלון ריפוי", correct: false }
+            { text: "רקמה עשירה בכלי דם שממלאת הפצע ומהווה בסיס לאפיתל", correct: true },
+            { text: "רקמה פתולוגית המעידה על זיהום חיידקי בפצע", correct: false },
+            { text: "רקמה נמקית שיש להסיר באמצעות דברידמנט", correct: false },
+            { text: "סימן לכישלון בתהליך הריפוי הדורש התערבות", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "רקמת גרנולציה בריאה היא ורודה-אדומה, לחה וגרגירית. מכילה כלי דם חדשים (אנגיוגנזיס) ומהווה בסיס לריפוי."
@@ -739,10 +739,10 @@ const surgeryData = [
     {
         question: "מדוע אלבומין נמוך מעכב ריפוי פצעים?",
         options: [
-            { text: "אלבומין נמוך גורם לבצקות ופגיעה בהובלת חומרים לרקמות", correct: true },
-            { text: "אלבומין גורם לזיהומים", correct: false },
-            { text: "אלבומין מעלה סוכר בדם", correct: false },
-            { text: "אין קשר בין אלבומין לריפוי פצעים", correct: false }
+            { text: "גורם לבצקות רקמה ופגיעה בהובלת חומרים לפצע", correct: true },
+            { text: "אלבומין נמוך מגביר סיכון לזיהומים חיידקיים", correct: false },
+            { text: "גורם לעלייה ברמות הסוכר המעכבת ריפוי", correct: false },
+            { text: "אלבומין אינו קשור לתהליכי ריפוי פצעים", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "היפואלבומינמיה גורמת לבצקות רקמה (לחץ אונקוטי נמוך), הפוגעות בהובלת חמצן וחומרים הנחוצים לריפוי."
@@ -807,10 +807,10 @@ const surgeryData = [
     {
         question: "מהו Adiponectin?",
         options: [
-            { text: "הורמון מרקמת שומן שמגביר רגישות לאינסולין - רמתו נמוכה בהשמנה", correct: true },
-            { text: "הורמון שגורם להשמנה", correct: false },
-            { text: "אנזים עיכול", correct: false },
-            { text: "הורמון רעב", correct: false }
+            { text: "הורמון משומן המגביר רגישות לאינסולין, נמוך בהשמנה", correct: true },
+            { text: "הורמון מרקמת שומן שגורם לצבירת שומן בגוף", correct: false },
+            { text: "אנזים עיכול המופרש מהלבלב לפירוק שומנים", correct: false },
+            { text: "הורמון הרעב המופרש מהקיבה לפני ארוחות", correct: false }
         ],
         category: "בריאטריה",
         explanation: "Adiponectin הוא הורמון מגן שרמתו יורדת בהשמנה. הוא משפר רגישות לאינסולין ובעל תכונות אנטי-דלקתיות."
@@ -818,10 +818,10 @@ const surgeryData = [
     {
         question: "מהי הסיבה העיקרית להיפוגליקמיה מאוחרת לאחר ניתוח בריאטרי?",
         options: [
-            { text: "הפרשת יתר של אינסולין בתגובה לספיגה מהירה של סוכרים", correct: true },
-            { text: "צום ממושך", correct: false },
-            { text: "תרופות לסוכרת", correct: false },
-            { text: "זיהום", correct: false }
+            { text: "הפרשת יתר אינסולין בתגובה לספיגה מהירה של סוכרים", correct: true },
+            { text: "צום ממושך לאחר הניתוח וחוסר צריכה קלורית", correct: false },
+            { text: "המשך נטילת תרופות לסוכרת במינון הקודם", correct: false },
+            { text: "זיהום בפצע הניתוחי הגורם לתגובה מטבולית", correct: false }
         ],
         category: "בריאטריה",
         explanation: "זהו חלק מ-Late Dumping Syndrome: סוכרים נספגים מהר, גורמים לשחרור אינסולין מוגזם, ואחר כך היפוגליקמיה."
@@ -832,9 +832,9 @@ const surgeryData = [
         question: "מהי הסיבה השכיחה ביותר לחסימת מעי דק (SBO)?",
         options: [
             { text: "הידבקויות (Adhesions) לאחר ניתוחים קודמים", correct: true },
-            { text: "גידולים", correct: false },
-            { text: "בקע", correct: false },
-            { text: "אבנים במרה", correct: false }
+            { text: "גידולים ראשוניים או גרורתיים במעי הדק", correct: false },
+            { text: "בקע מפשעתי או בקע טבורי כלוא ומחנק", correct: false },
+            { text: "אבנים במרה שחדרו למעי (Gallstone Ileus)", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "60-75% מ-SBO נגרמים מהידבקויות. גורמים נוספים: בקעים, גידולים, Crohn."
@@ -842,10 +842,10 @@ const surgeryData = [
     {
         question: "מהי הסיבה השכיחה ביותר לחסימת מעי גס (LBO)?",
         options: [
-            { text: "סרטן המעי הגס", correct: true },
-            { text: "הידבקויות", correct: false },
-            { text: "אבני מרה", correct: false },
-            { text: "עצירות רגילה", correct: false }
+            { text: "סרטן המעי הגס (קרצינומה קולורקטלית)", correct: true },
+            { text: "הידבקויות לאחר ניתוחים קודמים בבטן", correct: false },
+            { text: "אבני מרה שחדרו לקולון דרך פיסטולה", correct: false },
+            { text: "עצירות פונקציונלית עם צואה קשה במעי", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "60% מ-LBO נגרמים מסרטן המעי הגס. גורמים נוספים: וולוולוס, דיברטיקוליטיס, סטריקטורה."
@@ -853,10 +853,10 @@ const surgeryData = [
     {
         question: "מהו Volvulus?",
         options: [
-            { text: "פיתול של המעי סביב צירו הגורם לחסימה ולפגיעה בזרימת דם", correct: true },
-            { text: "בקע פנימי", correct: false },
-            { text: "דלקת מעי", correct: false },
-            { text: "גידול שפיר", correct: false }
+            { text: "פיתול של המעי סביב צירו הגורם לחסימה ואיסכמיה", correct: true },
+            { text: "בקע פנימי של לולאת מעי לחלל אחר בבטן", correct: false },
+            { text: "דלקת זיהומית או אוטואימונית של דופן המעי", correct: false },
+            { text: "גידול שפיר הגדל מדופן המעי פנימה", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "Volvulus גורם לחסימה מכנית וגם לאיסכמיה מסוכנת. סיגמואיד וצקום הם המיקומים השכיחים."
@@ -865,9 +865,9 @@ const surgeryData = [
         question: "מהו הסימן הקליני שמחשיד לסטרנגולציה בחסימת מעי?",
         options: [
             { text: "כאב קבוע (לא קוליקי), טכיקרדיה, חום, לויקוציטוזיס", correct: true },
-            { text: "כאב קוליקי בלבד", correct: false },
-            { text: "שלשולים", correct: false },
-            { text: "רעב מוגבר", correct: false }
+            { text: "כאב קוליקי לסירוגין עם הקלה בין ההתקפים", correct: false },
+            { text: "שלשולים מימיים עם ריר ודם מעורבים בצואה", correct: false },
+            { text: "רעב מוגבר עם ירידה במשקל והרגשת שובע מוקדם", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "סטרנגולציה = פגיעה בזרימת דם למעי. סימני אזהרה: כאב קבוע במקום קוליקי, סימני ספסיס, כאב לא פרופורציונלי."
@@ -875,10 +875,10 @@ const surgeryData = [
     {
         question: "מה רואים בצילום בטן בחסימת מעי דק?",
         options: [
-            { text: "לולאות מעי מורחבות עם רמות אוויר-נוזל (Air-fluid levels)", correct: true },
-            { text: "אוויר חופשי תת-סרעפתי", correct: false },
-            { text: "הסתיידויות", correct: false },
-            { text: "צילום תקין", correct: false }
+            { text: "לולאות מעי מורחבות עם רמות אוויר-נוזל", correct: true },
+            { text: "אוויר חופשי תת-סרעפתי המעיד על ניקוב", correct: false },
+            { text: "הסתיידויות מפושטות בחלל הבטן והאגן", correct: false },
+            { text: "צילום תקין ללא ממצאים פתולוגיים", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "בחסימה: הרחבת מעי פרוקסימלית לחסימה, רמות נוזל-אוויר, ומעי קולפס דיסטלית לחסימה."
@@ -886,10 +886,10 @@ const surgeryData = [
     {
         question: "מהו Intussusception?",
         options: [
-            { text: "חדירת קטע מעי לתוך הקטע הסמוך לו (טלסקופי)", correct: true },
-            { text: "פיתול של המעי", correct: false },
-            { text: "בקע של המעי", correct: false },
-            { text: "היצרות של המעי", correct: false }
+            { text: "חדירת קטע מעי לתוך הקטע הסמוך (טלסקופי)", correct: true },
+            { text: "פיתול של המעי סביב צירו עם חסימת זרימת דם", correct: false },
+            { text: "בקע של לולאת מעי דרך פתח בדופן הבטן", correct: false },
+            { text: "היצרות פיברוטית של לומן המעי עקב דלקת", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "Intussusception שכיח בילדים. במבוגרים לרוב קשור לגידול. גורם לחסימה ואיסכמיה."
@@ -899,10 +899,10 @@ const surgeryData = [
     {
         question: "כמה שעות צום נדרש לפני ניתוח אלקטיבי לנוזלים צלולים?",
         options: [
-            { text: "2 שעות", correct: true },
-            { text: "6 שעות", correct: false },
-            { text: "8 שעות", correct: false },
-            { text: "12 שעות", correct: false }
+            { text: "2 שעות לפני הניתוח", correct: true },
+            { text: "6 שעות לפני הניתוח", correct: false },
+            { text: "8 שעות לפני הניתוח", correct: false },
+            { text: "12 שעות לפני הניתוח", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "הנחיות ASA: נוזלים צלולים - 2 שעות, חלב אם - 4 שעות, ארוחה קלה - 6 שעות, ארוחה שומנית - 8 שעות."
@@ -911,9 +911,9 @@ const surgeryData = [
         question: "מהו סיבוך DVT לאחר ניתוח?",
         options: [
             { text: "קריש דם בוורידים העמוקים, בדרך כלל ברגליים", correct: true },
-            { text: "דימום מהפצע", correct: false },
-            { text: "זיהום בפצע", correct: false },
-            { text: "כאב בגרון", correct: false }
+            { text: "דימום מהפצע הניתוחי הדורש התערבות מחודשת", correct: false },
+            { text: "זיהום בפצע הניתוחי עם הפרשה מוגלתית", correct: false },
+            { text: "כאב בגרון לאחר אינטובציה עם קושי בבליעה", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "DVT = Deep Vein Thrombosis. סיכון מוגבר בניתוחים ארוכים, חוסר תנועה. סיבוך מסוכן: PE (תסחיף ריאתי)."
@@ -944,9 +944,9 @@ const surgeryData = [
         question: "מה כולל פרוטוקול ERAS (Enhanced Recovery After Surgery)?",
         options: [
             { text: "צום מקוצר, הליכה מוקדמת, הזנה מוקדמת, הפחתת אופיואידים", correct: true },
-            { text: "צום ממושך ומנוחה במיטה", correct: false },
-            { text: "אנטיביוטיקה ממושכת", correct: false },
-            { text: "הזנה תוך-ורידית בלבד", correct: false }
+            { text: "צום ממושך של 24 שעות ומנוחה מוחלטת במיטה", correct: false },
+            { text: "אנטיביוטיקה פרופילקטית ממושכת במשך שבוע", correct: false },
+            { text: "הזנה תוך-ורידית בלבד עד להוכחת פריסטלטיקה", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "ERAS מקצר אשפוז ומפחית סיבוכים: צום מינימלי, משככי כאב לא-אופיואידים, הקמה וניידות מוקדמת."
@@ -1125,10 +1125,10 @@ const surgeryData = [
     {
         question: "מהם סימני אזהרה (Red Flags) בתלונות GI הדורשים בירור דחוף?",
         options: [
-            { text: "ירידה במשקל, דם בצואה, אנמיה, קושי בבליעה, הקאות דם", correct: true },
-            { text: "גזים לאחר ארוחות", correct: false },
-            { text: "צרבת קלה", correct: false },
-            { text: "עצירות מדי פעם", correct: false }
+            { text: "ירידה במשקל, דם בצואה, אנמיה, דיספגיה, המטמזיס", correct: true },
+            { text: "גזים ונפיחות לאחר ארוחות עשירות בסיבים", correct: false },
+            { text: "צרבת קלה המוקלת על ידי נוגדי חומצה", correct: false },
+            { text: "עצירות מדי פעם עם צואה קשה אך ללא דם", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "דגלים אדומים מחשידים לממאירות או סיבוך חמור. דורשים אנדוסקופיה או הדמייה בהקדם."
