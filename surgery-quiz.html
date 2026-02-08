@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>חידון פרמקולוגיה</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>חידון כירורגיה וסיעוד המבוגר</title>
+    <link rel="stylesheet" href="surgery-styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>חידון פרמקולוגיה</h1>
-            <p class="subtitle">בחן את הידע שלך בתרופות</p>
+            <h1>חידון כירורגיה</h1>
+            <p class="subtitle">סיעוד המבוגר - כירורגיה</p>
         </header>
 
         <div id="stats" class="stats">
@@ -26,7 +26,7 @@
 
         <div id="quiz-container" class="quiz-container">
             <div id="question-card" class="question-card">
-                <div id="question-type" class="question-type"></div>
+                <div id="question-category" class="question-category"></div>
                 <h2 id="question-text" class="question-text"></h2>
                 <div id="options" class="options"></div>
             </div>
@@ -34,7 +34,7 @@
             <div id="feedback" class="feedback hidden">
                 <div id="feedback-icon" class="feedback-icon"></div>
                 <p id="feedback-text"></p>
-                <p id="correct-answer" class="correct-answer"></p>
+                <p id="explanation" class="explanation"></p>
             </div>
 
             <button id="next-btn" class="btn next-btn hidden">השאלה הבאה</button>
@@ -47,9 +47,6 @@
             </div>
             <p id="results-message"></p>
             <button id="restart-btn" class="btn">התחל מחדש</button>
-            <a href="lecture-quiz.html" class="btn secondary-btn">חידון הרצאות</a>
-            <a href="ecg-quiz.html" class="btn tertiary-btn">חידון אק"ג</a>
-            <a href="surgery-quiz.html" class="btn quaternary-btn">חידון כירורגיה</a>
         </div>
 
         <div id="settings" class="settings">
@@ -65,23 +62,26 @@
                 </select>
             </div>
             <div class="setting-item">
-                <label for="question-types">סוג שאלות:</label>
-                <select id="question-types">
+                <label for="category-select">קטגוריה:</label>
+                <select id="category-select">
                     <option value="all" selected>הכל</option>
-                    <option value="mechanism">מנגנון פעולה</option>
-                    <option value="clinical">שימושים קליניים</option>
-                    <option value="toxicity">תופעות לוואי</option>
-                    <option value="drug">זיהוי תרופה</option>
+                    <option value="סוכרת">דגש: סוכרת - משפחות תרופות</option>
+                    <option value="הפטיטיס B">דגש: הפטיטיס B - מעבדה</option>
+                    <option value="אלקטרוליטים">דגש: שינויי אלקטרוליטים</option>
+                    <option value="מערכת העיכול">מערכת העיכול</option>
+                    <option value="חסימת מעי">חסימת מעי</option>
+                    <option value="פרי-אופרטיבי">פרי-אופרטיבי</option>
+                    <option value="לבלב">לבלב</option>
+                    <option value="כבד ומרה">כבד ומרה</option>
+                    <option value="בריאטריה">בריאטריה</option>
+                    <option value="ריפוי פצעים">ריפוי פצעים</option>
                 </select>
             </div>
             <button id="start-btn" class="btn start-btn">התחל חידון</button>
-            <a href="lecture-quiz.html" class="btn secondary-btn">חידון הרצאות</a>
-            <a href="ecg-quiz.html" class="btn tertiary-btn">חידון אק"ג</a>
-            <a href="surgery-quiz.html" class="btn quaternary-btn">חידון כירורגיה</a>
         </div>
     </div>
 
-    <script src="drugs.js"></script>
-    <script src="quiz.js"></script>
+    <script src="surgery.js"></script>
+    <script src="surgery-quiz.js"></script>
 </body>
 </html>
