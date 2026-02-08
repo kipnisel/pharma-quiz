@@ -658,5 +658,479 @@ const surgeryData = [
         ],
         category: "ריפוי פצעים",
         explanation: "סימני דלקת קלאסיים: Rubor (אודם), Calor (חום), Tumor (נפיחות), Dolor (כאב), ו-Pus."
+    },
+    {
+        question: "מהם שלושת השלבים של ריפוי פצע?",
+        options: [
+            { text: "דלקתי, שגשוג (פרוליפרטיבי), ושיפוץ (רימודלינג)", correct: true },
+            { text: "דימום, קרישה, החלמה", correct: false },
+            { text: "נמק, צלקת, ריפוי", correct: false },
+            { text: "זיהום, ניקוי, סגירה", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "ריפוי פצע כולל: שלב דלקתי (1-4 ימים), שלב שגשוג עם יצירת גרנולציה וקולגן (4-21 יום), ושלב שיפוץ (3 שבועות עד שנה)."
+    },
+    {
+        question: "מהי Dehiscence?",
+        options: [
+            { text: "פתיחה חוזרת של פצע ניתוחי לאורך קו התפרים", correct: true },
+            { text: "זיהום בפצע", correct: false },
+            { text: "ריפוי תקין של פצע", correct: false },
+            { text: "היצרות של צלקת", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Dehiscence היא פתיחה חוזרת של שכבות הפצע, לרוב בין יום 5-10 לאחר ניתוח. גורמי סיכון: השמנה, סוכרת, זיהום, שיעול."
+    },
+    {
+        question: "מהי Evisceration?",
+        options: [
+            { text: "יציאת איברים פנימיים דרך פצע בטני פתוח", correct: true },
+            { text: "פתיחה של שכבות שטחיות בלבד", correct: false },
+            { text: "היווצרות בקע", correct: false },
+            { text: "הצטלקות יתר", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Evisceration היא סיבוך חמור של Dehiscence בו איברי בטן (לרוב מעי) יוצאים החוצה. מחייב כיסוי עם מפית רטובה וניתוח דחוף."
+    },
+    {
+        question: "איזה ויטמין חיוני ליצירת קולגן בריפוי פצעים?",
+        options: [
+            { text: "ויטמין C", correct: true },
+            { text: "ויטמין A", correct: false },
+            { text: "ויטמין D", correct: false },
+            { text: "ויטמין B12", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "ויטמין C חיוני לסינתזת קולגן. חסר בויטמין C (צפדינה) פוגע בריפוי פצעים."
+    },
+    {
+        question: "מהו ריפוי ב-Primary intention?",
+        options: [
+            { text: "ריפוי כשקצוות הפצע מקורבים ותפורים, יוצר צלקת מינימלית", correct: true },
+            { text: "ריפוי כשהפצע נשאר פתוח", correct: false },
+            { text: "ריפוי לאחר זיהום", correct: false },
+            { text: "ריפוי עם השתלת עור", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Primary intention - קצוות הפצע נסגרים מיד (תפרים, סיכות). Secondary intention - הפצע נשאר פתוח ומתמלא בהדרגה."
+    },
+    {
+        question: "מה התפקיד של רקמת גרנולציה בריפוי פצע?",
+        options: [
+            { text: "רקמה עשירה בכלי דם שממלאת את הפצע ומהווה בסיס לאפיתליזציה", correct: true },
+            { text: "רקמה שגורמת לזיהום", correct: false },
+            { text: "רקמה שיש להסיר מיידית", correct: false },
+            { text: "סימן לכישלון ריפוי", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "רקמת גרנולציה בריאה היא ורודה-אדומה, לחה וגרגירית. מכילה כלי דם חדשים (אנגיוגנזיס) ומהווה בסיס לריפוי."
+    },
+    {
+        question: "מהו Keloid?",
+        options: [
+            { text: "צלקת היפרטרופית שגדלה מעבר לגבולות הפצע המקורי", correct: true },
+            { text: "צלקת שטוחה ולבנה", correct: false },
+            { text: "פצע פתוח כרוני", correct: false },
+            { text: "זיהום בצלקת", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Keloid היא הצטלקות מוגזמת החורגת מגבולות הפצע. שכיחה יותר בעור כהה. טיפול: הזרקת סטרואידים, לחץ, או כריתה."
+    },
+    {
+        question: "מדוע אלבומין נמוך מעכב ריפוי פצעים?",
+        options: [
+            { text: "אלבומין נמוך גורם לבצקות ופגיעה בהובלת חומרים לרקמות", correct: true },
+            { text: "אלבומין גורם לזיהומים", correct: false },
+            { text: "אלבומין מעלה סוכר בדם", correct: false },
+            { text: "אין קשר בין אלבומין לריפוי פצעים", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "היפואלבומינמיה גורמת לבצקות רקמה (לחץ אונקוטי נמוך), הפוגעות בהובלת חמצן וחומרים הנחוצים לריפוי."
+    },
+
+    // ========== שאלות נוספות - בריאטריה ==========
+    {
+        question: "מהו ההבדל העיקרי בין Sleeve Gastrectomy ל-Gastric Bypass?",
+        options: [
+            { text: "Sleeve מסיר חלק מהקיבה בלבד, Bypass יוצר גם עקיפת מעי", correct: true },
+            { text: "אין הבדל", correct: false },
+            { text: "Sleeve כולל עקיפת מעי", correct: false },
+            { text: "Bypass מגדיל את הקיבה", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Sleeve Gastrectomy מסיר 80% מהקיבה. Gastric Bypass (Roux-en-Y) יוצר כיס קיבה קטן וגם עוקף חלק מהמעי הדק."
+    },
+    {
+        question: "איזה חסר תזונתי שכיח לאחר ניתוח Gastric Bypass?",
+        options: [
+            { text: "ברזל, B12, סידן וויטמין D", correct: true },
+            { text: "עודף ברזל", correct: false },
+            { text: "עודף B12", correct: false },
+            { text: "אין חסרים תזונתיים", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "עקיפת הדואודנום והג'גונום פוגעת בספיגת ברזל, סידן וויטמינים מסיסי שומן. עקיפת הקיבה פוגעת בספיגת B12."
+    },
+    {
+        question: "מהו Dumping Syndrome?",
+        options: [
+            { text: "מעבר מהיר של מזון לא מעוכל למעי הגורם לתסמינים GI וכלי דם", correct: true },
+            { text: "עצירות כרונית", correct: false },
+            { text: "רפלוקס קיבתי ושטי", correct: false },
+            { text: "זיהום במעיים", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Dumping Syndrome מופיע לאחר ניתוחי קיבה. Early dumping (15-30 דקות): בחילות, שלשול, הזעה. Late dumping (1-3 שעות): היפוגליקמיה."
+    },
+    {
+        question: "מהי הגישה המועדפת לניתוחים בריאטריים כיום?",
+        options: [
+            { text: "לפרוסקופית (זעיר פולשנית)", correct: true },
+            { text: "ניתוח פתוח בלבד", correct: false },
+            { text: "ניתוח רובוטי בלבד", correct: false },
+            { text: "אנדוסקופית דרך הפה", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "גישה לפרוסקופית מפחיתה סיבוכים, כאב, ותקופת החלמה בהשוואה לניתוח פתוח."
+    },
+    {
+        question: "מהו סיבוך מוקדם חמור של Sleeve Gastrectomy?",
+        options: [
+            { text: "דליפה מקו התפרים (Staple line leak)", correct: true },
+            { text: "עלייה במשקל", correct: false },
+            { text: "סוכרת", correct: false },
+            { text: "אין סיבוכים", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "דליפה מקו התפרים היא סיבוך חמור (1-3%) הדורש זיהוי מוקדם. סימנים: טכיקרדיה, חום, כאב בטן."
+    },
+    {
+        question: "מהו Adiponectin?",
+        options: [
+            { text: "הורמון מרקמת שומן שמגביר רגישות לאינסולין - רמתו נמוכה בהשמנה", correct: true },
+            { text: "הורמון שגורם להשמנה", correct: false },
+            { text: "אנזים עיכול", correct: false },
+            { text: "הורמון רעב", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Adiponectin הוא הורמון מגן שרמתו יורדת בהשמנה. הוא משפר רגישות לאינסולין ובעל תכונות אנטי-דלקתיות."
+    },
+    {
+        question: "מהי הסיבה העיקרית להיפוגליקמיה מאוחרת לאחר ניתוח בריאטרי?",
+        options: [
+            { text: "הפרשת יתר של אינסולין בתגובה לספיגה מהירה של סוכרים", correct: true },
+            { text: "צום ממושך", correct: false },
+            { text: "תרופות לסוכרת", correct: false },
+            { text: "זיהום", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "זהו חלק מ-Late Dumping Syndrome: סוכרים נספגים מהר, גורמים לשחרור אינסולין מוגזם, ואחר כך היפוגליקמיה."
+    },
+
+    // ========== שאלות נוספות - חסימת מעי ==========
+    {
+        question: "מהי הסיבה השכיחה ביותר לחסימת מעי דק (SBO)?",
+        options: [
+            { text: "הידבקויות (Adhesions) לאחר ניתוחים קודמים", correct: true },
+            { text: "גידולים", correct: false },
+            { text: "בקע", correct: false },
+            { text: "אבנים במרה", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "60-75% מ-SBO נגרמים מהידבקויות. גורמים נוספים: בקעים, גידולים, Crohn."
+    },
+    {
+        question: "מהי הסיבה השכיחה ביותר לחסימת מעי גס (LBO)?",
+        options: [
+            { text: "סרטן המעי הגס", correct: true },
+            { text: "הידבקויות", correct: false },
+            { text: "אבני מרה", correct: false },
+            { text: "עצירות רגילה", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "60% מ-LBO נגרמים מסרטן המעי הגס. גורמים נוספים: וולוולוס, דיברטיקוליטיס, סטריקטורה."
+    },
+    {
+        question: "מהו Volvulus?",
+        options: [
+            { text: "פיתול של המעי סביב צירו הגורם לחסימה ולפגיעה בזרימת דם", correct: true },
+            { text: "בקע פנימי", correct: false },
+            { text: "דלקת מעי", correct: false },
+            { text: "גידול שפיר", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "Volvulus גורם לחסימה מכנית וגם לאיסכמיה מסוכנת. סיגמואיד וצקום הם המיקומים השכיחים."
+    },
+    {
+        question: "מהו הסימן הקליני שמחשיד לסטרנגולציה בחסימת מעי?",
+        options: [
+            { text: "כאב קבוע (לא קוליקי), טכיקרדיה, חום, לויקוציטוזיס", correct: true },
+            { text: "כאב קוליקי בלבד", correct: false },
+            { text: "שלשולים", correct: false },
+            { text: "רעב מוגבר", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "סטרנגולציה = פגיעה בזרימת דם למעי. סימני אזהרה: כאב קבוע במקום קוליקי, סימני ספסיס, כאב לא פרופורציונלי."
+    },
+    {
+        question: "מה רואים בצילום בטן בחסימת מעי דק?",
+        options: [
+            { text: "לולאות מעי מורחבות עם רמות אוויר-נוזל (Air-fluid levels)", correct: true },
+            { text: "אוויר חופשי תת-סרעפתי", correct: false },
+            { text: "הסתיידויות", correct: false },
+            { text: "צילום תקין", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "בחסימה: הרחבת מעי פרוקסימלית לחסימה, רמות נוזל-אוויר, ומעי קולפס דיסטלית לחסימה."
+    },
+    {
+        question: "מהו Intussusception?",
+        options: [
+            { text: "חדירת קטע מעי לתוך הקטע הסמוך לו (טלסקופי)", correct: true },
+            { text: "פיתול של המעי", correct: false },
+            { text: "בקע של המעי", correct: false },
+            { text: "היצרות של המעי", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "Intussusception שכיח בילדים. במבוגרים לרוב קשור לגידול. גורם לחסימה ואיסכמיה."
+    },
+
+    // ========== שאלות נוספות - פרי-אופרטיבי ==========
+    {
+        question: "כמה שעות צום נדרש לפני ניתוח אלקטיבי לנוזלים צלולים?",
+        options: [
+            { text: "2 שעות", correct: true },
+            { text: "6 שעות", correct: false },
+            { text: "8 שעות", correct: false },
+            { text: "12 שעות", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "הנחיות ASA: נוזלים צלולים - 2 שעות, חלב אם - 4 שעות, ארוחה קלה - 6 שעות, ארוחה שומנית - 8 שעות."
+    },
+    {
+        question: "מהו סיבוך DVT לאחר ניתוח?",
+        options: [
+            { text: "קריש דם בוורידים העמוקים, בדרך כלל ברגליים", correct: true },
+            { text: "דימום מהפצע", correct: false },
+            { text: "זיהום בפצע", correct: false },
+            { text: "כאב בגרון", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "DVT = Deep Vein Thrombosis. סיכון מוגבר בניתוחים ארוכים, חוסר תנועה. סיבוך מסוכן: PE (תסחיף ריאתי)."
+    },
+    {
+        question: "מהי הפרעת האיזון הנפוצה לאחר ניתוח?",
+        options: [
+            { text: "היפוקלמיה וחמצת מטבולית", correct: true },
+            { text: "היפרקלמיה ובססת", correct: false },
+            { text: "היפרנתרמיה", correct: false },
+            { text: "היפרקלצמיה", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "לאחר ניתוח נפוצים: איבוד נוזלים, צום, הקאות. כל אלה גורמים להיפוקלמיה ולעיתים חמצת."
+    },
+    {
+        question: "מהי אטלקטזיס לאחר ניתוח?",
+        options: [
+            { text: "קריסת אלוואולות בריאות, סיבוך ריאתי שכיח", correct: true },
+            { text: "דלקת ריאות", correct: false },
+            { text: "פנאומוטורקס", correct: false },
+            { text: "בצקת ריאות", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "אטלקטזיס שכיח 24-48 שעות אחרי ניתוח. גורם: הרדמה, כאב, חוסר נשימות עמוקות. מניעה: ספירומטר, שיעול."
+    },
+    {
+        question: "מה כולל פרוטוקול ERAS (Enhanced Recovery After Surgery)?",
+        options: [
+            { text: "צום מקוצר, הליכה מוקדמת, הזנה מוקדמת, הפחתת אופיואידים", correct: true },
+            { text: "צום ממושך ומנוחה במיטה", correct: false },
+            { text: "אנטיביוטיקה ממושכת", correct: false },
+            { text: "הזנה תוך-ורידית בלבד", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "ERAS מקצר אשפוז ומפחית סיבוכים: צום מינימלי, משככי כאב לא-אופיואידים, הקמה וניידות מוקדמת."
+    },
+    {
+        question: "מהי סיבת החום ב-24 השעות הראשונות לאחר ניתוח?",
+        options: [
+            { text: "בדרך כלל אטלקטזיס (ריאתי), לא זיהום", correct: true },
+            { text: "זיהום בפצע", correct: false },
+            { text: "DVT", correct: false },
+            { text: "דלקת בדרכי השתן", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "חום מוקדם (יום 1-2) = בדרך כלל ריאתי. חום ביום 3-5 = זיהום פצע/UTI. חום מאוחר (יום 5+) = DVT/אבצס."
+    },
+
+    // ========== שאלות נוספות - לבלב ==========
+    {
+        question: "מהו הכאב האופייני בדלקת לבלב חריפה?",
+        options: [
+            { text: "כאב אפיגסטרי חד הקורן לגב, בתנוחה מכופפת קדימה", correct: true },
+            { text: "כאב בבטן ימנית תחתונה", correct: false },
+            { text: "כאב בחזה", correct: false },
+            { text: "כאב בשכמות", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "כאב לבלב קלאסי: אפיגסטרי, קורן לגב, משתפר בישיבה מכופפת קדימה. מלווה בבחילות והקאות."
+    },
+    {
+        question: "מהו סימן Cullen?",
+        options: [
+            { text: "שטף דם סביב הטבור המעיד על דימום רטרופריטוניאלי", correct: true },
+            { text: "צהבת", correct: false },
+            { text: "נפיחות בטנית", correct: false },
+            { text: "כאב בכתף", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "Cullen sign = ecchymosis סביב הטבור. Grey Turner sign = ecchymosis בצדדים. שניהם מעידים על דלקת לבלב נקרוטית חמורה."
+    },
+    {
+        question: "מהי דלקת לבלב נקרוטית (Necrotizing Pancreatitis)?",
+        options: [
+            { text: "נמק של רקמת הלבלב, מצב חמור עם תמותה גבוהה", correct: true },
+            { text: "דלקת קלה שחולפת מעצמה", correct: false },
+            { text: "גידול בלבלב", correct: false },
+            { text: "אבנים בלבלב", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "20% מדלקות לבלב הן נקרוטיות. סיבוכים: זיהום הנמק, SIRS, אי ספיקת איברים. תמותה 20-40%."
+    },
+    {
+        question: "מהי Pseudocyst של הלבלב?",
+        options: [
+            { text: "אוסף נוזל מוקף דופן דלקתית, ללא אפיתל אמיתי", correct: true },
+            { text: "גידול ממאיר", correct: false },
+            { text: "אבן בלבלב", correct: false },
+            { text: "מורסה", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "Pseudocyst מתפתח 4-6 שבועות לאחר דלקת לבלב. רוב הקטנים נספגים. גדולים/סימפטומטיים דורשים ניקוז."
+    },
+    {
+        question: "מדוע בודקים סידן בדם בדלקת לבלב?",
+        options: [
+            { text: "היפוקלצמיה היא סימן לחומרה (ספוניפיקציה של שומן)", correct: true },
+            { text: "היפרקלצמיה שכיחה", correct: false },
+            { text: "אין קשר לסידן", correct: false },
+            { text: "לבדיקת תפקודי כליות", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "בדלקת לבלב נקרוטית, חומצות שומן משתחררות וקושרות סידן (saponification). היפוקלצמיה = סימן פרוגנוסטי רע."
+    },
+    {
+        question: "מהו ציון Ranson?",
+        options: [
+            { text: "מערכת ניקוד לחומרת דלקת לבלב ולפרוגנוזה", correct: true },
+            { text: "מדד לתפקוד כליות", correct: false },
+            { text: "ציון כאב", correct: false },
+            { text: "מדד לסוכרת", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "Ranson מעריך 11 פרמטרים (5 בקבלה, 6 אחרי 48 שעות). ציון גבוה (>3) מעיד על תמותה גבוהה יותר."
+    },
+
+    // ========== שאלות נוספות - כבד ומרה ==========
+    {
+        question: "מהו Murphy's Sign?",
+        options: [
+            { text: "עצירת נשימה בלחיצה על RUQ, אופייני לדלקת כיס מרה", correct: true },
+            { text: "כאב ב-LLQ", correct: false },
+            { text: "נפיחות בטנית", correct: false },
+            { text: "צהבת", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Murphy's Sign חיובי: בלחיצה מתחת לקשת הצלעות ימין, החולה עוצר נשימה מכאב. אופייני לדלקת כיס מרה חריפה."
+    },
+    {
+        question: "מהי Cholecystitis?",
+        options: [
+            { text: "דלקת של כיס המרה, לרוב בגלל אבנים", correct: true },
+            { text: "דלקת של צינורות המרה", correct: false },
+            { text: "אבנים בכליות", correct: false },
+            { text: "דלקת הלבלב", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Cholecystitis = דלקת כיס מרה. 90% מאבנים. סימנים: כאב RUQ, חום, Murphy חיובי, לויקוציטוזיס."
+    },
+    {
+        question: "מהי Cholangitis ומהי הטריאדה של Charcot?",
+        options: [
+            { text: "דלקת צינורות מרה: חום, צהבת, כאב RUQ", correct: true },
+            { text: "דלקת כיס מרה: בחילות, הקאות, שלשול", correct: false },
+            { text: "דלקת לבלב: כאב גב, חום, היפוקלצמיה", correct: false },
+            { text: "דלקת כבד: צהבת, הקאות, בלבול", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Cholangitis = זיהום בצינורות המרה, חירום רפואי. Charcot's triad: חום+צמרמורות, צהבת, כאב RUQ."
+    },
+    {
+        question: "מהי הפנטאדה של Reynolds בדלקת צינורות מרה?",
+        options: [
+            { text: "טריאדת Charcot + בלבול + היפוטנציה (שוק)", correct: true },
+            { text: "חום + שלשול + הקאות + כאב + צהבת", correct: false },
+            { text: "כאב + בחילות + עלייה בסוכר + חום + לויקוציטוזיס", correct: false },
+            { text: "צהבת + גרד + כאב + בחילות + ירידה במשקל", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Reynolds' Pentad = Cholangitis חמורה עם ספסיס: Charcot's triad (חום, צהבת, כאב) + בלבול + שוק."
+    },
+    {
+        question: "מה גורם לגרד (Pruritus) במחלות כבד?",
+        options: [
+            { text: "הצטברות מלחי מרה בעור", correct: true },
+            { text: "בילירובין גבוה", correct: false },
+            { text: "אלבומין נמוך", correct: false },
+            { text: "עלייה באמוניה", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "מלחי מרה מצטברים בחסימה ובשחמת, מגיעים לעור ומגרים את קצות העצבים. גרד חמור אופייני לחסימה."
+    },
+
+    // ========== שאלות נוספות - מערכת העיכול ==========
+    {
+        question: "מהו GERD ומה הטיפול העיקרי?",
+        options: [
+            { text: "רפלוקס קיבתי-ושטי, טיפול: PPI (מעכבי משאבת פרוטונים)", correct: true },
+            { text: "כיב קיבה, טיפול: אנטיביוטיקה", correct: false },
+            { text: "דלקת קיבה, טיפול: סטרואידים", correct: false },
+            { text: "חסימת ושט, טיפול: ניתוח", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "GERD = Gastroesophageal Reflux Disease. PPIs (כמו Omeprazole) מפחיתים חומציות ומרפאים ושט."
+    },
+    {
+        question: "מהו Barrett's Esophagus?",
+        options: [
+            { text: "החלפת אפיתל קשקשי של הושט באפיתל גלילי עקב GERD כרוני", correct: true },
+            { text: "גידול שפיר בושט", correct: false },
+            { text: "היצרות הושט", correct: false },
+            { text: "דליות בושט", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "Barrett's הוא מצב טרום-סרטני. דורש מעקב אנדוסקופי עם ביופסיות. סיכון לאדנוקרצינומה של הושט."
+    },
+    {
+        question: "מהו Helicobacter pylori ולמה הוא קשור?",
+        options: [
+            { text: "חיידק הגורם לכיבים פפטיים ולסרטן קיבה", correct: true },
+            { text: "וירוס הגורם לשלשול", correct: false },
+            { text: "פרזיט הגורם לעצירות", correct: false },
+            { text: "פטרייה הגורמת לרפלוקס", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "H. pylori גורם ל-90% מכיבי תריסריון ו-70% מכיבי קיבה. טיפול: Triple therapy (2 אנטיביוטיקות + PPI)."
+    },
+    {
+        question: "מהם סימני אזהרה (Red Flags) בתלונות GI הדורשים בירור דחוף?",
+        options: [
+            { text: "ירידה במשקל, דם בצואה, אנמיה, קושי בבליעה, הקאות דם", correct: true },
+            { text: "גזים לאחר ארוחות", correct: false },
+            { text: "צרבת קלה", correct: false },
+            { text: "עצירות מדי פעם", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "דגלים אדומים מחשידים לממאירות או סיבוך חמור. דורשים אנדוסקופיה או הדמייה בהקדם."
     }
 ];

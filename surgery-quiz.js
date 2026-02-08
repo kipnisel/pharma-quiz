@@ -5,9 +5,62 @@ class SurgeryQuiz {
         this.score = 0;
         this.totalQuestions = 10;
         this.selectedCategory = 'all';
+        this.mistakeStorageKey = 'surgery_quiz_mistakes';
+        this.mistakes = this.loadMistakes();
 
         this.initElements();
         this.bindEvents();
+    }
+
+    // Load mistakes from localStorage
+    loadMistakes() {
+        try {
+            const stored = localStorage.getItem(this.mistakeStorageKey);
+            return stored ? JSON.parse(stored) : {};
+        } catch (e) {
+            return {};
+        }
+    }
+
+    // Save mistakes to localStorage
+    saveMistakes() {
+        try {
+            localStorage.setItem(this.mistakeStorageKey, JSON.stringify(this.mistakes));
+        } catch (e) {
+            console.warn('Could not save mistakes to localStorage');
+        }
+    }
+
+    // Record a mistake for a question
+    recordMistake(questionText) {
+        if (!this.mistakes[questionText]) {
+            this.mistakes[questionText] = { count: 0, lastMistake: null };
+        }
+        this.mistakes[questionText].count++;
+        this.mistakes[questionText].lastMistake = Date.now();
+        this.saveMistakes();
+    }
+
+    // Record a correct answer (reduce mistake weight over time)
+    recordCorrect(questionText) {
+        if (this.mistakes[questionText] && this.mistakes[questionText].count > 0) {
+            this.mistakes[questionText].count = Math.max(0, this.mistakes[questionText].count - 1);
+            if (this.mistakes[questionText].count === 0) {
+                delete this.mistakes[questionText];
+            }
+            this.saveMistakes();
+        }
+    }
+
+    // Get mistake weight for prioritization (higher = more likely to appear)
+    getMistakeWeight(questionText) {
+        if (!this.mistakes[questionText]) return 1;
+        // Weight based on mistake count and recency
+        const mistake = this.mistakes[questionText];
+        const daysSinceLastMistake = (Date.now() - mistake.lastMistake) / (1000 * 60 * 60 * 24);
+        // More recent mistakes get higher priority
+        const recencyBonus = Math.max(1, 5 - daysSinceLastMistake);
+        return 1 + (mistake.count * 2) + recencyBonus;
     }
 
     initElements() {
@@ -64,8 +117,18 @@ class SurgeryQuiz {
             );
         }
 
-        // Shuffle questions
-        availableQuestions = availableQuestions.sort(() => Math.random() - 0.5);
+        // Weighted shuffle - prioritize questions with previous mistakes
+        availableQuestions = availableQuestions.map(q => ({
+            ...q,
+            weight: this.getMistakeWeight(q.question)
+        }));
+
+        // Sort by weighted random - questions with higher weights more likely to appear first
+        availableQuestions = availableQuestions.sort((a, b) => {
+            const randomA = Math.random() * a.weight;
+            const randomB = Math.random() * b.weight;
+            return randomB - randomA;
+        });
 
         // Take only the number we need
         return availableQuestions.slice(0, this.totalQuestions);
@@ -119,10 +182,13 @@ class SurgeryQuiz {
             });
         }
 
-        // Update score
+        // Update score and track mistakes
         if (isCorrect) {
             this.score++;
             this.scoreEl.textContent = this.score;
+            this.recordCorrect(question.question);
+        } else {
+            this.recordMistake(question.question);
         }
 
         // Show feedback
