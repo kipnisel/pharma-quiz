@@ -130,9 +130,9 @@ const surgeryData = [
         question: "מה מעיד נוכחות Anti-HBs חיובי בלבד?",
         options: [
             { text: "חיסון מוצלח נגד הפטיטיס B", correct: true },
-            { text: "זיהום כרוני", correct: false },
-            { text: "זיהום חריף", correct: false },
-            { text: "נשאות", correct: false }
+            { text: "החלמה מזיהום קודם (היה צפוי גם Anti-HBc)", correct: false },
+            { text: "זיהום כרוני פעיל (היה צפוי HBsAg חיובי)", correct: false },
+            { text: "Window Period בזיהום חריף (היה צפוי Anti-HBc)", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "Anti-HBs חיובי ללא סמנים אחרים מעיד על חיסון מוצלח - הגוף יצר נוגדנים כנגד החיסון."
@@ -141,9 +141,9 @@ const surgeryData = [
         question: "מה משמעות HBsAg חיובי + Anti-HBc IgM חיובי?",
         options: [
             { text: "זיהום חריף פעיל בהפטיטיס B", correct: true },
-            { text: "זיהום כרוני", correct: false },
-            { text: "החלמה מזיהום", correct: false },
-            { text: "חיסון", correct: false }
+            { text: "זיהום כרוני (היה צפוי Anti-HBc IgG במקום IgM)", correct: false },
+            { text: "החלמה מזיהום (היה צפוי HBsAg שלילי)", correct: false },
+            { text: "שלב מוקדם של חיסון (היה צפוי רק Anti-HBs)", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "IgM מעיד על זיהום חדש (חריף). HBsAg מעיד על נוכחות הווירוס. יחד = זיהום חריף."
@@ -152,9 +152,9 @@ const surgeryData = [
         question: "מה משמעות HBsAg חיובי + Anti-HBc IgG חיובי ללא IgM?",
         options: [
             { text: "זיהום כרוני או נשאות", correct: true },
-            { text: "זיהום חריף", correct: false },
-            { text: "החלמה", correct: false },
-            { text: "חיסון", correct: false }
+            { text: "זיהום חריף (היה צפוי IgM ולא רק IgG)", correct: false },
+            { text: "החלמה מזיהום (היה צפוי HBsAg שלילי)", correct: false },
+            { text: "חיסון מוצלח (לא היה צפוי Anti-HBc)", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "IgG מעיד על זיהום ישן. HBsAg נוכח מעל 6 חודשים = כרוני/נשא."
@@ -163,9 +163,9 @@ const surgeryData = [
         question: "מה מעיד HBeAg חיובי?",
         options: [
             { text: "ריבוי נגיפי גבוה ויכולת הדבקה גבוהה", correct: true },
-            { text: "החלמה מהמחלה", correct: false },
-            { text: "חיסון מוצלח", correct: false },
-            { text: "זיהום לא פעיל", correct: false }
+            { text: "סרוקונברסיה עם ירידה ביכולת ההדבקה", correct: false },
+            { text: "נשאות לא פעילה עם viral load נמוך", correct: false },
+            { text: "החלמה מהזיהום עם פינוי הנגיף מהגוף", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "HBeAg מעיד על שכפול פעיל של הווירוס ויכולת הדבקה גבוהה."
@@ -174,9 +174,9 @@ const surgeryData = [
         question: "מה משמעות Anti-HBs + Anti-HBc IgG חיוביים?",
         options: [
             { text: "החלמה מזיהום קודם עם חסינות", correct: true },
-            { text: "זיהום פעיל", correct: false },
-            { text: "חיסון בלבד", correct: false },
-            { text: "נשאות", correct: false }
+            { text: "זיהום כרוני פעיל (היה צפוי HBsAg חיובי)", correct: false },
+            { text: "חיסון מוצלח בלבד (לא היה צפוי Anti-HBc)", correct: false },
+            { text: "Window Period בזיהום חריף (היה צפוי IgM)", correct: false }
         ],
         category: "הפטיטיס B",
         explanation: "שילוב של נוגדנים ל-HBs (חסינות) ונוגדנים ל-HBc (חשיפה קודמת) = החלמה טבעית."
@@ -354,9 +354,9 @@ const surgeryData = [
         question: "מהו ה-pH בקיבה?",
         options: [
             { text: "1-3 (חומצי מאוד)", correct: true },
-            { text: "7 (נייטרלי)", correct: false },
-            { text: "8 (בסיסי)", correct: false },
-            { text: "5-6 (חומצי קלות)", correct: false }
+            { text: "4-5 (חומצי בינוני, כמו בתריסריון)", correct: false },
+            { text: "6-7 (קרוב לנייטרלי, כמו במעי הדק)", correct: false },
+            { text: "7-8 (בסיסי קל, כמו הפרשות הלבלב)", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "הקיבה מייצרת HCl שיוצר סביבה חומצית מאוד (pH 1-3) לעיכול ולחיטוי."
@@ -365,9 +365,9 @@ const surgeryData = [
         question: "איזה אנזים מתחיל את פירוק הפחמימות כבר בפה?",
         options: [
             { text: "Ptyalin (עמילאז רוקי)", correct: true },
-            { text: "Pepsin", correct: false },
-            { text: "Lipase", correct: false },
-            { text: "Trypsin", correct: false }
+            { text: "Pepsin (אנזים לפירוק חלבונים בקיבה)", correct: false },
+            { text: "Lipase (אנזים לפירוק שומנים בתריסריון)", correct: false },
+            { text: "Lactase (אנזים לפירוק לקטוז במעי הדק)", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "Ptyalin (עמילאז) ברוק מתחיל לפרק עמילנים כבר בפה."
@@ -376,9 +376,9 @@ const surgeryData = [
         question: "היכן נספגים רוב החומרים התזונתיים?",
         options: [
             { text: "במעי הדק (ג'גונום ואילאום)", correct: true },
-            { text: "בקיבה", correct: false },
-            { text: "במעי הגס", correct: false },
-            { text: "בוושט", correct: false }
+            { text: "בקיבה (לאחר פירוק ראשוני של המזון)", correct: false },
+            { text: "במעי הגס (עם ספיגת מים ואלקטרוליטים)", correct: false },
+            { text: "בתריסריון (לאחר ערבוב עם מיצי מרה ולבלב)", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "המעי הדק הוא אתר הספיגה העיקרי הודות לשטח הפנים הגדול (Villi)."
@@ -398,9 +398,9 @@ const surgeryData = [
         question: "מהו Peritonitis?",
         options: [
             { text: "דלקת של הצפק (הממברנה העוטפת את חלל הבטן)", correct: true },
-            { text: "דלקת הוושט", correct: false },
-            { text: "דלקת הקיבה", correct: false },
-            { text: "דלקת המעי הגס", correct: false }
+            { text: "דלקת של דופן המעי (אנטריטיס או קוליטיס)", correct: false },
+            { text: "דלקת של רקמת השומן סביב המעי (מזנטריטיס)", correct: false },
+            { text: "דלקת של רירית חלל הבטן ללא מעורבות הצפק", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "Peritonitis היא דלקת הצפק, מצב חירום המחייב טיפול מיידי."
@@ -422,9 +422,9 @@ const surgeryData = [
         question: "מה ההבדל בין SBO ל-LBO?",
         options: [
             { text: "SBO - חסימת מעי דק, LBO - חסימת מעי גס", correct: true },
-            { text: "SBO - חסימה קטנה, LBO - חסימה גדולה", correct: false },
-            { text: "אין הבדל", correct: false },
-            { text: "SBO - שמאל, LBO - ימין", correct: false }
+            { text: "SBO - חסימה מכנית, LBO - חסימה פונקציונלית (פאראליטית)", correct: false },
+            { text: "SBO - חסימה חלקית, LBO - חסימה מלאה", correct: false },
+            { text: "SBO - חסימה פשוטה, LBO - חסימה עם סטרנגולציה", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "SBO = Small Bowel Obstruction, LBO = Large Bowel Obstruction."
@@ -444,9 +444,9 @@ const surgeryData = [
         question: "מהו Ileus?",
         options: [
             { text: "חסימת מעי פונקציונלית (פאראליטית) ללא חסימה מכנית", correct: true },
-            { text: "חסימת מעי מכנית", correct: false },
-            { text: "דלקת מעי", correct: false },
-            { text: "גידול במעי", correct: false }
+            { text: "חסימת מעי מכנית עקב הידבקויות או גידול", correct: false },
+            { text: "פיתול של לולאת מעי סביב צירה (Volvulus)", correct: false },
+            { text: "חדירת קטע מעי לתוך הקטע הסמוך (Intussusception)", correct: false }
         ],
         category: "חסימת מעי",
         explanation: "Ileus הוא שיתוק של תנועת המעי, לעיתים לאחר ניתוח, תרופות, או הפרעות אלקטרוליטים."
@@ -457,9 +457,9 @@ const surgeryData = [
         question: "מדוע מטופל לפני ניתוח צריך להיות בצום?",
         options: [
             { text: "למנוע אספירציה של תוכן קיבה בזמן ההרדמה", correct: true },
-            { text: "לרדת במשקל", correct: false },
-            { text: "להוריד לחץ דם", correct: false },
-            { text: "לשפר את הראייה", correct: false }
+            { text: "להפחית את נפח הדם ולמזער דימום במהלך הניתוח", correct: false },
+            { text: "לייצב את רמות הסוכר ולמנוע היפוגליקמיה בזמן ההרדמה", correct: false },
+            { text: "להקטין את עומס העבודה על הכבד בזמן פירוק התרופות", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "צום מונע אספירציה של תוכן קיבה לריאות בזמן ההרדמה."
@@ -468,9 +468,9 @@ const surgeryData = [
         question: "מהו NPO?",
         options: [
             { text: "Nothing Per Os - צום מוחלט דרך הפה", correct: true },
-            { text: "סוג של תרופה", correct: false },
-            { text: "בדיקת מעבדה", correct: false },
-            { text: "סוג ניתוח", correct: false }
+            { text: "Nil Per Oral - הגבלת נוזלים תוך-ורידיים בלבד", correct: false },
+            { text: "Non-Parenteral Ordering - הוראות תזונה לא פרנטרלית", correct: false },
+            { text: "Nutritional Pre-Operative - הכנה תזונתית לפני ניתוח", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "NPO = Nothing Per Os = אין לאכול או לשתות דרך הפה."
@@ -479,9 +479,9 @@ const surgeryData = [
         question: "מתי מחזירים פריסטלטיקה אחרי ניתוח בטן?",
         options: [
             { text: "כשיש קולות מעיים ומעבר גזים", correct: true },
-            { text: "מיד לאחר הניתוח", correct: false },
-            { text: "לאחר שבוע בכל מקרה", correct: false },
-            { text: "כשיש עלייה בחום", correct: false }
+            { text: "לאחר 48 שעות באופן אוטומטי ללא קשר לסימנים", correct: false },
+            { text: "כשהמטופל מרגיש רעב ומבקש לאכול", correct: false },
+            { text: "כשרמות האלקטרוליטים חוזרות לנורמה", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "חזרת פריסטלטיקה מתבטאת בקולות מעיים ומעבר גזים/צואה."
@@ -503,9 +503,9 @@ const surgeryData = [
         question: "מהם שני התפקידים של הלבלב?",
         options: [
             { text: "אקסוקריני (אנזימי עיכול) ואנדוקריני (הורמונים כמו אינסולין)", correct: true },
-            { text: "עיכול בלבד", correct: false },
-            { text: "ייצור מרה בלבד", correct: false },
-            { text: "סינון דם בלבד", correct: false }
+            { text: "אקסוקריני (הפרשת מרה) ואנדוקריני (ויסות לחץ דם)", correct: false },
+            { text: "נוירואנדוקריני (שחרור נוירוטרנסמיטרים) ומטבולי (פירוק רעלים)", correct: false },
+            { text: "אקסוקריני (הפרשת ביקרבונט בלבד) ואנדוקריני (גלוקגון בלבד)", correct: false }
         ],
         category: "לבלב",
         explanation: "הלבלב מייצר אנזימי עיכול (אקסוקריני) והורמונים כמו אינסולין וגלוקגון (אנדוקריני)."
@@ -514,9 +514,9 @@ const surgeryData = [
         question: "מהו הסמן המעבדתי העיקרי לדלקת לבלב חריפה?",
         options: [
             { text: "Lipase ו-Amylase מוגברים", correct: true },
-            { text: "המוגלובין נמוך", correct: false },
-            { text: "קריאטינין גבוה", correct: false },
-            { text: "סוכר נמוך", correct: false }
+            { text: "ALT ו-AST מוגברים (אנזימי כבד)", correct: false },
+            { text: "Bilirubin ו-ALP מוגברים (סמני חסימה)", correct: false },
+            { text: "CRP ו-WBC מוגברים (סמני דלקת כלליים)", correct: false }
         ],
         category: "לבלב",
         explanation: "עלייה ב-Lipase ו-Amylase (אנזימי הלבלב) מעידה על נזק לרקמת הלבלב."
@@ -525,9 +525,9 @@ const surgeryData = [
         question: "מהם הגורמים השכיחים לדלקת לבלב חריפה?",
         options: [
             { text: "אבני מרה ואלכוהול", correct: true },
-            { text: "זיהום ויראלי", correct: false },
-            { text: "אי ספיקת לב", correct: false },
-            { text: "סוכרת", correct: false }
+            { text: "היפרטריגליצרידמיה והיפרקלצמיה", correct: false },
+            { text: "תרופות (כמו Azathioprine) וזיהום ויראלי", correct: false },
+            { text: "טראומה בטנית ו-ERCP אבחנתי", correct: false }
         ],
         category: "לבלב",
         explanation: "80% מהמקרים נגרמים מאבני מרה או אלכוהול."
@@ -536,9 +536,9 @@ const surgeryData = [
         question: "מדוע נותנים צום בדלקת לבלב?",
         options: [
             { text: "כדי להניח את הלבלב ולמנוע גירוי להפרשת אנזימים", correct: true },
-            { text: "לרדת במשקל", correct: false },
-            { text: "כי המטופל לא רעב", correct: false },
-            { text: "כדי לחסוך בעלויות", correct: false }
+            { text: "כדי למנוע הקאות ולהפחית את הסיכון לאספירציה", correct: false },
+            { text: "כדי להפחית את זרימת הדם לאיבר הדלקתי", correct: false },
+            { text: "כדי לאפשר בדיקות הדמייה ללא הפרעה מתוכן המעיים", correct: false }
         ],
         category: "לבלב",
         explanation: "אכילה מגרה הפרשת אנזימי לבלב, מה שמחמיר את הדלקת והנזק."
@@ -549,9 +549,9 @@ const surgeryData = [
         question: "מהו תפקיד המרה?",
         options: [
             { text: "אמולסיפיקציה (הקטנת טיפות) של שומנים לעיכול", correct: true },
-            { text: "פירוק חלבונים", correct: false },
-            { text: "ספיגת מים", correct: false },
-            { text: "ייצור אינסולין", correct: false }
+            { text: "פירוק אנזימטי של שומנים על ידי Lipase שבמרה", correct: false },
+            { text: "נטרול החומציות הקיבתית בתריסריון", correct: false },
+            { text: "הפעלת אנזימי הלבלב לפירוק חלבונים", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "המרה מפרקת טיפות שומן גדולות לקטנות, מה שמגדיל שטח הפנים לפעולת אנזים Lipase."
@@ -560,9 +560,9 @@ const surgeryData = [
         question: "היכן מאוחסנת המרה?",
         options: [
             { text: "בכיס המרה", correct: true },
-            { text: "בכבד", correct: false },
-            { text: "בלבלב", correct: false },
-            { text: "בקיבה", correct: false }
+            { text: "בכבד (מיוצרת ומאוחסנת באותו מקום)", correct: false },
+            { text: "בצינור המרה המשותף (Common Bile Duct)", correct: false },
+            { text: "בפפילה של ואטר בתריסריון", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "המרה מיוצרת בכבד ומאוחסנת ומרוכזת בכיס המרה."
@@ -571,9 +571,9 @@ const surgeryData = [
         question: "מהו צהבת (Jaundice)?",
         options: [
             { text: "הצטברות בילירובין הגורמת לצבע צהוב בעור ובלחמיות", correct: true },
-            { text: "עודף ברזל", correct: false },
-            { text: "חסר ויטמין D", correct: false },
-            { text: "חסר B12", correct: false }
+            { text: "הצטברות קרוטנואידים מעודף צריכת ירקות כתומים", correct: false },
+            { text: "שקיעת נחושת ברקמות עקב מחלת וילסון", correct: false },
+            { text: "עלייה בהמוסידרין עקב עומס ברזל בגוף", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "בילירובין מוגבר (מפירוק המוגלובין או חסימת מרה) גורם לצהבת."
@@ -593,9 +593,9 @@ const surgeryData = [
         question: "מהי שחמת הכבד (Cirrhosis)?",
         options: [
             { text: "פיברוזיס והצטלקות של הכבד עם פגיעה בתפקוד", correct: true },
-            { text: "דלקת חריפה", correct: false },
-            { text: "גידול שפיר", correct: false },
-            { text: "זיהום חיידקי", correct: false }
+            { text: "דלקת כבד חריפה (הפטיטיס) עם עליית אנזימים", correct: false },
+            { text: "הצטברות שומן בכבד (סטאטוזיס) ללא פיברוזיס", correct: false },
+            { text: "גידול ראשוני בכבד (הפטוצלולר קרצינומה)", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "שחמת היא שלב סופי של נזק כבדי כרוני, עם צלקות שמפריעות לתפקוד."
@@ -674,9 +674,9 @@ const surgeryData = [
         question: "מהי Dehiscence?",
         options: [
             { text: "פתיחה חוזרת של פצע ניתוחי לאורך קו התפרים", correct: true },
-            { text: "זיהום בפצע", correct: false },
-            { text: "ריפוי תקין של פצע", correct: false },
-            { text: "היצרות של צלקת", correct: false }
+            { text: "יציאת איברים פנימיים דרך הפצע הפתוח (Evisceration)", correct: false },
+            { text: "זיהום עמוק בפצע עם הפרשה מוגלתית", correct: false },
+            { text: "היווצרות בקע בפצע הניתוחי (Incisional Hernia)", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "Dehiscence היא פתיחה חוזרת של שכבות הפצע, לרוב בין יום 5-10 לאחר ניתוח. גורמי סיכון: השמנה, סוכרת, זיהום, שיעול."
@@ -685,9 +685,9 @@ const surgeryData = [
         question: "מהי Evisceration?",
         options: [
             { text: "יציאת איברים פנימיים דרך פצע בטני פתוח", correct: true },
-            { text: "פתיחה של שכבות שטחיות בלבד", correct: false },
-            { text: "היווצרות בקע", correct: false },
-            { text: "הצטלקות יתר", correct: false }
+            { text: "פתיחה חלקית של הפצע (Dehiscence) ללא יציאת איברים", correct: false },
+            { text: "בקע דרך פצע הניתוח בשבועות לאחר הניתוח", correct: false },
+            { text: "דימום פנימי לחלל הבטן דרך קו התפרים", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "Evisceration היא סיבוך חמור של Dehiscence בו איברי בטן (לרוב מעי) יוצאים החוצה. מחייב כיסוי עם מפית רטובה וניתוח דחוף."
@@ -695,10 +695,10 @@ const surgeryData = [
     {
         question: "איזה ויטמין חיוני ליצירת קולגן בריפוי פצעים?",
         options: [
-            { text: "ויטמין C", correct: true },
-            { text: "ויטמין A", correct: false },
-            { text: "ויטמין D", correct: false },
-            { text: "ויטמין B12", correct: false }
+            { text: "ויטמין C (נדרש להידרוקסילציה של פרולין וליזין)", correct: true },
+            { text: "ויטמין A (חשוב למערכת החיסון ואפיתליזציה)", correct: false },
+            { text: "ויטמין E (נוגד חמצון המגן על ממברנות תאים)", correct: false },
+            { text: "ויטמין K (חיוני לקרישת דם ועצירת דימום)", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "ויטמין C חיוני לסינתזת קולגן. חסר בויטמין C (צפדינה) פוגע בריפוי פצעים."
@@ -707,9 +707,9 @@ const surgeryData = [
         question: "מהו ריפוי ב-Primary intention?",
         options: [
             { text: "ריפוי כשקצוות הפצע מקורבים ותפורים, יוצר צלקת מינימלית", correct: true },
-            { text: "ריפוי כשהפצע נשאר פתוח", correct: false },
-            { text: "ריפוי לאחר זיהום", correct: false },
-            { text: "ריפוי עם השתלת עור", correct: false }
+            { text: "ריפוי כשהפצע נשאר פתוח ומתמלא ברקמת גרנולציה (Secondary)", correct: false },
+            { text: "ריפוי כשפצע זיהומי נסגר לאחר ניקוי ועיכוב (Tertiary)", correct: false },
+            { text: "ריפוי עם השתלת עור או שימוש בשתלים סינתטיים", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "Primary intention - קצוות הפצע נסגרים מיד (תפרים, סיכות). Secondary intention - הפצע נשאר פתוח ומתמלא בהדרגה."
@@ -729,9 +729,9 @@ const surgeryData = [
         question: "מהו Keloid?",
         options: [
             { text: "צלקת היפרטרופית שגדלה מעבר לגבולות הפצע המקורי", correct: true },
-            { text: "צלקת שטוחה ולבנה", correct: false },
-            { text: "פצע פתוח כרוני", correct: false },
-            { text: "זיהום בצלקת", correct: false }
+            { text: "צלקת היפרטרופית שנשארת בגבולות הפצע המקורי", correct: false },
+            { text: "צלקת אטרופית שקועה מתחת לרמת העור", correct: false },
+            { text: "צלקת נורמלית עם תהליך ריפוי תקין ומושלם", correct: false }
         ],
         category: "ריפוי פצעים",
         explanation: "Keloid היא הצטלקות מוגזמת החורגת מגבולות הפצע. שכיחה יותר בעור כהה. טיפול: הזרקת סטרואידים, לחץ, או כריתה."
@@ -933,9 +933,9 @@ const surgeryData = [
         question: "מהי אטלקטזיס לאחר ניתוח?",
         options: [
             { text: "קריסת אלוואולות בריאות, סיבוך ריאתי שכיח", correct: true },
-            { text: "דלקת ריאות", correct: false },
-            { text: "פנאומוטורקס", correct: false },
-            { text: "בצקת ריאות", correct: false }
+            { text: "דלקת ריאות חיידקית (Pneumonia) עקב אספירציה", correct: false },
+            { text: "הצטברות אוויר בחלל הפלאורלי (Pneumothorax)", correct: false },
+            { text: "הצטברות נוזל בריאות (Pulmonary Edema)", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "אטלקטזיס שכיח 24-48 שעות אחרי ניתוח. גורם: הרדמה, כאב, חוסר נשימות עמוקות. מניעה: ספירומטר, שיעול."
@@ -955,9 +955,9 @@ const surgeryData = [
         question: "מהי סיבת החום ב-24 השעות הראשונות לאחר ניתוח?",
         options: [
             { text: "בדרך כלל אטלקטזיס (ריאתי), לא זיהום", correct: true },
-            { text: "זיהום בפצע", correct: false },
-            { text: "DVT", correct: false },
-            { text: "דלקת בדרכי השתן", correct: false }
+            { text: "זיהום מוקדם בפצע הניתוחי (SSI)", correct: false },
+            { text: "קריש דם בוורידים עמוקים (DVT)", correct: false },
+            { text: "דלקת בדרכי השתן מהצנתר (CAUTI)", correct: false }
         ],
         category: "פרי-אופרטיבי",
         explanation: "חום מוקדם (יום 1-2) = בדרך כלל ריאתי. חום ביום 3-5 = זיהום פצע/UTI. חום מאוחר (יום 5+) = DVT/אבצס."
@@ -979,9 +979,9 @@ const surgeryData = [
         question: "מהו סימן Cullen?",
         options: [
             { text: "שטף דם סביב הטבור המעיד על דימום רטרופריטוניאלי", correct: true },
-            { text: "צהבת", correct: false },
-            { text: "נפיחות בטנית", correct: false },
-            { text: "כאב בכתף", correct: false }
+            { text: "שטף דם באזור המותניים (Grey Turner) המעיד על דימום חריף", correct: false },
+            { text: "נוקשות דופן בטן (Guarding) המעידה על גירוי צפקי", correct: false },
+            { text: "רגישות נקודתית ב-McBurney המעידה על אפנדיציטיס", correct: false }
         ],
         category: "לבלב",
         explanation: "Cullen sign = ecchymosis סביב הטבור. Grey Turner sign = ecchymosis בצדדים. שניהם מעידים על דלקת לבלב נקרוטית חמורה."
@@ -990,9 +990,9 @@ const surgeryData = [
         question: "מהי דלקת לבלב נקרוטית (Necrotizing Pancreatitis)?",
         options: [
             { text: "נמק של רקמת הלבלב, מצב חמור עם תמותה גבוהה", correct: true },
-            { text: "דלקת קלה שחולפת מעצמה", correct: false },
-            { text: "גידול בלבלב", correct: false },
-            { text: "אבנים בלבלב", correct: false }
+            { text: "דלקת עם יצירת ציסטות שקריות ללא נמק רקמתי", correct: false },
+            { text: "דלקת אינטרסטיציאלית בצקתית עם פרוגנוזה טובה", correct: false },
+            { text: "דלקת כרונית עם פיברוזיס והסתיידויות בלבלב", correct: false }
         ],
         category: "לבלב",
         explanation: "20% מדלקות לבלב הן נקרוטיות. סיבוכים: זיהום הנמק, SIRS, אי ספיקת איברים. תמותה 20-40%."
@@ -1001,9 +1001,9 @@ const surgeryData = [
         question: "מהי Pseudocyst של הלבלב?",
         options: [
             { text: "אוסף נוזל מוקף דופן דלקתית, ללא אפיתל אמיתי", correct: true },
-            { text: "גידול ממאיר", correct: false },
-            { text: "אבן בלבלב", correct: false },
-            { text: "מורסה", correct: false }
+            { text: "ציסטה אמיתית מרופדת באפיתל עם פוטנציאל ממאיר", correct: false },
+            { text: "מורסה (אבצס) סטרילית המכילה נמק מעוכל", correct: false },
+            { text: "ציסטה מוצינית של הלבלב (IPMN) הדורשת כריתה", correct: false }
         ],
         category: "לבלב",
         explanation: "Pseudocyst מתפתח 4-6 שבועות לאחר דלקת לבלב. רוב הקטנים נספגים. גדולים/סימפטומטיים דורשים ניקוז."
@@ -1012,9 +1012,9 @@ const surgeryData = [
         question: "מדוע בודקים סידן בדם בדלקת לבלב?",
         options: [
             { text: "היפוקלצמיה היא סימן לחומרה (ספוניפיקציה של שומן)", correct: true },
-            { text: "היפרקלצמיה שכיחה", correct: false },
-            { text: "אין קשר לסידן", correct: false },
-            { text: "לבדיקת תפקודי כליות", correct: false }
+            { text: "היפרקלצמיה עלולה להיות הגורם לדלקת הלבלב", correct: false },
+            { text: "רמת הסידן משקפת את מידת הפגיעה הכבדית הנלוות", correct: false },
+            { text: "סידן נמוך מעיד על דרגת ההתייבשות של המטופל", correct: false }
         ],
         category: "לבלב",
         explanation: "בדלקת לבלב נקרוטית, חומצות שומן משתחררות וקושרות סידן (saponification). היפוקלצמיה = סימן פרוגנוסטי רע."
@@ -1023,9 +1023,9 @@ const surgeryData = [
         question: "מהו ציון Ranson?",
         options: [
             { text: "מערכת ניקוד לחומרת דלקת לבלב ולפרוגנוזה", correct: true },
-            { text: "מדד לתפקוד כליות", correct: false },
-            { text: "ציון כאב", correct: false },
-            { text: "מדד לסוכרת", correct: false }
+            { text: "סולם להערכת חומרת דלקת תוספתן (אפנדיציטיס)", correct: false },
+            { text: "ציון APACHE II מותאם למחלות מערכת העיכול", correct: false },
+            { text: "מדד לחומרת דלקת כיס מרה (Tokyo Guidelines)", correct: false }
         ],
         category: "לבלב",
         explanation: "Ranson מעריך 11 פרמטרים (5 בקבלה, 6 אחרי 48 שעות). ציון גבוה (>3) מעיד על תמותה גבוהה יותר."
@@ -1036,9 +1036,9 @@ const surgeryData = [
         question: "מהו Murphy's Sign?",
         options: [
             { text: "עצירת נשימה בלחיצה על RUQ, אופייני לדלקת כיס מרה", correct: true },
-            { text: "כאב ב-LLQ", correct: false },
-            { text: "נפיחות בטנית", correct: false },
-            { text: "צהבת", correct: false }
+            { text: "כאב בשחרור פתאומי של הלחץ (Rebound) ב-RUQ, מעיד על פריטוניטיס", correct: false },
+            { text: "כאב בנקודת McBurney בלחיצה, מעיד על דלקת תוספתן", correct: false },
+            { text: "רגישות בזווית הכליה (CVA tenderness), מעידה על פיילונפריטיס", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "Murphy's Sign חיובי: בלחיצה מתחת לקשת הצלעות ימין, החולה עוצר נשימה מכאב. אופייני לדלקת כיס מרה חריפה."
@@ -1047,9 +1047,9 @@ const surgeryData = [
         question: "מהי Cholecystitis?",
         options: [
             { text: "דלקת של כיס המרה, לרוב בגלל אבנים", correct: true },
-            { text: "דלקת של צינורות המרה", correct: false },
-            { text: "אבנים בכליות", correct: false },
-            { text: "דלקת הלבלב", correct: false }
+            { text: "דלקת של צינורות המרה (Cholangitis) עקב חסימה", correct: false },
+            { text: "נוכחות אבנים בכיס המרה ללא דלקת (Cholelithiasis)", correct: false },
+            { text: "התכווצויות כואבות של כיס המרה ללא דלקת (Biliary colic)", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "Cholecystitis = דלקת כיס מרה. 90% מאבנים. סימנים: כאב RUQ, חום, Murphy חיובי, לויקוציטוזיס."
@@ -1080,9 +1080,9 @@ const surgeryData = [
         question: "מה גורם לגרד (Pruritus) במחלות כבד?",
         options: [
             { text: "הצטברות מלחי מרה בעור", correct: true },
-            { text: "בילירובין גבוה", correct: false },
-            { text: "אלבומין נמוך", correct: false },
-            { text: "עלייה באמוניה", correct: false }
+            { text: "עלייה בבילירובין הישיר המגיע לשכבות העור", correct: false },
+            { text: "שחרור היסטמין מתאי פיטום עקב נזק כבדי", correct: false },
+            { text: "הצטברות אמוניה ורעלים אורמיים ברקמות", correct: false }
         ],
         category: "כבד ומרה",
         explanation: "מלחי מרה מצטברים בחסימה ובשחמת, מגיעים לעור ומגרים את קצות העצבים. גרד חמור אופייני לחסימה."
@@ -1104,9 +1104,9 @@ const surgeryData = [
         question: "מהו Barrett's Esophagus?",
         options: [
             { text: "החלפת אפיתל קשקשי של הושט באפיתל גלילי עקב GERD כרוני", correct: true },
-            { text: "גידול שפיר בושט", correct: false },
-            { text: "היצרות הושט", correct: false },
-            { text: "דליות בושט", correct: false }
+            { text: "דלקת כרונית של הושט (אאוזינופילית) עם דיספגיה", correct: false },
+            { text: "היצרות פפטית של הושט עקב צלקות מרפלוקס", correct: false },
+            { text: "הפרעה בתנועתיות הושט עם דיספגיה (אכלזיה)", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "Barrett's הוא מצב טרום-סרטני. דורש מעקב אנדוסקופי עם ביופסיות. סיכון לאדנוקרצינומה של הושט."
@@ -1115,9 +1115,9 @@ const surgeryData = [
         question: "מהו Helicobacter pylori ולמה הוא קשור?",
         options: [
             { text: "חיידק הגורם לכיבים פפטיים ולסרטן קיבה", correct: true },
-            { text: "וירוס הגורם לשלשול", correct: false },
-            { text: "פרזיט הגורם לעצירות", correct: false },
-            { text: "פטרייה הגורמת לרפלוקס", correct: false }
+            { text: "חיידק הגורם לדלקת קיבה אטרופית ללא קשר לכיבים", correct: false },
+            { text: "חיידק הגורם לדלקת מעי דקיקה (SIBO) בלבד", correct: false },
+            { text: "חיידק הגורם לרפלוקס ושטי-קיבתי (GERD)", correct: false }
         ],
         category: "מערכת העיכול",
         explanation: "H. pylori גורם ל-90% מכיבי תריסריון ו-70% מכיבי קיבה. טיפול: Triple therapy (2 אנטיביוטיקות + PPI)."
