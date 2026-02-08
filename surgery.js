@@ -1132,5 +1132,762 @@ const surgeryData = [
         ],
         category: "מערכת העיכול",
         explanation: "דגלים אדומים מחשידים לממאירות או סיבוך חמור. דורשים אנדוסקופיה או הדמייה בהקדם."
+    },
+
+    // ========== שאלות נוספות - סוכרת ==========
+    {
+        question: "מהי המטרה הטיפולית ל-HbA1c ברוב חולי הסוכרת?",
+        options: [
+            { text: "מתחת ל-7% (או 53 mmol/mol)", correct: true },
+            { text: "מתחת ל-5% (או 31 mmol/mol)", correct: false },
+            { text: "מתחת ל-10% (או 86 mmol/mol)", correct: false },
+            { text: "מתחת ל-12% (או 108 mmol/mol)", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "HbA1c מתחת ל-7% מפחית סיכון לסיבוכים מיקרווסקולריים. בקשישים או חולים מורכבים המטרה גמישה יותר."
+    },
+    {
+        question: "מהו DKA (Diabetic Ketoacidosis)?",
+        options: [
+            { text: "חמצת מטבולית עם קטונים בדם, שכיח בסוכרת סוג 1", correct: true },
+            { text: "תרדמת היפוגליקמית עקב עודף אינסולין", correct: false },
+            { text: "בססת נשימתית עקב היפרונטילציה", correct: false },
+            { text: "היפרגליקמיה קלה ללא קטונים בדם", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "DKA מאופיין בסוכר גבוה, חמצת (pH<7.3), קטונים בדם/שתן. מצב חירום הדורש אינסולין ונוזלים IV."
+    },
+    {
+        question: "מהו HHS (Hyperosmolar Hyperglycemic State)?",
+        options: [
+            { text: "היפרגליקמיה קשה עם התייבשות חמורה, ללא קטוזיס משמעותי", correct: true },
+            { text: "היפוגליקמיה קשה עם אובדן הכרה ופרכוסים", correct: false },
+            { text: "חמצת לקטית עקב מטפורמין בחולה כליות", correct: false },
+            { text: "תגובה אלרגית לאינסולין עם אנפילקסיס", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "HHS שכיח בסוכרת סוג 2, עם סוכר מעל 600 mg/dL, אוסמולריות גבוהה, והתייבשות קשה. תמותה גבוהה מ-DKA."
+    },
+    {
+        question: "מהי נוירופתיה סוכרתית?",
+        options: [
+            { text: "פגיעה בעצבים היקפיים הגורמת לתחושת נימול וכאב בכפות הרגליים", correct: true },
+            { text: "פגיעה בראייה עקב נזק לרשתית העין בלבד", correct: false },
+            { text: "פגיעה בכליות עם חלבון בשתן בלבד", correct: false },
+            { text: "פגיעה בכלי דם גדולים עם התקפי לב", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "נוירופתיה פריפרית היא הסיבוך השכיח ביותר. גורמת לאובדן תחושה, כאב נוירופתי, וסיכון לפצעים ברגליים."
+    },
+    {
+        question: "מהו הטיפול הראשון בהיפוגליקמיה (סוכר נמוך) בחולה בהכרה?",
+        options: [
+            { text: "מתן 15-20 גרם פחמימות פשוטות (מיץ, סוכריות)", correct: true },
+            { text: "הזרקת אינסולין לתיקון האיזון ההורמונלי", correct: false },
+            { text: "מתן גלוקגון תת-עורי כקו ראשון בכל מקרה", correct: false },
+            { text: "צום למשך שעה עד להתייצבות הסוכר", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "כלל 15-15: 15 גרם פחמימות, המתן 15 דקות, בדוק שוב. גלוקגון IM או דקסטרוז IV רק אם אין הכרה."
+    },
+    {
+        question: "מהם סימני Somogyi effect?",
+        options: [
+            { text: "היפרגליקמיה בבוקר כתגובה להיפוגליקמיה לילית", correct: true },
+            { text: "היפוגליקמיה בבוקר עקב צום לילי ממושך", correct: false },
+            { text: "היפרגליקמיה קבועה לאורך כל היום והלילה", correct: false },
+            { text: "תנודות סוכר רק לאחר ארוחות גדולות", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "Somogyi: היפוגליקמיה לילית גורמת לשחרור הורמונים קונטר-רגולטוריים ולסוכר גבוה בבוקר. פתרון: הפחתת אינסולין לילי."
+    },
+    {
+        question: "מהו Dawn Phenomenon?",
+        options: [
+            { text: "עלייה בסוכר בשעות הבוקר המוקדמות עקב הורמונים", correct: true },
+            { text: "ירידה בסוכר בשעות הלילה המאוחרות עקב צום", correct: false },
+            { text: "תנודות סוכר לאחר פעילות גופנית אינטנסיבית", correct: false },
+            { text: "היפוגליקמיה בשעות אחר הצהריים המאוחרות", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "Dawn phenomenon נגרם מהפרשת GH וקורטיזול בשעות 4-8 בבוקר. פתרון: התאמת אינסולין או תזמון."
+    },
+    {
+        question: "מהי Retinopathy סוכרתית?",
+        options: [
+            { text: "פגיעה בכלי הדם ברשתית הגורמת לאובדן ראייה", correct: true },
+            { text: "פגיעה בעצב האופטי עקב לחץ תוך עיני גבוה", correct: false },
+            { text: "עכירות של עדשת העין (קטרקט) בלבד", correct: false },
+            { text: "דלקת בקרנית העין עקב יובש כרוני", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "רטינופתיה סוכרתית היא הגורם המוביל לעיוורון במבוגרים. דורשת בדיקת קרקעית עיניים שנתית."
+    },
+    {
+        question: "מהי Nephropathy סוכרתית?",
+        options: [
+            { text: "פגיעה בכליות המתחילה במיקרואלבומינוריה ומתקדמת לאי ספיקה", correct: true },
+            { text: "זיהום חוזר בדרכי השתן עקב סוכר גבוה בשתן", correct: false },
+            { text: "אבנים בכליות עקב שינויים מטבוליים בסוכרת", correct: false },
+            { text: "בצקת ברגליים עקב אגירת נוזלים בלבד", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "נפרופתיה סוכרתית היא הגורם השכיח לדיאליזה. ACE-I או ARB מאטים התקדמות. בדיקת מיקרואלבומין שנתית."
+    },
+    {
+        question: "מהו אינסולין Basal-Bolus?",
+        options: [
+            { text: "משטר אינסולין עם מנה בסיסית ארוכת טווח ומנות לארוחות", correct: true },
+            { text: "אינסולין בודד במנה אחת ביום ללא קשר לארוחות", correct: false },
+            { text: "אינסולין מעורב קבוע פעמיים ביום בלבד", correct: false },
+            { text: "אינסולין רק בזמן מחלה או מצבי דחק", correct: false }
+        ],
+        category: "סוכרת",
+        explanation: "Basal-Bolus מחקה הפרשה פיזיולוגית: אינסולין ארוך (Lantus/Levemir) + מהיר (Novorapid/Humalog) לארוחות."
+    },
+
+    // ========== שאלות נוספות - הפטיטיס ==========
+    {
+        question: "מהי הפטיטיס A ומה דרך ההעברה?",
+        options: [
+            { text: "דלקת כבד ויראלית המועברת בדרך פקאלית-אוראלית", correct: true },
+            { text: "דלקת כבד המועברת דרך דם ומגע מיני בלבד", correct: false },
+            { text: "דלקת כבד אוטואימונית ללא גורם זיהומי", correct: false },
+            { text: "דלקת כבד הנגרמת מתרופות או אלכוהול", correct: false }
+        ],
+        category: "הפטיטיס B",
+        explanation: "הפטיטיס A מועבר דרך מים ומזון מזוהם. בדרך כלל חולף מעצמו ללא כרוניות. יש חיסון יעיל (Havrix)."
+    },
+    {
+        question: "איזה מסמני הפטיטיס B מעיד על יכולת הדבקה נמוכה?",
+        options: [
+            { text: "Anti-HBe חיובי (סרוקונברסיה של HBeAg)", correct: true },
+            { text: "HBeAg חיובי עם viral load גבוה", correct: false },
+            { text: "HBsAg חיובי בלבד ללא נוגדנים", correct: false },
+            { text: "Anti-HBc IgM חיובי בשלב חריף", correct: false }
+        ],
+        category: "הפטיטיס B",
+        explanation: "Anti-HBe מופיע כש-HBeAg נעלם (סרוקונברסיה). מעיד על ירידה בשכפול הנגיפי ויכולת הדבקה נמוכה יותר."
+    },
+    {
+        question: "מהי Window Period בהפטיטיס B?",
+        options: [
+            { text: "תקופה בה HBsAg נעלם אך Anti-HBs עדיין לא הופיע", correct: true },
+            { text: "תקופת הדגירה מרגע ההדבקה ועד הופעת תסמינים", correct: false },
+            { text: "תקופה בה החולה מדבק אך ללא סימנים קליניים", correct: false },
+            { text: "זמן המתנה בין מנות החיסון השונות", correct: false }
+        ],
+        category: "הפטיטיס B",
+        explanation: "ב-Window Period הסמן היחיד החיובי הוא Anti-HBc. חשוב לאבחנה כי HBsAg ו-Anti-HBs שניהם שליליים."
+    },
+    {
+        question: "מהו הטיפול בהפטיטיס B כרונית?",
+        options: [
+            { text: "תרופות אנטי-ויראליות כמו Tenofovir או Entecavir", correct: true },
+            { text: "אנטיביוטיקה לטיפול בזיהום החיידקי המשני", correct: false },
+            { text: "סטרואידים להפחתת הדלקת בכבד בלבד", correct: false },
+            { text: "אין טיפול יעיל והמחלה תמיד מתקדמת", correct: false }
+        ],
+        category: "הפטיטיס B",
+        explanation: "Tenofovir ו-Entecavir מדכאים שכפול נגיפי ומפחיתים סיכון לשחמת וסרטן כבד. טיפול ארוך טווח."
+    },
+    {
+        question: "מהו Occult HBV Infection?",
+        options: [
+            { text: "HBsAg שלילי אך HBV DNA חיובי בדם או בכבד", correct: true },
+            { text: "HBsAg חיובי עם viral load גבוה מאוד", correct: false },
+            { text: "זיהום חריף עם תסמינים קליניים בולטים", correct: false },
+            { text: "מצב לאחר חיסון מוצלח עם Anti-HBs חיובי", correct: false }
+        ],
+        category: "הפטיטיס B",
+        explanation: "Occult HBV שכיח בחולים עם Anti-HBc חיובי בודד. חשוב במושתלי כבד ובחולים מדוכאי חיסון."
+    },
+
+    // ========== שאלות נוספות - אלקטרוליטים ==========
+    {
+        question: "מהו SIADH ואיזו הפרעה אלקטרוליטית הוא גורם?",
+        options: [
+            { text: "הפרשת יתר של ADH הגורמת להיפונתרמיה היפוטונית", correct: true },
+            { text: "חוסר הפרשת ADH הגורם להיפרנתרמיה חמורה", correct: false },
+            { text: "הפרשת יתר של אלדוסטרון הגורמת להיפוקלמיה", correct: false },
+            { text: "חוסר הפרשת קורטיזול הגורם להיפרקלמיה", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "SIADH: אגירת מים מדללת את הנתרן. גורמים: מחלות ריאה, CNS, תרופות, גידולים. טיפול: הגבלת נוזלים."
+    },
+    {
+        question: "מהו Diabetes Insipidus ואיזו הפרעה הוא גורם?",
+        options: [
+            { text: "חוסר ADH או תגובה אליו הגורם להיפרנתרמיה והשתנה מרובה", correct: true },
+            { text: "עודף ADH הגורם לאגירת נוזלים והיפונתרמיה", correct: false },
+            { text: "עודף אינסולין הגורם להיפוגליקמיה חמורה", correct: false },
+            { text: "חוסר אינסולין הגורם לסוכרת ולקטוזיס", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "DI מרכזי: חוסר ADH. DI נפרוגני: חוסר תגובה ל-ADH. שניהם גורמים לפוליאוריה, צמא, והיפרנתרמיה."
+    },
+    {
+        question: "מהם סימני ECG של היפרקלמיה?",
+        options: [
+            { text: "גלי T גבוהים וחדים, הארכת PR, הרחבת QRS", correct: true },
+            { text: "גלי U בולטים, הארכת QT, השטחת גל T", correct: false },
+            { text: "עליית ST בכל החיבורים עם גלי Q פתולוגיים", correct: false },
+            { text: "פרפור עליות עם תגובה חדרית מהירה", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "היפרקלמיה: T גבוהים (מוקדם) → PR ארוך, QRS רחב → גלים סינוסואידליים → VF/אסיסטולה. חירום!"
+    },
+    {
+        question: "מהו הטיפול בהיפונתרמיה סימפטומטית חמורה?",
+        options: [
+            { text: "NaCl 3% היפרטוני בזהירות עם העלאה איטית של הנתרן", correct: true },
+            { text: "מתן נוזלים היפוטוניים בכמות גדולה במהירות", correct: false },
+            { text: "הגבלת נוזלים מוחלטת ללא מתן סליין כלל", correct: false },
+            { text: "משתנים בכמות גבוהה להפחתת עומס נוזלים", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "תיקון מהיר מדי גורם ל-ODS (מיאלינוליזיס). מטרה: העלאה של 4-6 mEq/L ב-24 שעות ראשונות."
+    },
+    {
+        question: "מהי היפומגנזמיה ולמה היא קשורה?",
+        options: [
+            { text: "מגנזיום נמוך הגורם להיפוקלמיה והיפוקלצמיה עמידות לטיפול", correct: true },
+            { text: "מגנזיום גבוה הגורם לחולשת שרירים ודיכוי נשימתי", correct: false },
+            { text: "מגנזיום נמוך הגורם להיפרקלמיה ובססת מטבולית", correct: false },
+            { text: "מגנזיום גבוה הגורם להפרעות קצב חדריות", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "היפומגנזמיה שכיחה באלכוהוליזם, משתנים, שלשולים. יש לתקן מגנזיום לפני שניתן לתקן K+ ו-Ca++."
+    },
+    {
+        question: "מהו Anion Gap ומתי הוא מוגבר?",
+        options: [
+            { text: "Na - (Cl + HCO3), מוגבר בחמצת לקטית, DKA, אי ספיקת כליות", correct: true },
+            { text: "K + Na - Cl, מוגבר בהיפרקלמיה ובחמצת נשימתית", correct: false },
+            { text: "HCO3 + Cl - Na, מוגבר בבססת מטבולית חמורה", correct: false },
+            { text: "Ca + Mg - PO4, מוגבר בהיפרקלצמיה וממאירות", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "AG תקין: 8-12. AG גבוה: חמצות עם חומצות אורגניות (לקטט, קטונים, אורמיה, רעלים). MUDPILES."
+    },
+    {
+        question: "מהי פגיעה כלייתית חריפה (AKI) ומהם הסוגים?",
+        options: [
+            { text: "עלייה חדה בקריאטינין: פרה-רנלית, רנלית, פוסט-רנלית", correct: true },
+            { text: "ירידה הדרגתית ב-GFR לאורך שנים עם פרוטאינוריה", correct: false },
+            { text: "זיהום בדרכי השתן עם חום וצמרמורות בלבד", correct: false },
+            { text: "אבנים בכליות הגורמות לכאב קוליקי חד צדדי", correct: false }
+        ],
+        category: "אלקטרוליטים",
+        explanation: "פרה-רנלית: היפופרפוזיה. רנלית: ATN, גלומרולונפריטיס. פוסט-רנלית: חסימה. טיפול לפי הסיבה."
+    },
+
+    // ========== שאלות נוספות - מערכת העיכול ==========
+    {
+        question: "מהו Achalasia?",
+        options: [
+            { text: "כשל בהרפיית ה-LES וחוסר פריסטלטיקה בוושט", correct: true },
+            { text: "רפלוקס חומצי כרוני עם נזק לוושט התחתון", correct: false },
+            { text: "היצרות מכנית של הוושט עקב גידול או צלקת", correct: false },
+            { text: "דליות בוושט עקב יתר לחץ דם פורטלי", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "אכלזיה: דיספגיה לנוזלים ומוצקים, רגורגיטציה. אבחון: מנומטריה. טיפול: בוטוקס, הרחבה פניאומטית, מיוטומיה."
+    },
+    {
+        question: "מהו Zenker's Diverticulum?",
+        options: [
+            { text: "כיס בלוע התחתון הגורם לדיספגיה, ריח רע, ורגורגיטציה", correct: true },
+            { text: "כיס במעי הגס הגורם לדימום ודיברטיקוליטיס", correct: false },
+            { text: "כיס בקיבה הגורם לכאבים אפיגסטריים וצרבת", correct: false },
+            { text: "כיס בתריסריון הגורם לחסימת מוצא הקיבה", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "Zenker: דיברטיקולום פולסיבי בוושט עליון. שכיח בקשישים. סיבוכים: אספירציה, חסימה. טיפול: ניתוחי."
+    },
+    {
+        question: "מהי Gastroparesis?",
+        options: [
+            { text: "עיכוב בריקון הקיבה ללא חסימה מכנית, שכיח בסוכרת", correct: true },
+            { text: "חסימה מכנית של מוצא הקיבה עקב גידול או צלקת", correct: false },
+            { text: "דלקת חריפה של רירית הקיבה עם כאב והקאות", correct: false },
+            { text: "כיב פפטי מדמם הדורש התערבות אנדוסקופית", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "גסטרופרזיס: בחילות, הקאות, שובע מוקדם, נפיחות. גורמים: סוכרת, פוסט-כירורגי, אידיופתי. טיפול: פרוקינטיים."
+    },
+    {
+        question: "מהי Celiac Disease?",
+        options: [
+            { text: "רגישות לגלוטן הגורמת לנזק לרירית המעי הדק וחוסר ספיגה", correct: true },
+            { text: "אלרגיה לחלב הגורמת לשלשולים ונפיחות בטנית", correct: false },
+            { text: "דלקת מעי כרונית אוטואימונית כמו Crohn או UC", correct: false },
+            { text: "זיהום בקטריאלי במעי הגורם לשלשול דמי חריף", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "צליאק: נוגדנים Anti-tTG ו-Anti-EMA. ביופסיה: אטרופיה של וילי. טיפול: דיאטה ללא גלוטן לכל החיים."
+    },
+    {
+        question: "מהו Crohn's Disease?",
+        options: [
+            { text: "דלקת מעי כרונית טרנסמורלית שיכולה לפגוע בכל מערכת העיכול", correct: true },
+            { text: "דלקת מעי המוגבלת לקולון ולרקטום עם פגיעה שטחית", correct: false },
+            { text: "זיהום חיידקי במעי הנרפא עם אנטיביוטיקה", correct: false },
+            { text: "חסימת מעי מכנית עקב הידבקויות לאחר ניתוח", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "Crohn: פגיעה skip lesions, פיסטולות, היצרויות. מפה לאנוס. UC: רק קולון, פגיעה רציפה, שטחית."
+    },
+    {
+        question: "מהו Toxic Megacolon?",
+        options: [
+            { text: "התרחבות חריפה של הקולון עם סימני ספסיס, סיבוך של IBD או זיהום", correct: true },
+            { text: "גידול ממאיר גדול בקולון הגורם לחסימה מוחלטת", correct: false },
+            { text: "עצירות כרונית עם הצטברות צואה קשה במעי", correct: false },
+            { text: "פוליפים מרובים בקולון עם סיכון מוגבר לסרטן", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "Toxic Megacolon: חירום כירורגי. קולון מורחב >6cm, חום, טכיקרדיה, לויקוציטוזיס. סיכון לניקוב."
+    },
+    {
+        question: "מהו C. difficile Colitis?",
+        options: [
+            { text: "דלקת קולון עקב חיידק לאחר טיפול באנטיביוטיקה", correct: true },
+            { text: "דלקת קולון אוטואימונית ללא קשר לתרופות", correct: false },
+            { text: "דלקת קולון ויראלית עם שלשול קצר וחולף", correct: false },
+            { text: "דלקת קולון איסכמית עקב חסימת כלי דם", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "C. diff: שלשול מימי, חום, כאבי בטן לאחר אנטיביוטיקה. אבחון: PCR לטוקסין. טיפול: Vancomycin PO או Fidaxomicin."
+    },
+    {
+        question: "מהי Diverticulitis?",
+        options: [
+            { text: "דלקת וזיהום של דיברטיקולום, לרוב בקולון השמאלי", correct: true },
+            { text: "דימום מדיברטיקולום ללא דלקת או זיהום", correct: false },
+            { text: "היווצרות של דיברטיקולים חדשים בקולון", correct: false },
+            { text: "כיס בוושט הגורם לקושי בבליעה", correct: false }
+        ],
+        category: "מערכת העיכול",
+        explanation: "דיברטיקוליטיס: כאב LLQ, חום, לויקוציטוזיס. CT לאבחנה. טיפול: אנטיביוטיקה, במקרים חמורים ניתוח."
+    },
+
+    // ========== שאלות נוספות - חסימת מעי ==========
+    {
+        question: "מהי Ogilvie Syndrome?",
+        options: [
+            { text: "פסאודו-חסימה של המעי הגס ללא חסימה מכנית", correct: true },
+            { text: "חסימה מכנית של המעי הגס עקב סרטן קולורקטלי", correct: false },
+            { text: "פיתול של הסיגמואיד הגורם לחסימה ואיסכמיה", correct: false },
+            { text: "חדירת מעי לתוך מעי (אינטוססספציה) במבוגרים", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "Ogilvie: הרחבת צקום וקולון ימני ללא חסימה מכנית. שכיח בחולים מאושפזים. טיפול: Neostigmine, דקומפרסיה."
+    },
+    {
+        question: "מהו Gallstone Ileus?",
+        options: [
+            { text: "חסימת מעי עקב אבן מרה גדולה שחדרה דרך פיסטולה", correct: true },
+            { text: "דלקת כיס מרה חריפה עם צהבת וחום גבוה", correct: false },
+            { text: "חסימת צינור המרה עקב אבן קטנה הגורמת לקוליק", correct: false },
+            { text: "אילאוס פאראליטי לאחר ניתוח כיס מרה", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "Gallstone Ileus: אבן >2.5cm חודרת דרך פיסטולה כולציסטו-אנטרית. חסימה לרוב באילאום טרמינלי."
+    },
+    {
+        question: "מה ההבדל בין הקאות בחסימה גבוהה לנמוכה?",
+        options: [
+            { text: "גבוהה: הקאות מרובות מרתיות מוקדמות. נמוכה: הקאות צואתיות מאוחרות", correct: true },
+            { text: "גבוהה: הקאות צואתיות מוקדמות. נמוכה: הקאות מרתיות מאוחרות", correct: false },
+            { text: "גבוהה: ללא הקאות כלל. נמוכה: הקאות מרובות מיידיות", correct: false },
+            { text: "אין הבדל בסוג או בתזמון ההקאות בין שני הסוגים", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "חסימה גבוהה: הקאות מוקדמות, ירוקות. חסימה נמוכה: הקאות מאוחרות, צואתיות (feculent), נפיחות בולטת."
+    },
+    {
+        question: "מתי יש התוויה לניתוח בחסימת מעי?",
+        options: [
+            { text: "סימני סטרנגולציה, פריטוניטיס, כשל בטיפול שמרני", correct: true },
+            { text: "כל חסימת מעי דורשת ניתוח מיידי ללא יוצא מן הכלל", correct: false },
+            { text: "רק חסימה חוזרת לאחר שלושה אירועים קודמים", correct: false },
+            { text: "רק כאשר יש חום גבוה ללא קשר לממצאים אחרים", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "ניתוח דחוף: סטרנגולציה (כאב קבוע, טכיקרדיה, חמצת), פריטוניטיס, בקע כלוא, חסימה מלאה ללא שיפור."
+    },
+    {
+        question: "מהי Closed Loop Obstruction?",
+        options: [
+            { text: "קטע מעי חסום משני צדדיו עם סיכון גבוה לאיסכמיה", correct: true },
+            { text: "חסימה חלקית עם מעבר חלקי של גזים ונוזלים", correct: false },
+            { text: "חסימה פונקציונלית ללא חסימה אנטומית אמיתית", correct: false },
+            { text: "חסימה בנקודה אחת בלבד עם ניקוז פרוקסימלי חופשי", correct: false }
+        ],
+        category: "חסימת מעי",
+        explanation: "Closed loop: סיכון גבוה לסטרנגולציה וניקוב. נפוץ בוולוולוס ובקע כלוא. דורש ניתוח דחוף."
+    },
+
+    // ========== שאלות נוספות - פרי-אופרטיבי ==========
+    {
+        question: "מהו ASA Physical Status Classification?",
+        options: [
+            { text: "סיווג של מצב בריאותי לפני הרדמה, מ-ASA 1 (בריא) עד ASA 6 (מת מוחי)", correct: true },
+            { text: "סולם כאב סטנדרטי מ-0 עד 10 לאחר ניתוח", correct: false },
+            { text: "ציון סיכון לדימום בזמן ניתוח לפי בדיקות קרישה", correct: false },
+            { text: "מדד לעומק ההרדמה במהלך הניתוח עצמו", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "ASA 1: בריא. ASA 2: מחלה מערכתית קלה. ASA 3: מחלה חמורה. ASA 4: מסכן חיים. ASA 5: גוסס."
+    },
+    {
+        question: "מהו Malignant Hyperthermia?",
+        options: [
+            { text: "תגובה היפרמטבולית להרדמה עם עלייה בטמפרטורה ובCO2", correct: true },
+            { text: "חום לאחר ניתוח עקב זיהום בפצע הניתוחי", correct: false },
+            { text: "היפותרמיה חמורה בזמן ניתוח ארוך בחדר קר", correct: false },
+            { text: "תגובה אלרגית לאנטיביוטיקה עם חום ופריחה", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "MH: תגובה גנטית לסוקסיניל כולין או גזים מרדימים. טיפול: Dantrolene IV, קירור, תמיכה."
+    },
+    {
+        question: "מהי Aspiration Pneumonitis?",
+        options: [
+            { text: "דלקת ריאות כימית עקב שאיפת תוכן קיבה חומצי", correct: true },
+            { text: "דלקת ריאות חיידקית עקב שאיפת חיידקים מהפה", correct: false },
+            { text: "בצקת ריאות עקב עומס נוזלים במהלך הניתוח", correct: false },
+            { text: "תסחיף ריאתי עקב קריש דם מהרגליים", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "אספירציה בהרדמה: נזק כימי מיידי מחומצה. מניעה: צום, RSI, הגנה על דרכי אוויר."
+    },
+    {
+        question: "מהו Postoperative Ileus?",
+        options: [
+            { text: "עיכוב בחזרת תפקוד המעי לאחר ניתוח, בדרך כלל חולף", correct: true },
+            { text: "חסימת מעי מכנית עקב הידבקויות מיד לאחר ניתוח", correct: false },
+            { text: "ניקוב מעי במהלך הניתוח עם פריטוניטיס", correct: false },
+            { text: "דימום פנימי לחלל הבטן לאחר הניתוח", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "POI: קיבה 24-48h, מעי דק 24h, קולון 3-5 ימים. הארכה: אופיואידים, אלקטרוליטים, זיהום."
+    },
+    {
+        question: "מהי Surgical Site Infection (SSI)?",
+        options: [
+            { text: "זיהום באתר הניתוח תוך 30 יום, או שנה אם יש שתל", correct: true },
+            { text: "זיהום בדרכי השתן עקב צנתר שהוחדר לפני הניתוח", correct: false },
+            { text: "דלקת ריאות עקב הנשמה ממושכת לאחר ניתוח", correct: false },
+            { text: "זיהום בזרם הדם עקב קטטר ורידי מרכזי", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "SSI: Superficial (עור), Deep (פאשיה/שריר), Organ/Space. גורמי סיכון: סוכרת, השמנה, עישון, משך ניתוח."
+    },
+    {
+        question: "מהו VTE Prophylaxis לאחר ניתוח?",
+        options: [
+            { text: "מניעת קרישי דם באמצעות הפרין, גרביים, והליכה מוקדמת", correct: true },
+            { text: "מניעת זיהום באמצעות אנטיביוטיקה פרופילקטית בלבד", correct: false },
+            { text: "מניעת כאב באמצעות משככי כאבים סביב השעון", correct: false },
+            { text: "מניעת בחילות באמצעות תרופות נוגדות הקאה", correct: false }
+        ],
+        category: "פרי-אופרטיבי",
+        explanation: "VTE: DVT + PE. מניעה: LMWH/UFH, מכשירי לחץ, גרביים אלסטיות, הקמה מוקדמת. לפי סיכון וסוג ניתוח."
+    },
+
+    // ========== שאלות נוספות - לבלב ==========
+    {
+        question: "מהי Atlanta Classification לדלקת לבלב?",
+        options: [
+            { text: "סיווג חומרת דלקת לבלב: קלה, בינונית, חמורה", correct: true },
+            { text: "סיווג סוגי ניתוחים על הלבלב לפי גישה כירורגית", correct: false },
+            { text: "סיווג גידולי לבלב לפי דרגת ממאירות ופרוגנוזה", correct: false },
+            { text: "סיווג סוכרת לפי מידת הפגיעה בתאי הלבלב", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "Atlanta: קלה - ללא אי ספיקת איברים. בינונית - אי ספיקה חולפת <48h. חמורה - אי ספיקה מתמשכת >48h."
+    },
+    {
+        question: "מהו Walled-Off Necrosis (WON)?",
+        options: [
+            { text: "אוסף נמק מוקף דופן, מתפתח 4+ שבועות לאחר דלקת לבלב נקרוטית", correct: true },
+            { text: "אבצס חריף בלבלב הדורש ניקוז מיידי תוך ימים", correct: false },
+            { text: "פסאודוציסט פשוט ללא רכיב נקרוטי מוצק", correct: false },
+            { text: "גידול ציסטי בלבלב עם פוטנציאל ממאיר", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "WON: אוסף מוקף עם נמק מוצק. לעומת פסאודוציסט שמכיל נוזל בלבד. זיהום WON דורש התערבות."
+    },
+    {
+        question: "מהו Pancreatic Divisum?",
+        options: [
+            { text: "מום מולד בו צינורות הלבלב לא התמזגו, גורם לדלקת חוזרת", correct: true },
+            { text: "קרע טראומטי של הלבלב לשני חלקים נפרדים", correct: false },
+            { text: "גידול המחלק את הלבלב לשני אונות נפרדות", correct: false },
+            { text: "ניתוח בו מסירים חצי מהלבלב (המיפנקריאטקטומי)", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "Pancreatic Divisum: הצינור הדורסלי מנקז דרך הפפילה המינורית. אצל חלק גורם לדלקות חוזרות."
+    },
+    {
+        question: "מהו Autoimmune Pancreatitis (AIP)?",
+        options: [
+            { text: "דלקת לבלב אוטואימונית, לרוב מגיבה לסטרואידים", correct: true },
+            { text: "דלקת לבלב חריפה עקב אבני מרה וצריכת אלכוהול", correct: false },
+            { text: "דלקת לבלב כרונית עקב מוטציה גנטית בלבד", correct: false },
+            { text: "דלקת לבלב זיהומית הדורשת טיפול אנטיביוטי", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "AIP Type 1: קשור ל-IgG4, מערבת איברים נוספים. Type 2: מוגבל ללבלב. שניהם מגיבים לסטרואידים."
+    },
+    {
+        question: "מהו IPMN (Intraductal Papillary Mucinous Neoplasm)?",
+        options: [
+            { text: "גידול ציסטי בצינורות הלבלב המייצר ריר, עם פוטנציאל ממאיר", correct: true },
+            { text: "דלקת לבלב כרונית עם הצטברות סידן בצינורות", correct: false },
+            { text: "ציסטה פשוטה בלבלב ללא פוטנציאל סרטני", correct: false },
+            { text: "פסאודוציסט לאחר דלקת לבלב חריפה", correct: false }
+        ],
+        category: "לבלב",
+        explanation: "IPMN: Main duct - סיכון גבוה לממאירות, ניתוח. Branch duct - מעקב או ניתוח לפי גודל וסימנים מחשידים."
+    },
+
+    // ========== שאלות נוספות - כבד ומרה ==========
+    {
+        question: "מהי Acalculous Cholecystitis?",
+        options: [
+            { text: "דלקת כיס מרה ללא אבנים, שכיחה בחולים קשים באשפוז", correct: true },
+            { text: "דלקת כיס מרה עם אבנים מרובות הדורשת ניתוח דחוף", correct: false },
+            { text: "כיס מרה מכווץ וקטן ללא דלקת או תסמינים", correct: false },
+            { text: "גידול בכיס המרה המתחזה לדלקת רגילה", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Acalculous cholecystitis: 5-10% מכלל הכולציסטיטיס. בחולי ICU, טראומה, צום ממושך, TPN. תמותה גבוהה יותר."
+    },
+    {
+        question: "מהו Mirizzi Syndrome?",
+        options: [
+            { text: "אבן בצוואר כיס המרה לוחצת על צינור המרה וגורמת לצהבת", correct: true },
+            { text: "פיסטולה בין כיס המרה למעי הדק עקב דלקת כרונית", correct: false },
+            { text: "ניקוב של כיס המרה עם מוגלה בחלל הבטן", correct: false },
+            { text: "סרטן כיס המרה עם חדירה לכבד הסמוך", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "Mirizzi: אבן בצוואר כיס המרה גורמת לחסימה חיצונית של CBD. סוגים I-IV לפי חומרת הפיסטולה."
+    },
+    {
+        question: "מהו Primary Sclerosing Cholangitis (PSC)?",
+        options: [
+            { text: "דלקת כרונית של צינורות המרה עם היצרויות ופיברוזיס", correct: true },
+            { text: "דלקת חריפה של צינורות המרה עקב חיידקים וחסימה", correct: false },
+            { text: "אבנים בצינורות המרה הגורמות לחסימה וזיהום", correct: false },
+            { text: "גידול של צינורות המרה (כולנגיוקרצינומה)", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "PSC: קשור ל-IBD (במיוחד UC). סיכון לכולנגיוקרצינומה. MRCP מראה beading. אין טיפול יעיל, השתלת כבד."
+    },
+    {
+        question: "מהו Hepatorenal Syndrome?",
+        options: [
+            { text: "אי ספיקת כליות בחולי שחמת עם אי ספיקת כבד מתקדמת", correct: true },
+            { text: "פגיעה בכבד עקב אי ספיקת כליות כרונית ממושכת", correct: false },
+            { text: "זיהום בדרכי השתן בחולים עם מחלת כבד", correct: false },
+            { text: "אבנים בכליות עקב הפרעות מטבוליות בשחמת", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "HRS: וזוקונסטריקציה כלייתית בשחמת. Type 1: מהיר, חמור. Type 2: איטי. טיפול: אלבומין, Terlipressin, TIPS."
+    },
+    {
+        question: "מהו Spontaneous Bacterial Peritonitis (SBP)?",
+        options: [
+            { text: "זיהום ספונטני של נוזל מיימת בחולי שחמת, ללא מקור ניתוחי", correct: true },
+            { text: "דלקת צפק לאחר ניקוב מעי או ניתוח בבטן", correct: false },
+            { text: "הצטברות נוזל מיימת סטרילי ללא זיהום", correct: false },
+            { text: "דלקת צפק כימית עקב דליפת מרה לחלל הבטן", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "SBP: PMN >250/mm³ בנוזל מיימת. טיפול: Ceftriaxone או Cefotaxime. פרופילקסיס: Norfloxacin לאחר אירוע."
+    },
+    {
+        question: "מהו Hepatic Encephalopathy?",
+        options: [
+            { text: "הפרעה נוירולוגית עקב הצטברות אמוניה באי ספיקת כבד", correct: true },
+            { text: "שבץ מוחי בחולי שחמת עקב הפרעות קרישה", correct: false },
+            { text: "גידול מוחי גרורתי מסרטן כבד ראשוני", correct: false },
+            { text: "דימום מוחי עקב לחץ דם פורטלי גבוה", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "HE: בלבול, אסטריקסיס (flapping tremor), תרדמת. טיפול: לקטולוז (מפחית pH במעי), Rifaximin."
+    },
+    {
+        question: "מהו TIPS (Transjugular Intrahepatic Portosystemic Shunt)?",
+        options: [
+            { text: "שאנט בין וריד פורטלי לוריד כבדי להפחתת לחץ פורטלי", correct: true },
+            { text: "השתלת כבד חלקית מתורם חי לחולה שחמת", correct: false },
+            { text: "ניתוח לכריתת גידול בכבד עם שוליים נקיים", correct: false },
+            { text: "צנתור לניקוז מורסה בכבד דרך העור", correct: false }
+        ],
+        category: "כבד ומרה",
+        explanation: "TIPS: מפחית לחץ פורטלי. התוויות: דימום מדליות לא נשלט, מיימת עמידה. סיבוך: אנצפלופתיה."
+    },
+
+    // ========== שאלות נוספות - בריאטריה ==========
+    {
+        question: "מהו Gastric Banding?",
+        options: [
+            { text: "טבעת מתכווננת סביב הקיבה העליונה ליצירת כיס קטן", correct: true },
+            { text: "כריתת 80% מהקיבה ויצירת שרוול צר", correct: false },
+            { text: "עקיפת חלק מהקיבה והמעי הדק לספיגה מופחתת", correct: false },
+            { text: "הכנסת בלון לקיבה לתקופה זמנית להקטנת נפח", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Gastric Banding: הליך הפיך, ירידה במשקל פחות דרמטית. פחות נפוץ היום עקב סיבוכים וחזרה במשקל."
+    },
+    {
+        question: "מהו BPD-DS (Biliopancreatic Diversion with Duodenal Switch)?",
+        options: [
+            { text: "ניתוח משולב: Sleeve + עקיפת מעי ארוכה לחוסר ספיגה משמעותי", correct: true },
+            { text: "הליך מגביל בלבד ללא רכיב של חוסר ספיגה", correct: false },
+            { text: "הכנסת בלון לקיבה לתקופה של שישה חודשים", correct: false },
+            { text: "טבעת סביב הקיבה ללא שינוי באנטומיה", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "BPD-DS: ירידה במשקל מקסימלית אך סיכון גבוה לחסרים תזונתיים. שמור למקרים קשים במיוחד."
+    },
+    {
+        question: "מהו OAGB/MGB (One Anastomosis Gastric Bypass)?",
+        options: [
+            { text: "ניתוח עקיפה עם אנסטומוזה אחת בלבד, פשוט יותר מ-RYGB", correct: true },
+            { text: "ניתוח Sleeve סטנדרטי ללא עקיפת מעי כלל", correct: false },
+            { text: "ניתוח להסרת טבעת קיבה שהוחדרה בעבר", correct: false },
+            { text: "ניתוח להרחבת כיס הקיבה לאחר Sleeve", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "OAGB: לולאה אחת, ניתוח קצר יותר. סיכון: רפלוקס מרה. יעילות דומה ל-RYGB."
+    },
+    {
+        question: "מהי Internal Hernia לאחר ניתוח בריאטרי?",
+        options: [
+            { text: "בקע פנימי דרך פתחים שנוצרו בניתוח, גורם לחסימת מעי", correct: true },
+            { text: "בקע חיצוני בפצע הניתוחי בדופן הבטן", correct: false },
+            { text: "בקע מפשעתי שהתגלה לאחר ירידה במשקל", correct: false },
+            { text: "התרופפות של הטבעת סביב הקיבה העליונה", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Internal Hernia: סיבוך מאוחר של RYGB. כאב קוליקי, הקאות. CT לאבחנה. ניתוח דחוף אם יש חסימה."
+    },
+    {
+        question: "מהו Marginal Ulcer?",
+        options: [
+            { text: "כיב באנסטומוזה בין כיס הקיבה למעי לאחר Bypass", correct: true },
+            { text: "כיב בקיבה המקורית לאחר ניתוח Sleeve", correct: false },
+            { text: "שחיקה של הטבעת לתוך דופן הקיבה", correct: false },
+            { text: "כיב בתריסריון עקב H. pylori לאחר ניתוח", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Marginal Ulcer: 1-5% לאחר RYGB. גורמי סיכון: עישון, NSAIDs, H. pylori. טיפול: PPI, הפסקת עישון."
+    },
+    {
+        question: "מהי Rhabdomyolysis לאחר ניתוח בריאטרי?",
+        options: [
+            { text: "פירוק שרירים עקב לחץ ממושך בניתוח ארוך בחולים שמנים", correct: true },
+            { text: "חולשת שרירים עקב חסר בויטמין B12 לאחר ניתוח", correct: false },
+            { text: "כאבי שרירים עקב התייבשות בימים הראשונים", correct: false },
+            { text: "עווית שרירים עקב היפוקלצמיה לאחר ניתוח", correct: false }
+        ],
+        category: "בריאטריה",
+        explanation: "Rhabdomyolysis: CK מוגבר, שתן כהה, סיכון ל-AKI. מניעה: ריפוד טוב, הקטנת משך ניתוח, נוזלים."
+    },
+
+    // ========== שאלות נוספות - ריפוי פצעים ==========
+    {
+        question: "מהו Tertiary Intention Healing?",
+        options: [
+            { text: "סגירה מושהית של פצע לאחר תקופה של ריפוי פתוח", correct: true },
+            { text: "ריפוי פצע עם קצוות מקורבים וסגורים מההתחלה", correct: false },
+            { text: "ריפוי פצע פתוח שמתמלא בהדרגה ברקמת גרנולציה", correct: false },
+            { text: "ריפוי פצע עם השתלת עור מאזור אחר בגוף", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Tertiary intention: פצע נשאר פתוח (עקב זיהום או זיהום פוטנציאלי), ונסגר לאחר מספר ימים של ריפוי."
+    },
+    {
+        question: "מהו Negative Pressure Wound Therapy (NPWT)?",
+        options: [
+            { text: "שימוש בואקום לקידום ריפוי פצעים מורכבים", correct: true },
+            { text: "חבישות לחץ חיובי להפחתת בצקת סביב פצעים", correct: false },
+            { text: "טיפול בחמצן היפרברי לפצעים שאינם מחלימים", correct: false },
+            { text: "הזרקת סטרואידים לפצעים עם הצטלקות יתר", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "NPWT (VAC): מסיר עודף נוזלים, מגביר זרימת דם, מקדם גרנולציה. לפצעים מורכבים, כרוניים, לאחר ניתוח."
+    },
+    {
+        question: "מהם שלבי Pressure Injury (פצעי לחץ)?",
+        options: [
+            { text: "Stage 1-4 לפי עומק הפגיעה, מאודם ועד חשיפת עצם", correct: true },
+            { text: "Grade A-D לפי שטח הפצע בסנטימטרים מרובעים", correct: false },
+            { text: "Level I-III לפי כמות ההפרשה והריח מהפצע", correct: false },
+            { text: "Type 1-3 לפי מיקום הפצע על הגוף בלבד", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Stage 1: אודם שאינו מתבהר. 2: אובדן עור חלקי. 3: אובדן עור מלא. 4: חשיפת שריר/עצם. Unstageable: כיסוי נמק."
+    },
+    {
+        question: "מהו Biofilm בפצעים?",
+        options: [
+            { text: "קהילת חיידקים מוגנת על ידי מטריצה, עמידה לאנטיביוטיקה", correct: true },
+            { text: "שכבת עור חדשה הנוצרת במהלך תהליך האפיתליזציה", correct: false },
+            { text: "חבישה ביולוגית המכילה גורמי גדילה לריפוי", correct: false },
+            { text: "רקמה נמקית שיש להסיר מפצע לפני ריפוי", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Biofilm: חיידקים מוגנים במטריצה פולימרית. קשה לטיפול. דורש debridement מכני ואנטיביוטיקה ממוקדת."
+    },
+    {
+        question: "מהו Hypergranulation?",
+        options: [
+            { text: "יצירת יתר של רקמת גרנולציה הבולטת מעל גובה הפצע", correct: true },
+            { text: "חוסר ביצירת רקמת גרנולציה עם פצע יבש ושטוח", correct: false },
+            { text: "זיהום ברקמת הגרנולציה עם הפרשה מוגלתית", correct: false },
+            { text: "נמק של רקמת הגרנולציה עם צבע שחור-חום", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Hypergranulation: רקמה אדומה בולטת מעל גובה העור. מעכבת אפיתליזציה. טיפול: סילבר ניטראט, סטרואידים מקומיים."
+    },
+    {
+        question: "מהו Collagen בריפוי פצעים?",
+        options: [
+            { text: "חלבון מבני העיקרי בצלקת, מיוצר על ידי פיברובלסטים", correct: true },
+            { text: "אנזים המפרק רקמה נמקית בשלב הדלקתי", correct: false },
+            { text: "גורם גדילה המעודד התחלקות תאי אפיתל", correct: false },
+            { text: "חומר קרישה הסותם כלי דם פגועים בתחילת הפגיעה", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "קולגן Type III נוצר תחילה (חלש), מוחלף ב-Type I (חזק יותר) בשלב הרימודלינג. צלקת מגיעה ל-80% מחוזק העור המקורי."
+    },
+    {
+        question: "מהם גורמי גדילה חשובים בריפוי פצעים?",
+        options: [
+            { text: "PDGF, TGF-beta, VEGF, EGF - מעודדים ריפוי והתחדשות", correct: true },
+            { text: "TNF-alpha, IL-6, IL-1 בלבד - גורמים פרו-דלקתיים", correct: false },
+            { text: "אינסולין וגלוקגון בלבד - הורמונים מטבוליים", correct: false },
+            { text: "קורטיזול ואדרנלין בלבד - הורמוני סטרס", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "PDGF: כימוטקסיס. TGF-β: קולגן. VEGF: אנגיוגנזיס. EGF: אפיתליזציה. חשובים לכל שלבי הריפוי."
+    },
+    {
+        question: "מהו Wound Contraction?",
+        options: [
+            { text: "תהליך בו שולי הפצע מתקרבים בעזרת מיופיברובלסטים", correct: true },
+            { text: "הרחבת הפצע עקב זיהום או לחץ מקומי על הרקמות", correct: false },
+            { text: "יצירת צלקת קשה ומתוחה המגבילה תנועה", correct: false },
+            { text: "סגירה כירורגית של פצע באמצעות תפרים", correct: false }
+        ],
+        category: "ריפוי פצעים",
+        explanation: "Wound Contraction: מיופיברובלסטים מכווצים את הפצע. חשוב ב-Secondary intention. יכול לגרום לקונטרקטורות."
     }
 ];
