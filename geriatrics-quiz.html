@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חידון סיעוד בגריאטריה ושיקום</title>
+    <link rel="stylesheet" href="geriatrics-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>חידון גריאטריה ושיקום</h1>
+            <p class="subtitle">סיעוד בגריאטריה ושיקום</p>
+        </header>
+
+        <div id="stats" class="stats">
+            <div class="stat-item">
+                <span class="stat-label">שאלה:</span>
+                <span id="question-number">1</span> / <span id="total-questions">10</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">ניקוד:</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <div id="question-card" class="question-card">
+                <div id="question-category" class="question-category"></div>
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options" class="options"></div>
+            </div>
+
+            <div id="feedback" class="feedback hidden">
+                <div id="feedback-icon" class="feedback-icon"></div>
+                <p id="feedback-text"></p>
+                <p id="explanation" class="explanation"></p>
+            </div>
+
+            <button id="next-btn" class="btn next-btn hidden">השאלה הבאה</button>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>סיכום</h2>
+            <div class="results-score">
+                <span id="final-score">0</span> / <span id="final-total">10</span>
+            </div>
+            <p id="results-message"></p>
+            <button id="restart-btn" class="btn">התחל מחדש</button>
+        </div>
+
+        <div id="settings" class="settings">
+            <h3>הגדרות</h3>
+            <div class="setting-item">
+                <label for="question-count">מספר שאלות:</label>
+                <select id="question-count">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="category-select">קטגוריה:</label>
+                <select id="category-select">
+                    <option value="all" selected>הכל</option>
+                    <option value="מושגים והגדרות">מושגים והגדרות</option>
+                    <option value="גילנות">גילנות</option>
+                    <option value="שינויים נוירולוגיים">שינויים נוירולוגיים</option>
+                    <option value="חושים">חושים</option>
+                    <option value="שינה">שינה</option>
+                    <option value="דיכאון ואובדנות">דיכאון ואובדנות</option>
+                    <option value="דמנציה ודליריום">דמנציה ודליריום</option>
+                    <option value="תזונה">תזונה</option>
+                    <option value="נפילות ושיקום">נפילות ושיקום</option>
+                    <option value="מערכת לב וכלי דם">מערכת לב וכלי דם</option>
+                    <option value="מערכת נשימה">מערכת נשימה</option>
+                    <option value="מערכת עיכול">מערכת עיכול</option>
+                    <option value="מערכת השתן">מערכת השתן</option>
+                    <option value="מערכת שלד ושרירים">מערכת שלד ושרירים</option>
+                    <option value="עור">עור</option>
+                    <option value="תיאוריות הזדקנות">תיאוריות הזדקנות</option>
+                    <option value="טיפול פליאטיבי">טיפול פליאטיבי</option>
+                    <option value="פוליפארמקולוגיה">פוליפארמקולוגיה</option>
+                    <option value="עומס מטפלים">עומס מטפלים</option>
+                    <option value="שירותים קהילתיים">שירותים קהילתיים</option>
+                </select>
+            </div>
+            <button id="start-btn" class="btn start-btn">התחל חידון</button>
+        </div>
+    </div>
+
+    <script src="geriatrics.js"></script>
+    <script src="geriatrics-quiz.js"></script>
+</body>
+</html>
