@@ -871,5 +871,273 @@ const assessmentData = [
         ],
         category: "נגעי עור",
         explanation: "Pitting Edema היא בצקת בה לחיצה עם האצבע משאירה שקע שנשאר לזמן מה, מעידה על הצטברות נוזלים."
+    },
+
+    // אומדן נוירולוגי - 8 שאלות
+    {
+        question: "מהו טווח סולם GCS (Glasgow Coma Scale)?",
+        options: [
+            { text: "3-15 (3 הכי חמור, 15 הכי טוב)", correct: true },
+            { text: "0-10 (0 הכי חמור, 10 הכי טוב)", correct: false },
+            { text: "1-12 (1 הכי חמור, 12 הכי טוב)", correct: false },
+            { text: "5-20 (5 הכי חמור, 20 הכי טוב)", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "סולם GCS נע בין 3 (מצב קומה עמוק) ל-15 (ערות מלאה). הסולם כולל 3 קטגוריות: פתיחת עיניים, תגובה מילולית ותגובה מוטורית."
+    },
+    {
+        question: "מה משמעות PERRLA באומדן נוירולוגי?",
+        options: [
+            { text: "אישונים שווים, עגולים, מגיבים לאור והתאמה", correct: true },
+            { text: "לחץ דם תקין, דופק סדיר, נשימה טובה", correct: false },
+            { text: "רפלקסים תקינים, עמידה יציבה, הליכה תקינה", correct: false },
+            { text: "תנועות עיניים שוות, ראייה טובה, קואורדינציה תקינה", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "PERRLA = Pupils Equal, Round, React to Light and Accommodation. זהו תיאור תקין של בדיקת האישונים."
+    },
+    {
+        question: "מהו דירוג כוח שרירים 3/5 בסולם הערכת כוח שרירים?",
+        options: [
+            { text: "תנועה מלאה נגד כוח הכבידה, אך ללא התנגדות", correct: true },
+            { text: "תנועה מלאה נגד כבידה והתנגדות קלה", correct: false },
+            { text: "תנועה מלאה עם התנגדות חלקית נגד הבודק", correct: false },
+            { text: "תנועה חלקית ללא יכולת להתגבר על כבידה", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "סולם כוח שרירים: 0=אין תנועה, 1=כיווץ קל, 2=תנועה ללא כבידה, 3=תנועה נגד כבידה, 4=תנועה עם התנגדות, 5=כוח מלא."
+    },
+    {
+        question: "מה משמעות רפלקס מדורג +2?",
+        options: [
+            { text: "רפלקס תקין, תגובה נורמלית ופעילה", correct: true },
+            { text: "רפלקס מוגבר, אולי פתולוגי", correct: false },
+            { text: "רפלקס חלש, אך קיים", correct: false },
+            { text: "רפלקס היפראקטיבי עם קלונוס", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "סולם דירוג רפלקסים: 0=אין, +1=היפואקטיבי, +2=נורמלי, +3=מעט מוגבר, +4=היפראקטיבי עם קלונוס."
+    },
+    {
+        question: "מה בודקים במבחן אצבע-אף (Finger-to-nose test)?",
+        options: [
+            { text: "קואורדינציה והתאמה בין תנועות עדינות", correct: true },
+            { text: "כוח שרירים של הזרועות", correct: false },
+            { text: "רפלקסים עמוקים של הגפה העליונה", correct: false },
+            { text: "תחושת מישוש וכאב בקצות האצבעות", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "מבחן אצבע-אף בוחן קואורדינציה מוטורית עדינה ותפקוד המוחון (Cerebellum). המטופל נדרש לגעת באצבעו ולאחר מכן באפו."
+    },
+    {
+        question: "מה בודקים במבחן Romberg?",
+        options: [
+            { text: "שיווי משקל, פרופריוצפציה ותפקוד מערכת שיווי משקל", correct: true },
+            { text: "כוח שרירים של הרגליים", correct: false },
+            { text: "רפלקסים עמוקים של הברכיים", correct: false },
+            { text: "מהירות ותיאום תנועות הליכה", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "מבחן Romberg בוחן שיווי משקל ופרופריוצפציה. המטופל עומד עם רגליים צמודות ועיניים פקוחות, ואז סוגר עיניים. נפילה = חיובי."
+    },
+    {
+        question: "כיצד בודקים את עצב גולגולתי III (Oculomotor)?",
+        options: [
+            { text: "תגובת אישונים לאור, תנועות עיניים ופתיחת עפעפיים", correct: true },
+            { text: "חוש ריח באמצעות מבחן ריח", correct: false },
+            { text: "תנועות שרירי הפנים וטעם לשון", correct: false },
+            { text: "שמיעה ושיווי משקל פנימי", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "עצב CN III (Oculomotor) אחראי על תנועות עיניים רבות, הרמת עפעף עליון והתכווצות אישון. בודקים תגובת אישון ותנועות עיניים."
+    },
+    {
+        question: "מה משמעות תנוחת Decorticate posturing?",
+        options: [
+            { text: "פגיעה מוחית חמורה, זרועות כפופות פנימה, רגליים מתוחות", correct: true },
+            { text: "תפקוד נוירולוגי תקין, תנוחת גוף רגועה", correct: false },
+            { text: "פגיעה קלה, זרועות ורגליים מתוחות החוצה", correct: false },
+            { text: "התכווצות רפלקסיבית זמנית של הגפיים", correct: false }
+        ],
+        category: "אומדן נוירולוגי",
+        explanation: "Decorticate posturing מעידה על פגיעה מוחית חמורה - זרועות כפופות פנימה לחזה, רגליים מתוחות. Decerebrate - כל הגפיים מתוחות."
+    },
+
+    // אומדן וסקולרי - 17 שאלות
+    {
+        question: "מהו טווח לחץ הדם התקין?",
+        options: [
+            { text: "סיסטולי 90-120, דיאסטולי 60-80 mmHg", correct: true },
+            { text: "סיסטולי 100-140, דיאסטולי 70-90 mmHg", correct: false },
+            { text: "סיסטולי 80-110, דיאסטולי 50-70 mmHg", correct: false },
+            { text: "סיסטולי 110-130, דיאסטולי 65-85 mmHg", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "לחץ דם תקין הוא סיסטולי 90-120 mmHg ודיאסטולי 60-80 mmHg. מעל 130/80 נחשב יתר לחץ דם."
+    },
+    {
+        question: "מה משמעות דופק מדורג 2+ (Pulse 2+)?",
+        options: [
+            { text: "דופק תקין, בעל משרעת נורמלית וקל למישוש", correct: true },
+            { text: "דופק חלש מאוד, קשה למישוש", correct: false },
+            { text: "דופק מוגבר, חזק מאוד ובולט", correct: false },
+            { text: "דופק אופייני לחסימה עורקית חלקית", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "סולם דירוג דופק: 0=אין דופק, 1+=חלש, 2+=נורמלי, 3+=מוגבר, 4+=חזק מאוד (bounding)."
+    },
+    {
+        question: "מהו זמן מילוי נימי תקין (Capillary Refill Time)?",
+        options: [
+            { text: "פחות מ-2 שניות", correct: true },
+            { text: "פחות מ-5 שניות", correct: false },
+            { text: "בין 2-4 שניות", correct: false },
+            { text: "פחות מ-3 שניות", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "זמן מילוי נימי (CRT) תקין הוא פחות מ-2 שניות. זמן ארוך יותר מעיד על פרפוזיה לקויה או הלם."
+    },
+    {
+        question: "מה משמעות בצקת מדורגת 3+ (Edema 3+)?",
+        options: [
+            { text: "בצקת עמוקה, שקע של 6-8 מ\"מ שנמשך 1-2 דקות", correct: true },
+            { text: "בצקת קלה, שקע של 2 מ\"מ שנעלם מיד", correct: false },
+            { text: "בצקת בינונית, שקע של 4 מ\"מ שנעלם תוך שניות", correct: false },
+            { text: "בצקת מאסיבית, רגל נפוחה מאוד ללא שקע", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "סולם בצקת: 1+=קלה (2 מ\"מ), 2+=בינונית (4 מ\"מ), 3+=עמוקה (6-8 מ\"מ), 4+=מאסיבית (>8 מ\"מ)."
+    },
+    {
+        question: "מהם סימני אי ספיקה עורקית (Arterial Insufficiency)?",
+        options: [
+            { text: "חיוורון, קור, כאב, איבוד שיער, ציפורניים עבות", correct: true },
+            { text: "אדמומיות, חום, נפיחות מתמדת", correct: false },
+            { text: "גירוד, פריחה, שינוי צבע לכחול", correct: false },
+            { text: "בצקת מסיבית, עור מבריק ורך", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "אי ספיקה עורקית מאופיינת בחיוורון, קור, כאב, איבוד שיער, עור מבריק, ציפורניים עבות וכיבים כואבים."
+    },
+    {
+        question: "מה בודקים עם סימן Homan?",
+        options: [
+            { text: "חשד ל-DVT - כאב בשוק בעת כיפוף הרגל כלפי מעלה", correct: true },
+            { text: "זרימת דם עורקית בזרוע", correct: false },
+            { text: "תפקוד עצבים היקפיים ברגל", correct: false },
+            { text: "יציבות מפרק הקרסול והברך", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "סימן Homan בוחן חשד לטרומבוזיס ורידי עמוק (DVT). כאב בשוק בעת כיפוף כף הרגל כלפי מעלה הוא חיובי."
+    },
+    {
+        question: "מה משמעות ABI (Ankle-Brachial Index) של 0.7?",
+        options: [
+            { text: "מחלת עורקים היקפית בינונית (Moderate PAD)", correct: true },
+            { text: "זרימת דם תקינה, ללא פתולוגיה", correct: false },
+            { text: "מחלת עורקים קלה, טיפול לא דרוש", correct: false },
+            { text: "חסימה עורקית קריטית הדורשת התערבות מיידית", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "ABI תקין: 0.9-1.3. ABI 0.7-0.9 = PAD קלה, 0.4-0.69 = בינונית, <0.4 = חמורה. 0.7 הוא PAD בינונית."
+    },
+    {
+        question: "מהו קצב דופק תקין (Pulse Rate)?",
+        options: [
+            { text: "60-100 פעימות לדקה במבוגרים", correct: true },
+            { text: "50-90 פעימות לדקה במבוגרים", correct: false },
+            { text: "70-110 פעימות לדקה במבוגרים", correct: false },
+            { text: "65-95 פעימות לדקה במבוגרים", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "קצב דופק תקין במבוגרים הוא 60-100 פעימות לדקה. מתחת ל-60 = ברדיקרדיה, מעל 100 = טכיקרדיה."
+    },
+    {
+        question: "איפה ממוקם דופק Dorsalis Pedis?",
+        options: [
+            { text: "על גב כף הרגל, לצד הגידים האקסטנסורים", correct: true },
+            { text: "מאחורי הקרסול הפנימי", correct: false },
+            { text: "בשוק, מאחורי עצם השוקה", correct: false },
+            { text: "מתחת למפשעה, בקו הירך הפנימי", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "דופק Dorsalis Pedis נמצא על גב כף הרגל, לצד הגידים האקסטנסורים. Posterior Tibial נמצא מאחורי הקרסול הפנימי."
+    },
+    {
+        question: "מהי תופעת Raynaud?",
+        options: [
+            { text: "התכווצות כלי דם באצבעות עקב קור או מתח, שינויי צבע", correct: true },
+            { text: "התרחבות כלי דם בכפות הידיים עם חום", correct: false },
+            { text: "דלקת כרונית של כלי דם קטנים ברגליים", correct: false },
+            { text: "היצרות עורקים גדולים בזרועות וברגליים", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "תופעת Raynaud היא התכווצות כלי דם באצבעות בתגובה לקור או מתח, גורמת לשינוי צבע (לבן-כחול-אדום)."
+    },
+    {
+        question: "מה מטרת מבחן Allen?",
+        options: [
+            { text: "בדיקת זרימת דם עורקית בכף היד דרך העורקים הרדיאלי והאולנרי", correct: true },
+            { text: "בדיקת תפקוד ורידי בזרוע העליונה", correct: false },
+            { text: "הערכת כוח שרירי האחיזה של כף היד", correct: false },
+            { text: "בדיקת תחושה והולכה עצבית באצבעות", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "מבחן Allen בוחן את זרימת הדם העורקית בכף היד. חוסמים שני עורקים, משחררים אחד ובודקים אם כף היד מתמלאת בדם."
+    },
+    {
+        question: "מה ההבדל בין כיחלון מרכזי (Central) לכיחלון היקפי (Peripheral)?",
+        options: [
+            { text: "מרכזי בשפתיים ולשון, היקפי באצבעות וקצות גפיים", correct: true },
+            { text: "מרכזי בחזה ובטן, היקפי בפנים", correct: false },
+            { text: "מרכזי באוזניים, היקפי ברגליים", correct: false },
+            { text: "מרכזי בגב, היקפי בזרועות", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "כיחלון מרכזי מופיע בשפתיים, לשון וריריות ומעיד על היפוקסיה מערכתית. כיחלון היקפי מופיע באצבעות וקצות גפיים."
+    },
+    {
+        question: "כיצד נמדד דופק אפיקלי (Apical Pulse)?",
+        options: [
+            { text: "עם סטטוסקופ על החזה למשך 60 שניות", correct: true },
+            { text: "עם אצבעות על הצוואר למשך 30 שניות", correct: false },
+            { text: "עם מכשיר אלקטרוני על האצבע למשך דקה", correct: false },
+            { text: "עם מישוש על פרק כף היד למשך 15 שניות", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "דופק אפיקלי נמדד עם סטטוסקופ במקום PMI (Point of Maximal Impulse), בדרך כלל בין הצלעות 5-6, למשך 60 שניות מלאות."
+    },
+    {
+        question: "מהו Pulse Deficit?",
+        options: [
+            { text: "הפרש בין קצב דופק אפיקלי (לבבי) לדופק רדיאלי", correct: true },
+            { text: "דופק חלש מאוד שקשה למישוש", correct: false },
+            { text: "הפרש בין דופק ביד ימין לשמאל", correct: false },
+            { text: "דופק לא סדיר עם השהיות ארוכות", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "Pulse Deficit הוא הפרש בין קצב הלב (אפיקלי) לבין קצב הדופק הרדיאלי, נפוץ ב-Atrial Fibrillation."
+    },
+    {
+        question: "על מה מעיד Clubbing (התאלות אצבעות)?",
+        options: [
+            { text: "היפוקסיה כרונית, מחלות ריאה או לב כרוניות", correct: true },
+            { text: "זיהום חריף בדרכי הנשימה", correct: false },
+            { text: "מחסור בויטמין D וסידן", correct: false },
+            { text: "פגיעה מקומית באצבעות מטראומה", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "Clubbing מעיד על היפוקסיה כרונית, מחלות ריאה (COPD, סרטן ריאה), מחלות לב ציאנוטיות או מחלות מעיים דלקתיות."
+    },
+    {
+        question: "מהו Pulsus Paradoxus?",
+        options: [
+            { text: "ירידה בלחץ דם סיסטולי >10 mmHg בעת שאיפה", correct: true },
+            { text: "עלייה בלחץ דם בעת נשיפה", correct: false },
+            { text: "דופק לא סדיר עם פעימות חסרות", correct: false },
+            { text: "דופק חלש רק בגף אחד", correct: false }
+        ],
+        category: "אומדן וסקולרי",
+        explanation: "Pulsus Paradoxus הוא ירידה של יותר מ-10 mmHg בלחץ הדם הסיסטולי בעת שאיפה. נראה בטמפונדה לבבית ואסטמה חמורה."
     }
 ];
