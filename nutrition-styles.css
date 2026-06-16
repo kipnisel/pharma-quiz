@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0e6655 0%, #1abc9c 50%, #16a085 100%);
+    background: linear-gradient(135deg, #6b3fa0 0%, #9b59b6 50%, #8e44ad 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -49,7 +49,7 @@ header h1 {
 
 .stat-label {
     font-weight: bold;
-    color: #0e6655;
+    color: #6b3fa0;
 }
 
 .quiz-container {
@@ -70,7 +70,7 @@ header h1 {
 
 .question-category {
     display: inline-block;
-    background: linear-gradient(135deg, #0e6655 0%, #1abc9c 100%);
+    background: linear-gradient(135deg, #6b3fa0 0%, #9b59b6 100%);
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
@@ -104,14 +104,14 @@ header h1 {
 
 .option:hover {
     background: #e9ecef;
-    border-color: #1abc9c;
+    border-color: #9b59b6;
     transform: translateX(-5px);
 }
 
 .option.selected {
-    background: #1abc9c;
+    background: #9b59b6;
     color: white;
-    border-color: #1abc9c;
+    border-color: #9b59b6;
 }
 
 .option.correct {
@@ -145,12 +145,12 @@ header h1 {
 }
 
 .feedback.correct .feedback-icon::before {
-    content: '✓';
+    content: '\2713';
     color: #28a745;
 }
 
 .feedback.incorrect .feedback-icon::before {
-    content: '✗';
+    content: '\2717';
     color: #dc3545;
 }
 
@@ -172,7 +172,7 @@ header h1 {
     font-size: 1.1rem;
     font-weight: bold;
     color: white;
-    background: linear-gradient(135deg, #0e6655 0%, #1abc9c 100%);
+    background: linear-gradient(135deg, #6b3fa0 0%, #9b59b6 100%);
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -184,7 +184,7 @@ header h1 {
 
 .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(26, 188, 156, 0.4);
+    box-shadow: 0 5px 15px rgba(155, 89, 182, 0.4);
 }
 
 .next-btn {
@@ -212,7 +212,7 @@ header h1 {
 .results-score {
     font-size: 4rem;
     font-weight: bold;
-    color: #0e6655;
+    color: #6b3fa0;
     margin-bottom: 20px;
 }
 
@@ -259,7 +259,7 @@ header h1 {
 
 .setting-item select:focus {
     outline: none;
-    border-color: #1abc9c;
+    border-color: #9b59b6;
 }
 
 .start-btn {
