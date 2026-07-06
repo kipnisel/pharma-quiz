@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>חידון תזונה ודיאטטיקה</title>
-    <link rel="stylesheet" href="nutrition-styles.css">
+    <title>חידון בריאות הציבור והקהילה</title>
+    <link rel="stylesheet" href="public-health-styles.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>חידון תזונה ודיאטטיקה</h1>
-            <p class="subtitle">מערכת עיכול, הרכב גוף, מאקרו ומיקרו נוטריאנטים</p>
+            <h1>חידון בריאות הציבור והקהילה</h1>
+            <p class="subtitle">בריאות הציבור, מערכת הבריאות, קהילה, אתיקה, בריאות הנפש ורפואה תעסוקתית</p>
         </header>
 
         <div id="stats" class="stats">
@@ -59,35 +59,38 @@
                     <option value="20">20</option>
                     <option value="30">30</option>
                     <option value="50">50</option>
+                    <option value="100">100</option>
                 </select>
             </div>
             <div class="setting-item">
                 <label for="category-select">קטגוריה:</label>
                 <select id="category-select">
                     <option value="all" selected>הכל</option>
-                    <option value="מערכת העיכול">מערכת העיכול</option>
-                    <option value="הרכב הגוף">הרכב הגוף</option>
-                    <option value="מאזן אנרגיה">מאזן אנרגיה</option>
-                    <option value="פחמימות">פחמימות</option>
-                    <option value="סיבים תזונתיים">סיבים תזונתיים</option>
-                    <option value="שומנים">שומנים</option>
-                    <option value="חלבונים">חלבונים</option>
-                    <option value="ויטמינים ומינרלים">ויטמינים ומינרלים</option>
-                    <option value="רגישות למזון">רגישות למזון</option>
-                    <option value="תזונה קלינית">תזונה קלינית</option>
+                    <option value="מבוא לבריאות הציבור">מבוא לבריאות הציבור</option>
+                    <option value="מערכת הבריאות בישראל">מערכת הבריאות בישראל</option>
+                    <option value="אי שוויון בבריאות">אי שוויון בבריאות</option>
+                    <option value="בריאות הקהילה">בריאות הקהילה</option>
+                    <option value="אוכלוסיות בסיכון">אוכלוסיות בסיכון</option>
+                    <option value="סיעוד בקהילה">סיעוד בקהילה</option>
+                    <option value="מחלות כרוניות ורצף טיפולי">מחלות כרוניות ורצף טיפולי</option>
+                    <option value="אתיקה ופוליטיקה בבריאות הציבור">אתיקה ופוליטיקה בבריאות הציבור</option>
+                    <option value="בריאות הנפש בקהילה">בריאות הנפש בקהילה</option>
+                    <option value="רפואה תעסוקתית">רפואה תעסוקתית</option>
+                    <option value="מצבי חירום ובריאות הציבור">מצבי חירום ובריאות הציבור</option>
+                    <option value="רפואה דיגיטלית ושינויי אקלים">רפואה דיגיטלית ושינויי אקלים</option>
+                    <option value="קורונה והשפעותיה">קורונה והשפעותיה</option>
                 </select>
             </div>
             <button id="start-btn" class="btn start-btn">התחל חידון</button>
         </div>
-
         <div class="nav-links">
             <a href="nursing-quiz.html" class="nav-link">חידון סיעודי</a>
+            <a href="nutrition-quiz.html" class="nav-link">חידון תזונה ודיאטטיקה</a>
             <a href="internal-quiz.html" class="nav-link">חידון פנימיות ב'</a>
-            <a href="public-health-quiz.html" class="nav-link">חידון בריאות הציבור</a>
         </div>
     </div>
 
-    <script src="nutrition.js"></script>
-    <script src="nutrition-quiz.js"></script>
+    <script src="public-health.js"></script>
+    <script src="public-health-quiz.js"></script>
 </body>
 </html>
