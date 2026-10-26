@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חידון מילון עברית</title>
+    <link rel="stylesheet" href="hebrew-styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>חידון מילון עברית</h1>
+            <p class="subtitle">מילים וביטויים – מילון עברית, יחידות 1–10</p>
+        </header>
+
+        <div id="stats" class="stats">
+            <div class="stat-item">
+                <span class="stat-label">שאלה:</span>
+                <span id="question-number">1</span> / <span id="total-questions">10</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">ניקוד:</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+
+        <div id="quiz-container" class="quiz-container">
+            <div id="question-card" class="question-card">
+                <div id="question-category" class="question-category"></div>
+                <h2 id="question-text" class="question-text"></h2>
+                <div id="options" class="options"></div>
+            </div>
+
+            <div id="feedback" class="feedback hidden">
+                <div id="feedback-icon" class="feedback-icon"></div>
+                <p id="feedback-text"></p>
+                <p id="explanation" class="explanation"></p>
+            </div>
+
+            <button id="next-btn" class="btn next-btn hidden">השאלה הבאה</button>
+        </div>
+
+        <div id="results" class="results hidden">
+            <h2>סיכום</h2>
+            <div class="results-score">
+                <span id="final-score">0</span> / <span id="final-total">10</span>
+            </div>
+            <p id="results-message"></p>
+            <button id="restart-btn" class="btn">התחל מחדש</button>
+        </div>
+
+        <div id="settings" class="settings">
+            <h3>הגדרות</h3>
+            <div class="setting-item">
+                <label for="question-count">מספר שאלות:</label>
+                <select id="question-count">
+                    <option value="5">5</option>
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="category-select">קטגוריה:</label>
+                <select id="category-select">
+                    <option value="all" selected>הכל</option>
+                    <option value="יחידה 1">יחידה 1</option>
+                    <option value="יחידה 2">יחידה 2</option>
+                    <option value="יחידה 3">יחידה 3</option>
+                    <option value="יחידה 4">יחידה 4</option>
+                    <option value="יחידה 5">יחידה 5</option>
+                    <option value="יחידה 6">יחידה 6</option>
+                    <option value="יחידה 7">יחידה 7</option>
+                    <option value="יחידה 8">יחידה 8</option>
+                    <option value="יחידה 9">יחידה 9</option>
+                    <option value="יחידה 10">יחידה 10</option>
+                </select>
+            </div>
+            <div class="setting-item">
+                <label for="direction-select">סוג שאלה:</label>
+                <select id="direction-select">
+                    <option value="all" selected>מעורב</option>
+                    <option value="word">מילה ← פירוש</option>
+                    <option value="meaning">פירוש ← מילה</option>
+                </select>
+            </div>
+            <button id="start-btn" class="btn start-btn">התחל חידון</button>
+        </div>
+        <div class="nav-links">
+            <a href="er-quiz.html" class="nav-link">חידון מיון</a>
+            <a href="public-health-quiz.html" class="nav-link">חידון בריאות הציבור</a>
+            <a href="nursing-quiz.html" class="nav-link">חידון סיעודי</a>
+            <a href="nutrition-quiz.html" class="nav-link">חידון תזונה ודיאטטיקה</a>
+            <a href="internal-quiz.html" class="nav-link">חידון פנימיות ב'</a>
+        </div>
+    </div>
+
+    <script src="hebrew.js"></script>
+    <script src="hebrew-quiz.js"></script>
+</body>
+</html>
